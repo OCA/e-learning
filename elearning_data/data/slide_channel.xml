@@ -3,16 +3,16 @@
     <record forcecreate="True" id="getting_started" model="slide.channel">
         <field name="name">Prise en main</field>
         <field name="enroll">public</field>
-        <field name="publish_template_id" eval="False"/>
-        <field name="completed_template_id" eval="False"/>
-        <field name="website_published" eval="True"/>
+        <field name="publish_template_id" eval="False" />
+        <field name="completed_template_id" eval="False" />
+        <field name="website_published" eval="True" />
     </record>
 
     <record forcecreate="True" id="advanced_use" model="slide.channel">
         <field name="name">Utilisation avancée</field>
         <field name="enroll">public</field>
-        <field name="publish_template_id" eval="False"/>
-        <field name="completed_template_id" eval="False"/>
-        <field name="website_published" eval="True"/>
+        <field name="publish_template_id" eval="False" />
+        <field name="completed_template_id" eval="False" />
+        <field name="website_published" eval="True" />
     </record>
 </odoo>
