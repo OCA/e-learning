@@ -1,260 +1,470 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <!-- ANALYSES -->
-    <!-- QESTION 1 -->
-    <record forcecreate="True" id="question_default_analysis_sale" model="slide.question">
-        <field name="question">Quelle mesure est utilisée par défaut pour l'analyse des ventes dans l'exemple ?</field>
-        <field name="slide_id" ref="advanced_use_analysis_quiz"/>
+    <!-- QUESTION 1 -->
+    <record
+        forcecreate="True"
+        id="question_default_analysis_sale"
+        model="slide.question"
+    >
+        <field
+            name="question"
+        >Quelle mesure est utilisée par défaut pour l'analyse des ventes dans l'exemple ?</field>
+        <field name="slide_id" ref="advanced_use_analysis_quiz" />
     </record>
-    <record forcecreate="True" id="question_default_analysis_sale_1" model="slide.answer">
-        <field name="question_id" ref="question_default_analysis_sale"/>
+    <record
+        forcecreate="True"
+        id="question_default_analysis_sale_1"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_default_analysis_sale" />
         <field name="text_value">Total hors-taxe</field>
-        <field name="is_correct" eval="True"/>
+        <field name="is_correct" eval="True" />
     </record>
-    <record forcecreate="True" id="question_default_analysis_sale_2" model="slide.answer">
-        <field name="question_id" ref="question_default_analysis_sale"/>
+    <record
+        forcecreate="True"
+        id="question_default_analysis_sale_2"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_default_analysis_sale" />
         <field name="text_value">Chiffre d'affaires après taxes</field>
     </record>
-    <record forcecreate="True" id="question_default_analysis_sale_3" model="slide.answer">
-        <field name="question_id" ref="question_default_analysis_sale"/>
+    <record
+        forcecreate="True"
+        id="question_default_analysis_sale_3"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_default_analysis_sale" />
         <field name="text_value">Nombre de clients</field>
     </record>
-    <record forcecreate="True" id="question_default_analysis_sale_4" model="slide.answer">
-        <field name="question_id" ref="question_default_analysis_sale"/>
+    <record
+        forcecreate="True"
+        id="question_default_analysis_sale_4"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_default_analysis_sale" />
         <field name="text_value">Nombre de commandes</field>
     </record>
 
-    <!-- QESTION 2 -->
-    <record forcecreate="True" id="question_available_graphic_analysis" model="slide.question">
-        <field name="question">Quel type de graphique n'est pas mentionné comme option disponible dans l'interface ?</field>
-        <field name="slide_id" ref="advanced_use_analysis_quiz"/>
+    <!-- QUESTION 2 -->
+    <record
+        forcecreate="True"
+        id="question_available_graphic_analysis"
+        model="slide.question"
+    >
+        <field
+            name="question"
+        >Quel type de graphique n'est pas mentionné comme option disponible dans l'interface ?</field>
+        <field name="slide_id" ref="advanced_use_analysis_quiz" />
     </record>
-    <record forcecreate="True" id="question_available_graphic_analysis_1" model="slide.answer">
-        <field name="question_id" ref="question_available_graphic_analysis"/>
+    <record
+        forcecreate="True"
+        id="question_available_graphic_analysis_1"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_available_graphic_analysis" />
         <field name="text_value">Graphique en aires</field>
-        <field name="is_correct" eval="True"/>
+        <field name="is_correct" eval="True" />
     </record>
-    <record forcecreate="True" id="question_available_graphic_analysis_2" model="slide.answer">
-        <field name="question_id" ref="question_available_graphic_analysis"/>
+    <record
+        forcecreate="True"
+        id="question_available_graphic_analysis_2"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_available_graphic_analysis" />
         <field name="text_value">Graphique à barres</field>
     </record>
-    <record forcecreate="True" id="question_available_graphic_analysis_3" model="slide.answer">
-        <field name="question_id" ref="question_available_graphic_analysis"/>
+    <record
+        forcecreate="True"
+        id="question_available_graphic_analysis_3"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_available_graphic_analysis" />
         <field name="text_value">Graphique linéaire</field>
     </record>
-    <record forcecreate="True" id="question_available_graphic_analysis_4" model="slide.answer">
-        <field name="question_id" ref="question_available_graphic_analysis"/>
+    <record
+        forcecreate="True"
+        id="question_available_graphic_analysis_4"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_available_graphic_analysis" />
         <field name="text_value">Graphique en forme de camembert</field>
     </record>
 
-    <!-- QESTION 3 -->
-    <record forcecreate="True" id="question_click_on_pivot_table" model="slide.question">
-        <field name="question">Quelle action est possible en cliquant sur une valeur dans un tableau croisé dynamique ?</field>
-        <field name="slide_id" ref="advanced_use_analysis_quiz"/>
+    <!-- QUESTION 3 -->
+    <record
+        forcecreate="True"
+        id="question_click_on_pivot_table"
+        model="slide.question"
+    >
+        <field
+            name="question"
+        >Quelle action est possible en cliquant sur une valeur dans un tableau croisé dynamique ?</field>
+        <field name="slide_id" ref="advanced_use_analysis_quiz" />
     </record>
-    <record forcecreate="True" id="question_click_on_pivot_table_1" model="slide.answer">
-        <field name="question_id" ref="question_click_on_pivot_table"/>
+    <record
+        forcecreate="True"
+        id="question_click_on_pivot_table_1"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_click_on_pivot_table" />
         <field name="text_value">Accéder aux valeurs qui composent la cellule</field>
-        <field name="is_correct" eval="True"/>
+        <field name="is_correct" eval="True" />
     </record>
-    <record forcecreate="True" id="question_click_on_pivot_table_2" model="slide.answer">
-        <field name="question_id" ref="question_click_on_pivot_table"/>
+    <record
+        forcecreate="True"
+        id="question_click_on_pivot_table_2"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_click_on_pivot_table" />
         <field name="text_value">Modifier le type de graphique</field>
     </record>
-    <record forcecreate="True" id="question_click_on_pivot_table_3" model="slide.answer">
-        <field name="question_id" ref="question_click_on_pivot_table"/>
+    <record
+        forcecreate="True"
+        id="question_click_on_pivot_table_3"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_click_on_pivot_table" />
         <field name="text_value">Télécharger les données correspondantes</field>
     </record>
-    <record forcecreate="True" id="question_click_on_pivot_table_4" model="slide.answer">
-        <field name="question_id" ref="question_click_on_pivot_table"/>
+    <record
+        forcecreate="True"
+        id="question_click_on_pivot_table_4"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_click_on_pivot_table" />
         <field name="text_value">Supprimer la valeur sélectionnée</field>
     </record>
     <!-- ANALYSES -->
 
     <!-- FILTRES ET REGROUPEMENTS PERSONNALISÉS -->
-    <!-- QESTION 1 -->
+    <!-- QUESTION 1 -->
     <record forcecreate="True" id="question_groupby_contact" model="slide.question">
-        <field name="question">Comment peut-on regrouper les contacts dans la barre de recherche d'Odoo ?</field>
-        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz"/>
+        <field
+            name="question"
+        >Comment peut-on regrouper les contacts dans la barre de recherche d'Odoo ?</field>
+        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz" />
     </record>
     <record forcecreate="True" id="question_groupby_contact_1" model="slide.answer">
-        <field name="question_id" ref="question_groupby_contact"/>
+        <field name="question_id" ref="question_groupby_contact" />
         <field name="text_value">Tout</field>
-        <field name="is_correct" eval="True"/>
+        <field name="is_correct" eval="True" />
     </record>
     <record forcecreate="True" id="question_groupby_contact_2" model="slide.answer">
-        <field name="question_id" ref="question_groupby_contact"/>
+        <field name="question_id" ref="question_groupby_contact" />
         <field name="text_value">Par nom</field>
     </record>
     <record forcecreate="True" id="question_groupby_contact_3" model="slide.answer">
-        <field name="question_id" ref="question_groupby_contact"/>
+        <field name="question_id" ref="question_groupby_contact" />
         <field name="text_value">Par ville</field>
     </record>
     <record forcecreate="True" id="question_groupby_contact_4" model="slide.answer">
-        <field name="question_id" ref="question_groupby_contact"/>
+        <field name="question_id" ref="question_groupby_contact" />
         <field name="text_value">Par date de création</field>
     </record>
     <record forcecreate="True" id="question_groupby_contact_5" model="slide.answer">
-        <field name="question_id" ref="question_groupby_contact"/>
+        <field name="question_id" ref="question_groupby_contact" />
         <field name="text_value">Par numéro de téléphone</field>
     </record>
 
-    <!-- QESTION 2 -->
+    <!-- QUESTION 2 -->
     <record forcecreate="True" id="question_delete_groupby" model="slide.question">
-        <field name="question">Comment peut-on supprimer un regroupement personnalisé dans Odoo ?</field>
-        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz"/>
+        <field
+            name="question"
+        >Comment peut-on supprimer un regroupement personnalisé dans Odoo ?</field>
+        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz" />
     </record>
     <record forcecreate="True" id="question_delete_groupby_1" model="slide.answer">
-        <field name="question_id" ref="question_delete_groupby"/>
-        <field name="text_value">En cliquant sur la petite croix à côté du groupe</field>
-        <field name="is_correct" eval="True"/>
+        <field name="question_id" ref="question_delete_groupby" />
+        <field
+            name="text_value"
+        >En cliquant sur la petite croix à côté du groupe</field>
+        <field name="is_correct" eval="True" />
     </record>
     <record forcecreate="True" id="question_delete_groupby_2" model="slide.answer">
-        <field name="question_id" ref="question_delete_groupby"/>
-        <field name="text_value">En sélectionnant le groupe et en appuyant sur Suppr</field>
+        <field name="question_id" ref="question_delete_groupby" />
+        <field
+            name="text_value"
+        >En sélectionnant le groupe et en appuyant sur Suppr</field>
     </record>
     <record forcecreate="True" id="question_delete_groupby_3" model="slide.answer">
-        <field name="question_id" ref="question_delete_groupby"/>
+        <field name="question_id" ref="question_delete_groupby" />
         <field name="text_value">En décochant la case du groupe</field>
     </record>
     <record forcecreate="True" id="question_delete_groupby_4" model="slide.answer">
-        <field name="question_id" ref="question_delete_groupby"/>
+        <field name="question_id" ref="question_delete_groupby" />
         <field name="text_value">En double-cliquant sur le groupe</field>
     </record>
 
-    <!-- QESTION 3 -->
-    <record forcecreate="True" id="question_contact_count_when_filter" model="slide.question">
-        <field name="question">Combien de contacts ont été retrouvés en France après l'application du filtre dans l'exemple donné ?</field>
-        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz"/>
+    <!-- QUESTION 3 -->
+    <record
+        forcecreate="True"
+        id="question_contact_count_when_filter"
+        model="slide.question"
+    >
+        <field
+            name="question"
+        >Combien de contacts ont été retrouvés en France après l'application du filtre dans l'exemple donné ?</field>
+        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz" />
     </record>
-    <record forcecreate="True" id="question_contact_count_when_filter_1" model="slide.answer">
-        <field name="question_id" ref="question_contact_count_when_filter"/>
+    <record
+        forcecreate="True"
+        id="question_contact_count_when_filter_1"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_contact_count_when_filter" />
         <field name="text_value">Trois contacts</field>
-        <field name="is_correct" eval="True"/>
+        <field name="is_correct" eval="True" />
     </record>
-    <record forcecreate="True" id="question_contact_count_when_filter_2" model="slide.answer">
-        <field name="question_id" ref="question_contact_count_when_filter"/>
+    <record
+        forcecreate="True"
+        id="question_contact_count_when_filter_2"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_contact_count_when_filter" />
         <field name="text_value">Deux contacts</field>
     </record>
-    <record forcecreate="True" id="question_contact_count_when_filter_3" model="slide.answer">
-        <field name="question_id" ref="question_contact_count_when_filter"/>
+    <record
+        forcecreate="True"
+        id="question_contact_count_when_filter_3"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_contact_count_when_filter" />
         <field name="text_value">Un contact</field>
     </record>
-    <record forcecreate="True" id="question_contact_count_when_filter_4" model="slide.answer">
-        <field name="question_id" ref="question_contact_count_when_filter"/>
+    <record
+        forcecreate="True"
+        id="question_contact_count_when_filter_4"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_contact_count_when_filter" />
         <field name="text_value">Quatre contacts</field>
     </record>
 
-    <!-- QESTION 4 -->
-    <record forcecreate="True" id="question_which_filter_has_been_used" model="slide.question">
-        <field name="question">Quel critère supplémentaire a été appliqué pour filtrer les personnes à Pleasant Hill ?</field>
-        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz"/>
+    <!-- QUESTION 4 -->
+    <record
+        forcecreate="True"
+        id="question_which_filter_has_been_used"
+        model="slide.question"
+    >
+        <field
+            name="question"
+        >Quel critère supplémentaire a été appliqué pour filtrer les personnes à Pleasant Hill ?</field>
+        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz" />
     </record>
-    <record forcecreate="True" id="question_which_filter_has_been_used_1" model="slide.answer">
-        <field name="question_id" ref="question_which_filter_has_been_used"/>
+    <record
+        forcecreate="True"
+        id="question_which_filter_has_been_used_1"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_which_filter_has_been_used" />
         <field name="text_value">Le poste d'analyste</field>
-        <field name="is_correct" eval="True"/>
+        <field name="is_correct" eval="True" />
     </record>
-    <record forcecreate="True" id="question_which_filter_has_been_used_2" model="slide.answer">
-        <field name="question_id" ref="question_which_filter_has_been_used"/>
+    <record
+        forcecreate="True"
+        id="question_which_filter_has_been_used_2"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_which_filter_has_been_used" />
         <field name="text_value">Le numéro de téléphone</field>
     </record>
-    <record forcecreate="True" id="question_which_filter_has_been_used_3" model="slide.answer">
-        <field name="question_id" ref="question_which_filter_has_been_used"/>
+    <record
+        forcecreate="True"
+        id="question_which_filter_has_been_used_3"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_which_filter_has_been_used" />
         <field name="text_value">La date de naissance</field>
     </record>
-    <record forcecreate="True" id="question_which_filter_has_been_used_4" model="slide.answer">
-        <field name="question_id" ref="question_which_filter_has_been_used"/>
+    <record
+        forcecreate="True"
+        id="question_which_filter_has_been_used_4"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_which_filter_has_been_used" />
         <field name="text_value">Le statut marital</field>
     </record>
 
-    <!-- QESTION 5 -->
-    <record forcecreate="True" id="question_better_existant_filter" model="slide.question">
-        <field name="question">Comment peut-on affiner un filtre existant pour cibler les analystes à Pleasant Hill ?</field>
-        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz"/>
+    <!-- QUESTION 5 -->
+    <record
+        forcecreate="True"
+        id="question_better_existant_filter"
+        model="slide.question"
+    >
+        <field
+            name="question"
+        >Comment peut-on affiner un filtre existant pour cibler les analystes à Pleasant Hill ?</field>
+        <field name="slide_id" ref="advanced_use_custom_filter_groupby_quiz" />
     </record>
-    <record forcecreate="True" id="question_better_existant_filter_1" model="slide.answer">
-        <field name="question_id" ref="question_better_existant_filter"/>
+    <record
+        forcecreate="True"
+        id="question_better_existant_filter_1"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_better_existant_filter" />
         <field name="text_value">En créant un nouveau filtre combiné</field>
-        <field name="is_correct" eval="True"/>
+        <field name="is_correct" eval="True" />
     </record>
-    <record forcecreate="True" id="question_better_existant_filter_2" model="slide.answer">
-        <field name="question_id" ref="question_better_existant_filter"/>
+    <record
+        forcecreate="True"
+        id="question_better_existant_filter_2"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_better_existant_filter" />
         <field name="text_value">En ajoutant un nouveau groupe de filtre</field>
     </record>
-    <record forcecreate="True" id="question_better_existant_filter_3" model="slide.answer">
-        <field name="question_id" ref="question_better_existant_filter"/>
+    <record
+        forcecreate="True"
+        id="question_better_existant_filter_3"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_better_existant_filter" />
         <field name="text_value">En cochant une case spécifique</field>
     </record>
     <!-- FILTRES ET REGROUPEMENTS PERSONNALISÉS -->
 
     <!-- TABLEAUX DE BORD -->
-    <!-- QESTION 1 -->
-    <record forcecreate="True" id="question_access_purchase_dashboard" model="slide.question">
-        <field name="question">Comment pouvez-vous accéder aux détails d'une commande d'achat spécifique dans l'application Tableau de bord ?</field>
-        <field name="slide_id" ref="advanced_use_dashboard_quiz"/>
+    <!-- QUESTION 1 -->
+    <record
+        forcecreate="True"
+        id="question_access_purchase_dashboard"
+        model="slide.question"
+    >
+        <field
+            name="question"
+        >Comment pouvez-vous accéder aux détails d'une commande d'achat spécifique dans l'application Tableau de bord ?</field>
+        <field name="slide_id" ref="advanced_use_dashboard_quiz" />
     </record>
-    <record forcecreate="True" id="question_access_purchase_dashboard_1" model="slide.answer">
-        <field name="question_id" ref="question_access_purchase_dashboard"/>
+    <record
+        forcecreate="True"
+        id="question_access_purchase_dashboard_1"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_access_purchase_dashboard" />
         <field name="text_value">En cliquant sur le numéro de commande d'achat</field>
-        <field name="is_correct" eval="True"/>
+        <field name="is_correct" eval="True" />
     </record>
-    <record forcecreate="True" id="question_access_purchase_dashboard_2" model="slide.answer">
-        <field name="question_id" ref="question_access_purchase_dashboard"/>
-        <field name="text_value">En cliquant sur le fournisseur associé à la commande</field>
+    <record
+        forcecreate="True"
+        id="question_access_purchase_dashboard_2"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_access_purchase_dashboard" />
+        <field
+            name="text_value"
+        >En cliquant sur le fournisseur associé à la commande</field>
     </record>
-    <record forcecreate="True" id="question_access_purchase_dashboard_3" model="slide.answer">
-        <field name="question_id" ref="question_access_purchase_dashboard"/>
+    <record
+        forcecreate="True"
+        id="question_access_purchase_dashboard_3"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_access_purchase_dashboard" />
         <field name="text_value">En utilisant le filtre par catégorie de produit</field>
     </record>
-    <record forcecreate="True" id="question_access_purchase_dashboard_4" model="slide.answer">
-        <field name="question_id" ref="question_access_purchase_dashboard"/>
-        <field name="text_value">En naviguant de tableau de bord en tableau de bord</field>
+    <record
+        forcecreate="True"
+        id="question_access_purchase_dashboard_4"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_access_purchase_dashboard" />
+        <field
+            name="text_value"
+        >En naviguant de tableau de bord en tableau de bord</field>
     </record>
 
-    <!-- QESTION 2 -->
-    <record forcecreate="True" id="question_list_after_sale_dashboard" model="slide.question">
-        <field name="question">Qu'est-ce qui est présenté sous forme de liste sous l'évolution temporelle des achats dans le tableau de bord des achats ?</field>
-        <field name="slide_id" ref="advanced_use_dashboard_quiz"/>
+    <!-- QUESTION 2 -->
+    <record
+        forcecreate="True"
+        id="question_list_after_sale_dashboard"
+        model="slide.question"
+    >
+        <field
+            name="question"
+        >Qu'est-ce qui est présenté sous forme de liste sous l'évolution temporelle des achats dans le tableau de bord des achats ?</field>
+        <field name="slide_id" ref="advanced_use_dashboard_quiz" />
     </record>
-    <record forcecreate="True" id="question_list_after_sale_dashboard_1" model="slide.answer">
-        <field name="question_id" ref="question_list_after_sale_dashboard"/>
+    <record
+        forcecreate="True"
+        id="question_list_after_sale_dashboard_1"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_list_after_sale_dashboard" />
         <field name="text_value">Les meilleurs pays</field>
-        <field name="is_correct" eval="True"/>
+        <field name="is_correct" eval="True" />
     </record>
-    <record forcecreate="True" id="question_list_after_sale_dashboard_2" model="slide.answer">
-        <field name="question_id" ref="question_list_after_sale_dashboard"/>
+    <record
+        forcecreate="True"
+        id="question_list_after_sale_dashboard_2"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_list_after_sale_dashboard" />
         <field name="text_value">Les meilleurs acheteurs</field>
     </record>
-    <record forcecreate="True" id="question_list_after_sale_dashboard_3" model="slide.answer">
-        <field name="question_id" ref="question_list_after_sale_dashboard"/>
+    <record
+        forcecreate="True"
+        id="question_list_after_sale_dashboard_3"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_list_after_sale_dashboard" />
         <field name="text_value">Les meilleurs produits</field>
     </record>
-    <record forcecreate="True" id="question_list_after_sale_dashboard_4" model="slide.answer">
-        <field name="question_id" ref="question_list_after_sale_dashboard"/>
+    <record
+        forcecreate="True"
+        id="question_list_after_sale_dashboard_4"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_list_after_sale_dashboard" />
         <field name="text_value">Les meilleurs fournisseurs</field>
     </record>
 
-    <!-- QESTION 3 -->
-    <record forcecreate="True" id="question_reset_filter_dashboard" model="slide.question">
-        <field name="question">Comment pouvez-vous réinitialiser les filtres appliqués dans le tableau de bord des achats pour afficher l'ensemble des données à nouveau ?</field>
-        <field name="slide_id" ref="advanced_use_dashboard_quiz"/>
+    <!-- QUESTION 3 -->
+    <record
+        forcecreate="True"
+        id="question_reset_filter_dashboard"
+        model="slide.question"
+    >
+        <field
+            name="question"
+        >Comment pouvez-vous réinitialiser les filtres appliqués dans le tableau de bord des achats pour afficher l'ensemble des données à nouveau ?</field>
+        <field name="slide_id" ref="advanced_use_dashboard_quiz" />
     </record>
-    <record forcecreate="True" id="question_reset_filter_dashboard_1" model="slide.answer">
-        <field name="question_id" ref="question_reset_filter_dashboard"/>
-        <field name="text_value">En fermant et en rouvrant l'application Tableau de bord</field>
-        <field name="is_correct" eval="True"/>
+    <record
+        forcecreate="True"
+        id="question_reset_filter_dashboard_1"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_reset_filter_dashboard" />
+        <field
+            name="text_value"
+        >En fermant et en rouvrant l'application Tableau de bord</field>
+        <field name="is_correct" eval="True" />
     </record>
-    <record forcecreate="True" id="question_reset_filter_dashboard_2" model="slide.answer">
-        <field name="question_id" ref="question_reset_filter_dashboard"/>
+    <record
+        forcecreate="True"
+        id="question_reset_filter_dashboard_2"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_reset_filter_dashboard" />
         <field name="text_value">En double-cliquant sur le tableau de bord</field>
     </record>
-    <record forcecreate="True" id="question_reset_filter_dashboard_3" model="slide.answer">
-        <field name="question_id" ref="question_reset_filter_dashboard"/>
-        <field name="text_value">En cliquant sur un bouton "Réinitialiser filtres"</field>
+    <record
+        forcecreate="True"
+        id="question_reset_filter_dashboard_3"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_reset_filter_dashboard" />
+        <field
+            name="text_value"
+        >En cliquant sur un bouton "Réinitialiser filtres"</field>
     </record>
-    <record forcecreate="True" id="question_reset_filter_dashboard_4" model="slide.answer">
-        <field name="question_id" ref="question_reset_filter_dashboard"/>
+    <record
+        forcecreate="True"
+        id="question_reset_filter_dashboard_4"
+        model="slide.answer"
+    >
+        <field name="question_id" ref="question_reset_filter_dashboard" />
         <field name="text_value">En naviguant vers un autre tableau de bord</field>
     </record>
     <!-- TABLEAUX DE BORD -->
