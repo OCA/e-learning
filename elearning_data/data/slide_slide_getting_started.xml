@@ -37,7 +37,7 @@
     >
         <field name="slide_id" ref="getting_started_home_page_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/8U4xKrxztc4</field>
+        <field name="url">https://youtu.be/0Ru9s7n3t60?si=aWiVSah-JtlNB4zT</field>
     </record>
     <record forcecreate="True" id="getting_started_home_page_quiz" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
@@ -83,7 +83,7 @@
     >
         <field name="slide_id" ref="getting_started_tree_view_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/rDwR75y25Ho</field>
+        <field name="url">https://youtu.be/1RfOOHGu1Ro?si=_Z-J72-bPnQ4_3I0</field>
     </record>
     <record forcecreate="True" id="getting_started_tree_view_quiz" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
@@ -129,7 +129,7 @@
     >
         <field name="slide_id" ref="getting_started_form_view_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/8C9GBLC1ojo</field>
+        <field name="url">https://youtu.be/ZUP4AU3DJLA?si=wvVRpXascQqBVCMH</field>
     </record>
     <record forcecreate="True" id="getting_started_form_view_quiz" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
@@ -183,7 +183,7 @@
     >
         <field name="slide_id" ref="getting_started_navigation_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/FX85KzqwSXk</field>
+        <field name="url">https://youtu.be/z0Pjpg_0aRU?si=T_ziLAoNxHDKPvIC</field>
     </record>
     <record forcecreate="True" id="getting_started_navigation_quiz" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
@@ -229,7 +229,7 @@
     >
         <field name="slide_id" ref="getting_started_exchange_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/V3NdFJ5tAb4</field>
+        <field name="url">https://youtu.be/oUuHdXJIPe0?si=1gE1g3S4c2xiU9fe</field>
     </record>
     <record forcecreate="True" id="getting_started_exchange_quiz" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
@@ -287,7 +287,7 @@
     >
         <field name="slide_id" ref="getting_started_filter_search_group_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/exLmWcAp-mE</field>
+        <field name="url">https://youtu.be/iGBAWW2zvxo?si=f-G0m3laXU64e7N2</field>
     </record>
     <record
         forcecreate="True"
@@ -351,7 +351,7 @@
     >
         <field name="slide_id" ref="getting_started_save_delete_archive_search_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/0ukl-NBw5MU</field>
+        <field name="url">https://youtu.be/NhCT9S8YZZA?si=xqT7n9ccbTBPflgD</field>
     </record>
     <record
         forcecreate="True"

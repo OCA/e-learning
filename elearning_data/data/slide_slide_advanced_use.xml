@@ -37,7 +37,7 @@
     >
         <field name="slide_id" ref="advanced_use_analysis_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/uUuuWo2JWD4</field>
+        <field name="url">https://youtu.be/TtK-Y0o4YRw?si=ntAxZ4i9XSN1RbKr</field>
     </record>
     <record forcecreate="True" id="advanced_use_analysis_quiz" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
@@ -98,7 +98,7 @@
     >
         <field name="slide_id" ref="advanced_use_custom_filter_groupby_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/exLmWcAp-mE</field>
+        <field name="url">https://youtu.be/CweJ8D9pkI8?si=yFgEHxTv2zCXIknE</field>
     </record>
     <record
         forcecreate="True"
@@ -151,7 +151,7 @@
     >
         <field name="slide_id" ref="advanced_use_dashboard_video" />
         <field name="lang" ref="base.lang_fr" />
-        <field name="url">https://youtu.be/OAz9oXCKrms</field>
+        <field name="url">https://youtu.be/_jwgpEoSRp4?si=Ge7OwmD6FHUPcVus</field>
     </record>
     <record forcecreate="True" id="advanced_use_dashboard_quiz" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
