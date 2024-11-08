@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <!-- PAGE D'ACCUEIL -->
+    <!-- HOMEPAGE -->
     <record forcecreate="True" id="getting_started_home_page" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
-        <field name="name">Page d'accueil</field>
+        <field name="name">Home page</field>
         <field name="is_published" eval="True" />
         <field name="is_category" eval="True" />
         <field name="sequence">1</field>
@@ -11,34 +11,31 @@
     <record forcecreate="True" id="getting_started_home_page_intro" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_home_page" />
-        <field name="name">Page d'accueil - Introduction</field>
+        <field name="name">Home page - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
         <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">2</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Page d'accueil - Introduction</h1>
+<h1 style="margin-bottom: 0px;">Home page - Introduction</h1>
 <p style="margin-bottom: 0px;"><br /></p>
 <p
                 style="margin-bottom: 0px;"
-            >Dans cette vidéo, nous allons explorer la barre supérieure d'Odoo, un élément essentiel
-	pour la navigation et la gestion des applications.
+            >In this video, we'll explore Odoo's top bar, an essential element for navigation for navigation and application management.
 </p>
 <ul style="margin-bottom: 0px;">
 	<li
-                >Cette barre offre un accès rapide aux applications, aux notifications pour les discussions et aux activités
-		planifiées.
+                >This bar provides quick access to applications, chat notifications and scheduled activities.
 	</li>
-	<li
-                >Elle permet également de gérer les paramètres personnels et d'accéder à la documentation et au support d'Odoo.
+	<li>It also lets you manage personal settings and access Odoo documentation and support.
 	</li>
 </ul>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >
 	<em>elearning-demo.odooapps.ch</em> </a><em
-                >. Vous noterez que la plateforme est réinitialisée tous les jours.
+                >. Please note that the platform is reset every day.
 	</em>
 </p>
         </field>
@@ -46,7 +43,7 @@
     <record forcecreate="True" id="getting_started_home_page_video" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_home_page" />
-        <field name="name">Page d'accueil - Vidéo</field>
+        <field name="name">Home page - Video</field>
         <field
             name="completion_time"
         >0.034833333</field> <!-- 2 minutes and 9 seconds --> <!-- <minute> / 60 -->
@@ -66,18 +63,18 @@
     <record forcecreate="True" id="getting_started_home_page_quiz" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_home_page" />
-        <field name="name">Page d'accueil - Quiz</field>
+        <field name="name">Home page - Quiz</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">4</field>
         <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
-    <!-- PAGE D'ACCUEIL -->
+    <!-- HOMEPAGE -->
 
-    <!-- VUE LISTE -->
+    <!-- TREE VIEW -->
     <record forcecreate="True" id="getting_started_tree_view" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
-        <field name="name">Vue liste</field>
+        <field name="name">Tree view</field>
         <field name="is_published" eval="True" />
         <field name="is_category" eval="True" />
         <field name="sequence">20</field>
@@ -85,38 +82,38 @@
     <record forcecreate="True" id="getting_started_tree_view_intro" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_tree_view" />
-        <field name="name">Vue liste - Introduction</field>
+        <field name="name">Tree view - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
         <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">21</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Vue liste - Introduction</h1>
+<h1 style="margin-bottom: 0px;">Tree view - Introduction</h1>
 <p style="margin-bottom: 0px;"><br /></p>
 <p
                 style="margin-bottom: 0px;"
-            >Ce module vous apprendra à utiliser les vues listes dans Odoo, présentes dans des applications telles que Contacts.</p>
+            >It also lets you manage personal settings and access Odoo documentation and support.</p>
 <ul style="margin-bottom: 0px;">
 	<li
-                >Vous apprendrez à sélectionner et masquer des champs, trier les enregistrements, naviguer entre les pages et afficher tous les enregistrements d'un coup.</li>
+                >You'll learn how to select and hide fields, sort records, navigate between pages and display all records at once.</li>
 	<li
-                >Vous découvrirez également comment effectuer des actions de masse, telles que l'archivage ou l'exportation de plusieurs enregistrements, et mettre à jour massivement des données.</li>
+                >You'll also discover how to perform mass actions, such as archiving or exporting multiple records, and update data on a massive scale.</li>
 	<li
-                >Enfin, nous aborderons d'autres types de vues disponibles dans Odoo, qui seront explorés plus en détail ultérieurement.</li>
+                >Finally, we'll look at some of the other view types available in Odoo, which will be explored in more detail later.</li>
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_tree_view_video" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_tree_view" />
-        <field name="name">Vue liste - Vidéo</field>
+        <field name="name">Tree view - Video</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">22</field>
@@ -136,18 +133,18 @@
     <record forcecreate="True" id="getting_started_tree_view_quiz" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_tree_view" />
-        <field name="name">Vue liste - Quiz</field>
+        <field name="name">Tree view - Quiz</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">23</field>
         <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
-    <!-- VUE LISTE -->
+    <!-- TREE VIEW -->
 
-    <!-- VUE FORMULAIRE -->
+    <!-- FORM VIEW -->
     <record forcecreate="True" id="getting_started_form_view" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
-        <field name="name">Vue formulaire</field>
+        <field name="name">Form view</field>
         <field name="is_published" eval="True" />
         <field name="is_category" eval="True" />
         <field name="sequence">30</field>
@@ -155,40 +152,40 @@
     <record forcecreate="True" id="getting_started_form_view_intro" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_form_view" />
-        <field name="name">Vue formulaire - Introduction</field>
+        <field name="name">Form view - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
         <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">31</field>
         <field name="html_content" type="html">
-<h1>Vue formulaire - Introduction</h1>
+<h1>Form view - Introduction</h1>
 <p
                 style="margin-bottom: 0px;"
-            >Ce module explore les vues formulaire dans Odoo, en se concentrant sur leur apparence et leur utilisation pratiques.</p>
+            >This module explores form views in Odoo, focusing on their practical appearance and use.</p>
 <ul style="margin-bottom: 0px;">
 	<li
-                >Nous examinons comment les vues formulaire s'appliquent aux articles, contacts, employés et autres données de référence.</li>
+                >We look at how form views apply to items, contacts, employees and other reference data.</li>
 	<li
-                >Vous apprendrez à naviguer entre les articles, à utiliser les boutons intelligents pour accéder aux informations spécifiques telles que les prévisions de stock et les ventes associées</li>
+                >You'll learn how to navigate between items and use smart buttons to access specific information such as stock forecasts and associated sales</li>
 	<li
-                >Ainsi qu'à effectuer des actions courantes comme la mise à jour des quantités et l'impression d'étiquettes.</li>
+                >As well as performing routine actions such as updating quantities and printing labels.</li>
 	<li
-                >Les onglets en bas de l'écran permettent de configurer divers aspects des produits selon les modules installés.</li>
-	<li>Nous aborderons également le fonctionnement du "chatter" dans une vidéo dédiée.</li>
+                >The tabs at the bottom of the screen allow you to configure various aspects of the products according to the modules installed.</li>
+	<li>We'll also take a look at how chatter works in a dedicated video.</li>
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_form_view_video" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_form_view" />
-        <field name="name">Vue formulaire - Vidéo</field>
+        <field name="name">Form view - Video</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">32</field>
@@ -208,13 +205,13 @@
     <record forcecreate="True" id="getting_started_form_view_quiz" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_form_view" />
-        <field name="name">Vue formulaire - Quiz</field>
+        <field name="name">Form view - Quiz</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">33</field>
         <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
-    <!-- VUE FORMULAIRE -->
+    <!-- FORM VIEW -->
 
     <!-- NAVIGATION -->
     <record forcecreate="True" id="getting_started_navigation" model="slide.slide">
@@ -240,26 +237,26 @@
 <h1>Navigation - Introduction</h1>
 <p
                 style="margin-bottom: 0px;"
-            >Dans cette vidéo, nous explorons les fonctionnalités de navigation avancées dans Odoo.</p>
+            >In this video, we explore Odoo's advanced navigation features.</p>
 <ul style="margin-bottom: 0px;">
 	<li
-                >Nous découvrons comment utiliser efficacement le fil d'Ariane pour naviguer entre différents documents comme les bons de commande et les réceptions associées.</li>
+                >We discover how to use the breadcrumb trail effectively to navigate between different documents such as purchase orders and associated receipts.</li>
 	<li
-                >Les liens hypertexte facilitent l'accès aux détails des fournisseurs et autres informations pertinentes.</li>
+                >Hyperlinks provide easy access to supplier details and other relevant information.</li>
 	<li
-                >Odoo améliore également la productivité avec des raccourcis clavier pour une navigation rapide et la création instantanée de nouveaux documents.</li>
+                >Odoo also enhances productivity with keyboard shortcuts for fast navigation and instant creation of new documents.</li>
 	<li
-                >La plateforme simplifie aussi la saisie des données avec des raccourcis pour les dates et les calculs mathématiques.</li>
+                >The platform also simplifies data entry with shortcuts for dates and mathematical calculations.</li>
 	<li
-                >Enfin, la gestion des multiples écrans est optimisée grâce à la possibilité d'ouvrir des liens dans de nouveaux onglets, permettant une gestion efficace des tâches simultanées.</li>
+                >Last but not least, multi-screen management is optimized thanks to the ability to open links in new tabs, enabling efficient management of simultaneous tasks.</li>
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record
@@ -269,7 +266,7 @@
     >
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_navigation" />
-        <field name="name">Navigation - Vidéo</field>
+        <field name="name">Navigation - Video</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">42</field>
@@ -300,7 +297,7 @@
     <!-- EXCHANGE -->
     <record forcecreate="True" id="getting_started_exchange" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
-        <field name="name">Echanges</field>
+        <field name="name">Exchanges</field>
         <field name="is_published" eval="True" />
         <field name="is_category" eval="True" />
         <field name="sequence">50</field>
@@ -308,38 +305,38 @@
     <record forcecreate="True" id="getting_started_exchange_intro" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_exchange" />
-        <field name="name">Echanges - Introduction</field>
+        <field name="name">Exchanges - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
         <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">51</field>
         <field name="html_content" type="html">
-<h1>Echanges - Introduction</h1>
+<h1>Exchanges - Introduction</h1>
 <p
                 style="margin-bottom: 0px;"
-            >Dans cette vidéo, nous explorons le chatter, l'espace d'échange et de suivi des activités dans Odoo.</p>
+            >In this video, we explore the chatter, Odoo's space for exchanging and tracking activities.</p>
 <ul style="margin-bottom: 0px;">
 	<li
-                >Présent sur chaque entité comme les fiches employés, les commandes d'achat et les devis, le chatter permet de suivre les modifications apportées aux données et d'interagir aussi bien en interne qu'avec des contacts externes.</li>
+                >Present on each entity, such as employee files, purchase orders and quotations, the chatter allows you to track data modifications and interact both internally and with external contacts.</li>
 	<li
-                >Les utilisateurs peuvent échanger des notes internes pour des discussions privées, ou envoyer des messages externes aux partenaires.</li>
-	<li>Le chatter facilite également le partage de documents.</li>
+                >Users can exchange internal notes for private discussions, or send external messages to partners.</li>
+	<li>Chatter also facilitates document sharing.</li>
 	<li
-                >Enfin, les fonctionnalités de rappel permettent de planifier et de suivre les tâches à accomplir, assurant une traçabilité complète des activités au sein de l'entreprise.</li>
+                >Last but not least, reminder functions allow you to plan and track tasks, ensuring complete traceability of activities within the company.</li>
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_exchange_video" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_exchange" />
-        <field name="name">Echanges - Vidéo</field>
+        <field name="name">Exchanges - Video</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">52</field>
@@ -359,7 +356,7 @@
     <record forcecreate="True" id="getting_started_exchange_quiz" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_exchange" />
-        <field name="name">Echanges - Quiz</field>
+        <field name="name">Exchanges - Quiz</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">53</field>
@@ -367,14 +364,14 @@
     </record>
     <!-- EXCHANGE -->
 
-    <!-- FILTER, RECHERCHER ET GROUPER -->
+    <!-- FILTER, SEARCH AND GROUP -->
     <record
         forcecreate="True"
         id="getting_started_filter_search_group"
         model="slide.slide"
     >
         <field name="channel_id" ref="getting_started" />
-        <field name="name">Filter, rechercher et grouper</field>
+        <field name="name">Filter, search and group</field>
         <field name="is_published" eval="True" />
         <field name="is_category" eval="True" />
         <field name="sequence">60</field>
@@ -386,34 +383,33 @@
     >
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_filter_search_group" />
-        <field name="name">Filter, rechercher et grouper - Introduction</field>
+        <field name="name">Filter, search and group - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
         <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">61</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Filter, rechercher et grouper - Introduction</h1>
+<h1 style="margin-bottom: 0px;">Filter, search and group - Introduction</h1>
 <p style="margin-bottom: 0px;"><br /></p>
 <p
                 style="margin-bottom: 0px;"
-            >Ce module se concentre sur les fonctionnalités avancées de recherche et de regroupement dans Odoo, vous permettant de filtrer facilement vos enregistrements selon vos besoins spécifiques.</p>
+            >This module focuses on Odoo's advanced search and grouping features, allowing you to easily filter your records according to your specific needs.</p>
 <ul style="margin-bottom: 0px;">
 	<li
-                >Odoo offre des filtres préconfigurés qui facilitent la visualisation des données pertinentes, que ce soit pour les contacts, les produits ou les factures.</li>
+                >Odoo offers pre-configured filters that make it easy to visualize relevant data, whether for contacts, products or invoices.</li>
 	<li
-                >Vous pouvez ajuster ces filtres par défaut et effectuer des recherches précises pour trouver exactement ce que vous recherchez.</li>
+                >You can adjust these default filters and perform precise searches to find exactly what you're looking for.</li>
 	<li
-                >De plus, Odoo permet le regroupement flexible des enregistrements selon divers critères, offrant une meilleure organisation visuelle et analytique.</li>
-	<li
-                >Nous explorerons ces fonctionnalités en détail pour optimiser votre utilisation d'Odoo.</li>
+                >What's more, Odoo enables flexible grouping of records according to various criteria, providing better visual and analytical organization.</li>
+	<li>We'll explore these features in detail to optimize your use of Odoo.</li>
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record
@@ -423,7 +419,7 @@
     >
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_filter_search_group" />
-        <field name="name">Filter, rechercher et grouper - Vidéo</field>
+        <field name="name">Filter, search and group - Video</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">62</field>
@@ -447,13 +443,13 @@
     >
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_filter_search_group" />
-        <field name="name">Filter, rechercher et grouper - Quiz</field>
+        <field name="name">Filter, search and group - Quiz</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">63</field>
         <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
-    <!-- FILTER, RECHERCHER ET GROUPER -->
+    <!-- FILTER, SEARCH AND GROUP -->
 
     <!-- SAVE, DELETE, ARCHIVE, SEARCH -->
     <record
@@ -462,7 +458,7 @@
         model="slide.slide"
     >
         <field name="channel_id" ref="getting_started" />
-        <field name="name">Enregistrer, supprimer, archiver, rechercher</field>
+        <field name="name">Save, delete, archive, search</field>
         <field name="is_published" eval="True" />
         <field name="is_category" eval="True" />
         <field name="sequence">70</field>
@@ -474,23 +470,21 @@
     >
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_save_delete_archive_search" />
-        <field
-            name="name"
-        >Enregistrer, supprimer, archiver, rechercher - Introduction</field>
+        <field name="name">Save, delete, archive, search - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
         <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">71</field>
         <field name="html_content" type="html">
-<h1>Enregistrer, supprimer, archiver, rechercher - Introduction</h1>
+<h1>Save, delete, archive, search - Introduction</h1>
 <p><br /></p>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record
@@ -500,7 +494,7 @@
     >
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_save_delete_archive_search" />
-        <field name="name">Enregistrer, supprimer, archiver, rechercher - Vidéo</field>
+        <field name="name">Save, delete, archive, search - Video</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">72</field>
@@ -524,7 +518,7 @@
     >
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_save_delete_archive_search" />
-        <field name="name">Enregistrer, supprimer, archiver, rechercher - Quiz</field>
+        <field name="name">Save, delete, archive, search - Quiz</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">73</field>

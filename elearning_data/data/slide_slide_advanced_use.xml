@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <!-- ANALYSES -->
+    <!-- ANALYSIS -->
     <record forcecreate="True" id="advanced_use_analysis" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
-        <field name="name">Analyses</field>
+        <field name="name">Analysis</field>
         <field name="is_published" eval="True" />
         <field name="is_category" eval="True" />
         <field name="sequence">1</field>
@@ -11,35 +11,35 @@
     <record forcecreate="True" id="advanced_use_analysis_intro" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_analysis" />
-        <field name="name">Analyses - Introduction</field>
+        <field name="name">Analysis - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
         <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">2</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Analyses - Introduction</h1>
+<h1 style="margin-bottom: 0px;">Analysis - Introduction</h1>
 <p style="margin-bottom: 0px;"><br /></p>
 <p
                 style="margin-bottom: 0px;"
-            >Dans cette vidéo, nous découvrons comment réaliser des rapports dans Odoo en utilisant les outils d'analyse des ventes.</p>
+            >In this video, we show you how to create reports in Odoo using sales analysis tools..</p>
 <ul style="margin-bottom: 0px;">
 	<li
-                >L'interface permet de filtrer les données, de choisir entre différents types de visualisations comme les graphiques ou les tableaux croisés dynamiques, et de personnaliser l'affichage des résultats.</li>
+                >The interface lets you filter data, choose between different types of visualizations such as graphs or pivot tables, and customize the display of results.</li>
 	<li
-                >Les utilisateurs peuvent ainsi obtenir une vue détaillée et interactive de leurs ventes, en regroupant les données selon différents critères et en exportant les résultats pour une analyse plus approfondie.</li>
+                >Users can thus obtain a detailed, interactive view of their sales, grouping data according to different criteria and exporting the results for further analysis.</li>
 </ul>
 <p><br /> </p>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="advanced_use_analysis_video" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_analysis" />
-        <field name="name">Analyses - Vidéo</field>
+        <field name="name">Analysis - Video</field>
         <field
             name="completion_time"
         >0.0695</field> <!-- 2 minutes and 9 seconds --> <!-- <minute> / 60 -->
@@ -59,22 +59,22 @@
     <record forcecreate="True" id="advanced_use_analysis_quiz" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_analysis" />
-        <field name="name">Analyses - Quiz</field>
+        <field name="name">Analysis - Quiz</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">4</field>
         <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
-    <!-- ANALYSES -->
+    <!-- ANALYSIS -->
 
-    <!-- FILTRES ET REGROUPEMENTS PERSONNALISÉS -->
+    <!-- CUSTOM FILTERS AND GROUPINGS -->
     <record
         forcecreate="True"
         id="advanced_use_custom_filter_groupby"
         model="slide.slide"
     >
         <field name="channel_id" ref="advanced_use" />
-        <field name="name">Filtres et regroupements personnalisés</field>
+        <field name="name">Custom filters and groupings</field>
         <field name="is_published" eval="True" />
         <field name="is_category" eval="True" />
         <field name="sequence">11</field>
@@ -86,34 +86,32 @@
     >
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_custom_filter_groupby" />
-        <field name="name">Filtres et regroupements personnalisés - Introduction</field>
+        <field name="name">Custom filters and groupings - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
         <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">12</field>
         <field name="html_content" type="html">
-<h1
-                style="margin-bottom: 0px;"
-            >Filtres et regroupements personnalisés - Introduction</h1>
+<h1 style="margin-bottom: 0px;">Custom filters and groupings - Introduction</h1>
 <p style="margin-bottom: 0px;"><br /></p>
 <p
                 style="margin-bottom: 0px;"
-            >Dans cette vidéo, nous explorons la personnalisation avancée des fonctionnalités de recherche dans Odoo.</p>
+            >In this video, we explore advanced customization of Odoo's search functionality.</p>
 <ul style="margin-bottom: 0px;">
 	<li
-                >Nous nous concentrons sur la création de filtres et de regroupements sur mesure, applicables non seulement aux contacts, mais aussi aux articles, aux factures, et à toute autre section où la barre de recherche est présente.</li>
+                >We focus on creating customized filters and groupings, applicable not only to contacts, but also to items, invoices, and any other section where the search bar is present.</li>
 	<li
-                >Par exemple, vous apprendrez à regrouper les contacts par état et à créer des filtres pour trouver rapidement des informations spécifiques, comme tous les contacts basés en France ou ceux résidant à Pleasant Hill et ayant le poste d'analyste.</li>
+                >For example, you'll learn how to group contacts by status and create filters to quickly find specific information, such as all contacts based in France or those residing in Pleasant Hill and holding the position of analyst.</li>
 	<li
-                >Cette personnalisation permet d'exploiter pleinement la puissance de l'outil de recherche d'Odoo pour une efficacité accrue.</li>
+                >This customization allows you to fully exploit the power of Odoo's search tool for greater efficiency.</li>
 </ul>
 <p style="margin-bottom: 0px;"><br /></p>
 <p><br /> </p>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record
@@ -123,7 +121,7 @@
     >
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_custom_filter_groupby" />
-        <field name="name">Filtres et regroupements personnalisés - Vidéo</field>
+        <field name="name">Custom filters and groupings - Video</field>
         <field
             name="completion_time"
         >0.06783333</field> <!-- 4 minutes and 7 seconds --> <!-- <minute> / 60 -->
@@ -147,18 +145,18 @@
     >
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_custom_filter_groupby" />
-        <field name="name">Filtres et regroupements personnalisés - Quiz</field>
+        <field name="name">Custom filters and groupings - Quiz</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">14</field>
         <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
-    <!-- FILTRES ET REGROUPEMENTS PERSONNALISÉS -->
+    <!-- CUSTOM FILTERS AND GROUPINGS -->
 
-    <!-- TABLEAUX DE BORD -->
+    <!-- DASHBOARDS -->
     <record forcecreate="True" id="advanced_use_dashboard" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
-        <field name="name">Tableaux de bord</field>
+        <field name="name">Dashboards</field>
         <field name="is_published" eval="True" />
         <field name="is_category" eval="True" />
         <field name="sequence">21</field>
@@ -166,37 +164,37 @@
     <record forcecreate="True" id="advanced_use_dashboard_intro" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_dashboard" />
-        <field name="name">Tableaux de bord - Introduction</field>
+        <field name="name">Dashboards - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
         <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">22</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Tableaux de bord - Introduction</h1>
+<h1 style="margin-bottom: 0px;">Dashboards - Introduction</h1>
 <p style="margin-bottom: 0px;"><br /></p>
 <p
                 style="margin-bottom: 0px;"
-            >Dans cette vidéo, je vous présente l'application Tableau de bord qui offre un aperçu instantané des données clés à travers différentes applications.</p>
+            >In this video, I introduce you to the Dashboard application, which provides an instant overview of key data across different applications.</p>
 <ul style="margin-bottom: 0px;">
 	<li
-                >La barre de filtres en haut permet de sélectionner des critères comme le pays, le fournisseur, la catégorie de produit, le produit spécifique et l'acheteur.</li>
+                >The filter bar at the top lets you select criteria such as country, supplier, product category, specific product and buyer.</li>
 	<li
-                >Les tableaux affichent les principales métriques pour les achats avec des graphiques d'évolution temporelle et des listes des meilleurs résultats.</li>
+                >Tables display key metrics for purchases, with time trend graphs and lists of top results.</li>
 	<li
-                >Ces tableaux sont interactifs, permettant de cliquer sur des éléments comme les numéros de commande pour voir les détails, ou d'appliquer des filtres en un clic pour ajuster les données.</li>
+                >These tables are interactive, allowing you to click on items such as order numbers to see details, or apply filters with a single click to adjust the data.</li>
 </ul>
 <p><br /> </p>
-<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+<p><em>PS: To practice, you can use </em><a
                     href="https://elearning-demo.odooapps.ch"
                     target="_blank"
                 >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="advanced_use_dashboard_video" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_dashboard" />
-        <field name="name">Tableaux de bord - Vidéo</field>
+        <field name="name">Dashboards - Video</field>
         <field
             name="completion_time"
         >0.02633333</field> <!-- 1 minutes and 58 seconds --> <!-- <minute> / 60 -->
@@ -216,11 +214,11 @@
     <record forcecreate="True" id="advanced_use_dashboard_quiz" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_dashboard" />
-        <field name="name">Tableaux de bord - Quiz</field>
+        <field name="name">Dashboards - Quiz</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">24</field>
         <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
-    <!-- TABLEAUX DE BORD -->
+    <!-- DASHBOARDS -->
 </odoo>

@@ -19,7 +19,6 @@
         # Views
         "views/slide_slide.xml",
         # Data
-        "data/res_lang.xml",
         "data/slide_channel.xml",
         # Getting Started
         "data/slide_slide_getting_started.xml",
