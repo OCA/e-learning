@@ -1,0 +1,1717 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* elearning_data
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20240924\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-08 14:28+0000\n"
+"PO-Revision-Date: 2024-11-08 14:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_analysis_intro
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_custom_filter_groupby_intro
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_dashboard_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_exchange_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_filter_search_group_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_save_delete_archive_search_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_tree_view_intro
+msgid "<em> . Please note that the platform is reset every day. </em>"
+msgstr "<em> . Veuillez noter que la plateforme est réinitialisée tous les jours. </em>"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_home_page_intro
+msgid ""
+"<em>. Please note that the platform is reset every day.\n"
+"\t</em>"
+msgstr ""
+"<em>. Veuillez noter que la plateforme est réinitialisée tous les jours.\n"
+"\t</em>"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_analysis_intro
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_custom_filter_groupby_intro
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_dashboard_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_exchange_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_filter_search_group_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_home_page_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_save_delete_archive_search_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_tree_view_intro
+msgid "<em>PS: To practice, you can use </em>"
+msgstr "<em>PS : Pour vous entraîner, vous pouvez utiliser </em>"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_analysis_intro
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_custom_filter_groupby_intro
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_dashboard_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_exchange_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_filter_search_group_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_home_page_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_save_delete_archive_search_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_tree_view_intro
+msgid "<em>elearning-demo.odooapps.ch</em>"
+msgstr "<em>elearning-demo.odooapps.ch</em>"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_internal_note_3
+msgid "A message sent directly from the employee file."
+msgstr "Un message envoyé directement depuis le dossier de l'employé."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_internal_note_1
+#: model:slide.answer,text_value:elearning_data.question_exchange_internal_note_2
+msgid "A message sent via the \"Note\" button."
+msgstr "Un message envoyé via le bouton \"Note\"."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_smart_button_1
+msgid "Access relevant information"
+msgstr "Accéder aux informations pertinentes"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_click_on_pivot_table_1
+msgid "Access the values that make up the cell"
+msgstr "Accéder aux valeurs qui composent la cellule"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_smart_tab_2
+msgid "Action buttons"
+msgstr "Boutons d'action"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_reminder_1
+msgid "Activities."
+msgstr "Activités."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_reminder_3
+msgid "Adding attachments."
+msgstr "Ajout de pièces jointes."
+
+#. module: elearning_data
+#: model:slide.channel,name:elearning_data.advanced_use
+msgid "Advanced Use"
+msgstr "Utilisation avancée"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_groupby_contact_1
+msgid "All"
+msgstr "Tous"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_analysis
+msgid "Analysis"
+msgstr "Analyse"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_analysis_intro
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_analysis_intro
+msgid "Analysis - Introduction"
+msgstr "Analyse - Introduction"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_analysis_quiz
+msgid "Analysis - Quiz"
+msgstr "Analyse - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_analysis_video
+msgid "Analysis - Video"
+msgstr "Analyse - Vidéo"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_ireversible_action_2
+msgid "Archive an employee."
+msgstr "Archiver un employé."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_server_action_1
+msgid "Archive them"
+msgstr "Archivez-les"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_available_graphic_analysis_1
+msgid "Area chart"
+msgstr "Graphique en aires"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+msgid ""
+"As well as performing routine actions such as updating quantities and "
+"printing labels."
+msgstr ""
+"Outre les actions de routine telles que la mise à jour des quantités et de"
+"l'impression d'étiquettes."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_chatter_use_4
+msgid "Automatically modify file information."
+msgstr "Modifier automatiquement les informations du fichier."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_available_graphic_analysis_2
+msgid "Bar graph"
+msgstr "Graphique à barres"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_and_or_filter_4
+msgid "Both filters are combined with \"and\"."
+msgstr "Les deux filtres sont combinés avec \"et\"."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_and_or_filter_1
+msgid "Both filters are combined with \"or\"."
+msgstr "Les deux filtres sont combinés avec \"ou\"."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_create_product_2
+#: model:slide.answer,text_value:elearning_data.question_tree_change_view_2
+msgid "Bottom left"
+msgstr "En bas à gauche"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_notification_4
+msgid "By accessing the file every hour."
+msgstr "En accédant au fichier toutes les heures."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_change_company_in_multi_4
+msgid "By accessing the notification preferences"
+msgstr "En accédant aux préférences de notification"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_create_without_consent_2
+msgid "By activating a specific creation mode."
+msgstr "En activant un mode de création spécifique."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_activities_productivity_3
+msgid "By adding a city search filter"
+msgstr "En ajoutant un filtre de recherche de ville"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_notification_2
+msgid "By adding a manual alert to your calendar."
+msgstr "En ajoutant une alerte manuelle à votre calendrier."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_better_existant_filter_2
+msgid "By adding a new filter group"
+msgstr "En ajoutant un nouveau groupe de filtres"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_multi_task_multi_screen_4
+msgid "By automatically synchronizing data between screens"
+msgstr "En synchronisant automatiquement les données entre les écrans"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_notification_1
+msgid "By becoming a follower."
+msgstr "En devenant un follower."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_reset_filter_dashboard_3
+msgid "By clicking on a \"Reset filters\" button"
+msgstr "En cliquant sur un bouton \"Réinitialiser les filtres\"."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_access_app_top_bar_2
+msgid "By clicking on the \"New\" button"
+msgstr "En cliquant sur le bouton \"Nouveau\"."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_force_save_1
+msgid "By clicking on the cloud icon."
+msgstr "En cliquant sur l'icône nuage."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_change_company_in_multi_1
+msgid "By clicking on the company name displayed in the top bar"
+msgstr "En cliquant sur le nom de l'entreprise affiché dans la barre supérieure"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_access_app_top_bar_1
+msgid "By clicking on the matrix at the top left of the bar"
+msgstr "En cliquant sur la matrice en haut à gauche de la barre"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_access_app_top_bar_4
+msgid "By clicking on the notification button"
+msgstr "En cliquant sur le bouton de notification"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_navigate_page_3
+msgid "By clicking on the number of records"
+msgstr "En cliquant sur le nombre d'enregistrements"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_access_purchase_dashboard_1
+msgid "By clicking on the purchase order number"
+msgstr "En cliquant sur le numéro de bon de commande"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_delete_groupby_1
+msgid "By clicking on the small cross next to the group"
+msgstr "En cliquant sur la petite croix à côté du groupe"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_access_purchase_dashboard_2
+msgid "By clicking on the supplier associated with the order"
+msgstr "En cliquant sur le fournisseur associé à la commande"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_force_save_2
+msgid "By clicking on the update icon"
+msgstr "En cliquant sur l'icône de mise à jour"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_reset_filter_dashboard_1
+msgid "By closing and reopening the Dashboard application"
+msgstr "En fermant et en rouvrant l'application Dashboard"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_better_existant_filter_1
+msgid "By creating a new combined filter"
+msgstr "En créant un nouveau filtre combiné"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_groupby_contact_4
+msgid "By creation date"
+msgstr "Par date de création"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_multi_task_multi_screen_3
+msgid "By displaying pop-up notifications"
+msgstr "En affichant des notifications contextuelles"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_reset_filter_dashboard_2
+msgid "By double-clicking on the dashboard"
+msgstr "En double-cliquant sur le tableau de bord"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_delete_groupby_4
+msgid "By double-clicking on the group"
+msgstr "En double-cliquant sur le groupe"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_groupby_company_partner_4
+msgid "By entering the company name in the search bar"
+msgstr "En saisissant le nom de l'entreprise dans la barre de recherche"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_multi_task_multi_screen_2
+msgid "By integrating social networking functionalities"
+msgstr "En intégrant des fonctionnalités de réseaux sociaux"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_groupby_company_partner_3
+msgid "By manually sorting contacts"
+msgstr "En triant manuellement les contacts"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_multi_task_multi_screen_1
+msgid "By opening links in new tabs"
+msgstr "En ouvrant des liens dans de nouveaux onglets"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_groupby_contact_5
+msgid "By phone number"
+msgstr "Par numéro de téléphone"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_create_sale_order_keybord_shortcut_1
+msgid "By pressing Alt+C"
+msgstr "En appuyant sur Alt+C"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_create_sale_order_keybord_shortcut_2
+msgid "By pressing Alt+F4"
+msgstr "En appuyant sur Alt+F4"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_create_sale_order_keybord_shortcut_4
+msgid "By pressing Alt+P"
+msgstr "En appuyant sur Alt+P"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_create_sale_order_keybord_shortcut_3
+msgid "By pressing Alt+SHIFT+M"
+msgstr "En appuyant sur Alt+MAJ+M"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_navigate_product_3
+#: model:slide.answer,text_value:elearning_data.question_tree_navigate_page_2
+msgid "By scrolling up and down"
+msgstr "En faisant défiler vers le haut et vers le bas"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_groupby_company_partner_2
+msgid "By selecting a company filter"
+msgstr "En sélectionnant un filtre d'entreprise"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_create_without_consent_3
+msgid "By selecting a creation option from the main menu."
+msgstr "En sélectionnant une option de création dans le menu principal."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_delete_groupby_2
+msgid "By selecting the group and pressing Delete"
+msgstr "En sélectionnant le groupe et en appuyant sur Supprimer"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_notification_3
+msgid "By sending an external message to all users."
+msgstr "En envoyant un message externe à tous les utilisateurs."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_activities_productivity_1
+msgid "By specifying that the search must be made in the email field"
+msgstr "En précisant que la recherche doit être effectuée dans le champ email"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_better_existant_filter_3
+msgid "By ticking a specific box"
+msgstr "En cochant une case spécifique"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_delete_groupby_3
+msgid "By unchecking the group box"
+msgstr "En décochant la case du groupe"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_change_fields_4
+msgid "By updating the browser"
+msgstr "En mettant à jour le navigateur"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_create_without_consent_1
+msgid "By validating a data entry for a non-existent result."
+msgstr "En validant une saisie de données pour un résultat inexistant."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_click_on_pivot_table_2
+msgid "Change chart type"
+msgstr "Changer le type de graphique"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_smart_button_2
+msgid "Change colors"
+msgstr "Changer les couleurs"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_server_action_3
+msgid "Change their colors"
+msgstr "Changer leurs couleurs"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_difference_in_edit_1
+msgid "Changes are automatically saved without the need to switch to edit mode."
+msgstr "Les modifications sont automatiquement enregistrées sans qu'il soit nécessaire de passer en mode édition."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_exchange_intro
+msgid "Chatter also facilitates document sharing."
+msgstr "Chatter facilite également le partage de documents."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_navigate_product_2
+msgid "Click on the company logo"
+msgstr "Cliquez sur le logo de l'entreprise"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_change_fields_2
+msgid "Click on the company name"
+msgstr "Cliquez sur le nom de l'entreprise"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_smart_button_4
+msgid "Close form"
+msgstr "Fermer le formulaire"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_change_fields_3
+msgid "Closing and reopening Odoo"
+msgstr "Fermeture et réouverture d'Odoo"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_smart_tab_3
+msgid "Configuration wheel"
+msgstr "Roue de configuration"
+
+#. module: elearning_data
+#: model_terms:slide.channel,enroll_msg:elearning_data.advanced_use
+#: model_terms:slide.channel,enroll_msg:elearning_data.getting_started
+msgid "Contacter le responsable"
+msgstr "Contacter le responsable"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_available_feature_top_bar_4
+msgid "Create new documents"
+msgstr "Créer de nouveaux documents"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_custom_filter_groupby
+msgid "Custom filters and groupings"
+msgstr "Filtres et regroupements personnalisés"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_custom_filter_groupby_intro
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_custom_filter_groupby_intro
+msgid "Custom filters and groupings - Introduction"
+msgstr "Filtres et regroupements personnalisés - Introduction"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_custom_filter_groupby_quiz
+msgid "Custom filters and groupings - Quiz"
+msgstr "Filtres et regroupements personnalisés - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_custom_filter_groupby_video
+msgid "Custom filters and groupings - Video"
+msgstr "Filtres et regroupements personnalisés - Vidéo"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_dashboard
+msgid "Dashboards"
+msgstr "Tableaux de bord"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_dashboard_intro
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_dashboard_intro
+msgid "Dashboards - Introduction"
+msgstr "Tableaux de bord – Introduction"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_dashboard_quiz
+msgid "Dashboards - Quiz"
+msgstr "Tableaux de bord - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.advanced_use_dashboard_video
+msgid "Dashboards - Video"
+msgstr "Tableaux de bord - Vidéo"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_which_filter_has_been_used_3
+msgid "Date of birth"
+msgstr "Date de naissance"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_ireversible_action_1
+msgid "Delete an employee."
+msgstr "Supprimer un employé."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_click_on_pivot_table_4
+msgid "Delete selected value"
+msgstr "Supprimer la valeur sélectionnée"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_navigate_page_4
+msgid "Double-click on a record"
+msgstr "Double-cliquez sur un enregistrement"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_click_on_pivot_table_3
+msgid "Download corresponding data"
+msgstr "Télécharger les données correspondantes"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_exchange
+msgid "Exchanges"
+msgstr "Échanges"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_exchange_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_exchange_intro
+msgid "Exchanges - Introduction"
+msgstr "Échanges - Introduction"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_exchange_quiz
+msgid "Exchanges - Quiz"
+msgstr "Échanges - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_exchange_video
+msgid "Exchanges - Video"
+msgstr "Échanges - Vidéo"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_filter_search_group
+msgid "Filter, search and group"
+msgstr "Filtrer, rechercher et regrouper"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_filter_search_group_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_filter_search_group_intro
+msgid "Filter, search and group - Introduction"
+msgstr "Filtrer, rechercher et grouper - Introduction"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_filter_search_group_quiz
+msgid "Filter, search and group - Quiz"
+msgstr "Filtrer, rechercher et grouper - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_filter_search_group_video
+msgid "Filter, search and group - Video"
+msgstr "Filtrer, rechercher et grouper - Vidéo"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_activities_productivity_2
+msgid "Filtering by name first"
+msgstr "Filtrer par nom en premier"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_and_or_filter_2
+msgid "Filters are ignored"
+msgstr "Les filtres sont ignorés"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_tree_view_intro
+msgid ""
+"Finally, we'll look at some of the other view types available in Odoo, which"
+" will be explored in more detail later."
+msgstr ""
+"Enfin, nous examinerons quelques-uns des autres types de vues disponibles dans Odoo,"
+" qui seront étudiés plus en détail ultérieurement."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_custom_filter_groupby_intro
+msgid ""
+"For example, you'll learn how to group contacts by status and create filters"
+" to quickly find specific information, such as all contacts based in France "
+"or those residing in Pleasant Hill and holding the position of analyst."
+msgstr ""
+"Par exemple, vous apprendrez à regrouper les contacts par statut et à créer des filtres"
+" pour trouver rapidement des informations spécifiques, par exemple tous les contacts basés en France "
+"ou ceux qui résident à Pleasant Hill et occupent la fonction d'analyste."
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_form_view
+msgid "Form view"
+msgstr "Vue du formulaire"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_form_view_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+msgid "Form view - Introduction"
+msgstr "Vue formulaire - Introduction"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_form_view_quiz
+msgid "Form view - Quiz"
+msgstr "Vue formulaire - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_form_view_video
+msgid "Form view - Video"
+msgstr "Vue du formulaire - Vidéo"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_contact_count_when_filter_4
+msgid "Four contacts"
+msgstr "Quatre contacts"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_print_1
+msgid "Generate reports"
+msgstr "Générer des rapports"
+
+#. module: elearning_data
+#: model:slide.channel,name:elearning_data.getting_started
+msgid "Getting started"
+msgstr "Prise en main"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_home_page
+msgid "Home page"
+msgstr "Page d'accueil"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_home_page_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_home_page_intro
+msgid "Home page - Introduction"
+msgstr "Page d'accueil - Introduction"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_home_page_quiz
+msgid "Home page - Quiz"
+msgstr "Page d'accueil - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_home_page_video
+msgid "Home page - Video"
+msgstr "Page d'accueil - Vidéo"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_access_purchase_dashboard
+msgid ""
+"How can I access the details of a specific purchase order in the Dashboard "
+"application?"
+msgstr ""
+"Comment puis-je accéder aux détails d'une commande spécifique dans l'application "
+"Tableau de bord ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_access_app_top_bar
+msgid "How can I access the various Odoo applications from the top bar?"
+msgstr "Comment puis-je accéder aux différentes applications Odoo depuis la barre supérieure ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_save_delete_archive_search_create_without_consent
+msgid "How can I create a new record in Odoo unintentionally?"
+msgstr "Comment puis-je créer un nouvel enregistrement dans Odoo par inadvertance ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_delete_groupby
+msgid "How can I delete a custom grouping in Odoo?"
+msgstr "Comment puis-je supprimer un groupement personnalisé dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_save_delete_archive_search_force_save
+msgid "How can I force Odoo to save changes?"
+msgstr "Comment puis-je forcer Odoo à enregistrer les modifications ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_groupby_contact
+msgid "How can I group contacts in Odoo's search bar?"
+msgstr "Comment puis-je regrouper des contacts dans la barre de recherche d'Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_filter_search_group_activities_productivity
+msgid ""
+"How can I search for contacts whose email contains a specific word in Odoo?"
+msgstr ""
+"Comment puis-je rechercher des contacts dont l'email contient un mot spécifique dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_better_existant_filter
+msgid ""
+"How can an existing filter be refined to target analysts at Pleasant Hill?"
+msgstr ""
+"Comment affiner un filtre existant pour cibler les analystes de Pleasant Hill ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_tree_change_fields
+msgid "How can you customize the fields displayed in a list view in Odoo?"
+msgstr "Comment pouvez-vous personnaliser les champs affichés dans une vue de liste dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_filter_search_group_groupby_company_partner
+msgid "How can you group contacts by company in Odoo?"
+msgstr "Comment regrouper les contacts par entreprise dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_exchange_notification
+msgid "How can you make sure you're informed of updates to a file in Odoo?"
+msgstr "Comment pouvez-vous vous assurer d'être informé des mises à jour d'un fichier dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_form_navigate_product
+msgid "How can you navigate between different products in Odoo?"
+msgstr "Comment naviguer entre les différents produits dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_navigation_create_sale_order_keybord_shortcut
+msgid ""
+"How can you navigate between different products in Odoo? (Mac user replace "
+"ALT with Control)"
+msgstr ""
+"Comment naviguer entre les différents produits dans Odoo ? (utilisateur Mac remplacer "
+"ALT avec Control)"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_tree_navigate_page
+msgid ""
+"How can you navigate through different record pages in a list view in Odoo?"
+msgstr ""
+"Comment naviguer entre les différentes pages d'un enregistrement dans une vue en liste dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_reset_filter_dashboard
+msgid ""
+"How can you reset the filters applied in the Purchasing dashboard to display"
+" all the data again?"
+msgstr ""
+"Comment réinitialiser les filtres appliqués dans le tableau de bord des achats"
+" pour afficher à nouveau toutes les données ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_navigation_multi_task_multi_screen
+msgid ""
+"How does Odoo facilitate the management of simultaneous tasks on multiple "
+"screens?"
+msgstr ""
+"Comment Odoo facilite-t-il la gestion de tâches simultanées sur plusieurs"
+" écrans ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_contact_count_when_filter
+msgid ""
+"How many contacts were found in France after applying the filter in the "
+"example given?"
+msgstr ""
+"Combien de contacts ont été trouvés en France après l'application"
+" du filtre dans l'exemple donné ?"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+msgid ""
+"Hyperlinks provide easy access to supplier details and other relevant "
+"information."
+msgstr ""
+"Des hyperliens permettent d'accéder facilement aux coordonnées des"
+" fournisseurs et à d'autres informations pertinentes."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_ireversible_action_3
+msgid "Ignore a data change."
+msgstr "Ignorer un changement de données."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_change_company_in_multi_2
+msgid "In account settings"
+msgstr "Dans les paramètres du compte"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_save_search_3
+msgid "In the center clusters"
+msgstr "Dans les grappes centrales"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_save_search_1
+msgid "In the favorites on the right"
+msgstr "Dans les favoris à droite"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_save_search_2
+msgid "In the filters on the left"
+msgstr "Dans les filtres à gauche"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_create_product_4
+#: model:slide.answer,text_value:elearning_data.question_tree_change_view_4
+msgid "In the middle of the screen"
+msgstr "Au milieu de l'écran"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_save_search_4
+msgid "In the text field at the bottom"
+msgstr "Dans le champ de texte en bas"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_dashboard_intro
+msgid ""
+"In this video, I introduce you to the Dashboard application, which provides "
+"an instant overview of key data across different applications."
+msgstr ""
+"Dans cette vidéo, je vous présente l'application Tableau de bord, qui offre une vue d'ensemble"
+" instantanée des données clés de différentes applications."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+msgid "In this video, we explore Odoo's advanced navigation features."
+msgstr "Dans cette vidéo, nous explorons les fonctionnalités de navigation avancées d'Odoo."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_custom_filter_groupby_intro
+msgid ""
+"In this video, we explore advanced customization of Odoo's search "
+"functionality."
+msgstr ""
+"Dans cette vidéo, nous explorons la personnalisation"
+" avancée de la recherche d'Odoo."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_exchange_intro
+msgid ""
+"In this video, we explore the chatter, Odoo's space for exchanging and "
+"tracking activities."
+msgstr ""
+"Dans cette vidéo, nous explorons le chatter,"
+" l'espace d'Odoo pour l'échange et le partage d'informations."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_analysis_intro
+msgid ""
+"In this video, we show you how to create reports in Odoo using sales "
+"analysis tools.."
+msgstr ""
+"Dans cette vidéo, nous vous montrons comment créer des rapports dans"
+" Odoo à l'aide d'outils d'analyse des ventes."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_home_page_intro
+msgid ""
+"In this video, we'll explore Odoo's top bar, an essential element for "
+"navigation for navigation and application management."
+msgstr ""
+"Dans cette vidéo, nous allons explorer la barre supérieure d'Odoo,"
+" un élément essentiel pour la navigation et la gestion des applications."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_home_page_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_tree_view_intro
+msgid ""
+"It also lets you manage personal settings and access Odoo documentation and "
+"support."
+msgstr ""
+"Il vous permet également de gérer vos paramètres personnels et d'accéder"
+" à la documentation et à l'assistance Odoo."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_warning_4
+msgid "It doesn't work reliably"
+msgstr "Cela ne fonctionne pas de manière fiable"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_warning_3
+msgid "It requires too many clicks"
+msgstr "Cela nécessite trop de clics"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_warning_2
+msgid "It's too slow"
+msgstr "C'est trop lent"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+msgid ""
+"Last but not least, multi-screen management is optimized thanks to the "
+"ability to open links in new tabs, enabling efficient management of "
+"simultaneous tasks."
+msgstr ""
+"Enfin, la gestion multi-écrans est optimisée grâce à la possibilité"
+" d'ouvrir les liens dans de nouveaux onglets, ce qui permet de gérer"
+" efficacement des tâches simultanées."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_exchange_intro
+msgid ""
+"Last but not least, reminder functions allow you to plan and track tasks, "
+"ensuring complete traceability of activities within the company."
+msgstr ""
+"Enfin, les fonctions de rappel permettent de planifier et de suivre les tâches, assurant ainsi"
+" une traçabilité complète des activités au sein de l'entreprise."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_available_graphic_analysis_3
+msgid "Line graph"
+msgstr "Graphique linéaire"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_chatter_use_3
+msgid "Manage user permissions."
+msgstr "Gérer les autorisations des utilisateurs."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_available_feature_top_bar_2
+msgid "Manage users"
+msgstr "Gérer les utilisateurs"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_which_filter_has_been_used_4
+msgid "Marital status"
+msgstr "État matrimonial"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_difference_in_edit_2
+msgid "Modifications require manual confirmation after each change."
+msgstr "Les modifications nécessitent une confirmation manuelle après chaque changement."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_available_feature_top_bar_3
+msgid "Modify account settings"
+msgstr "Modifier les paramètres du compte"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_print_3
+msgid "Modify permissions"
+msgstr "Modifier les autorisations"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_reset_filter_dashboard_4
+msgid "Navigate to another dashboard"
+msgstr "Accéder à un autre tableau de bord"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_access_purchase_dashboard_4
+msgid "Navigating from dashboard to dashboard"
+msgstr "Navigation d'un tableau de bord à un autre"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_navigation
+msgid "Navigation"
+msgstr "Navigation"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_navigation_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+msgid "Navigation - Introduction"
+msgstr "Navigation - Présentation"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_navigation_quiz
+msgid "Navigation - Quiz"
+msgstr "Navigation - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_navigation_video
+msgid "Navigation - Video"
+msgstr "Navigation - Vidéo"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_default_analysis_sale_3
+msgid "Number of customers"
+msgstr "Nombre de clients"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_default_analysis_sale_4
+msgid "Number of orders"
+msgstr "Nombre de commandes"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+msgid ""
+"Odoo also enhances productivity with keyboard shortcuts for fast navigation "
+"and instant creation of new documents."
+msgstr ""
+"Odoo améliore également la productivité grâce à des raccourcis clavier permettant"
+" une navigation rapide et la création instantanée de nouveaux documents."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_filter_search_group_intro
+msgid ""
+"Odoo offers pre-configured filters that make it easy to visualize relevant "
+"data, whether for contacts, products or invoices."
+msgstr ""
+"Odoo propose des filtres préconfigurés qui facilitent la visualisation des"
+" données pertinentes, qu'il s'agisse de contacts, de produits ou de factures."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_ge_enter_3
+msgid "Odoo searches for companies whose email contains \"GE\"."
+msgstr "Odoo recherche les entreprises dont l'email contient \"GE\"."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_ge_enter_2
+msgid "Odoo searches for companies whose name begins with \"GE\"."
+msgstr "Odoo recherche les entreprises dont le nom commence par \"GE\."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_ge_enter_4
+msgid "Odoo searches for companies with \"JE\" in their name"
+msgstr "Odoo recherche des entreprises avec \"JE\ dans leurs nom."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_ge_enter_1
+msgid "Odoo searches for contacts with \"GE\" in their name."
+msgstr "Odoo recherche des contacts avec \"GE\ dans leurs nom."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_contact_count_when_filter_3
+msgid "One contact"
+msgstr "Un seul interlocuteur"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_and_or_filter_3
+msgid "Only the first filter is applied"
+msgstr "Seul le premier filtre est appliqué"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_print_2
+msgid "Page navigation"
+msgstr "Navigation des pages"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_groupby_contact_3
+msgid "Per city"
+msgstr "Par ville"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_groupby_contact_2
+msgid "Per name"
+msgstr "Par nom"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_which_filter_has_been_used_2
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_available_graphic_analysis_4
+msgid "Pie chart"
+msgstr "Diagramme circulaire"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_exchange_intro
+msgid ""
+"Present on each entity, such as employee files, purchase orders and "
+"quotations, the chatter allows you to track data modifications and interact "
+"both internally and with external contacts."
+msgstr ""
+"Présent sur chaque entité, comme les dossiers des employés, les bons"
+" de commande et les devis, le chat vous permet de suivre les modifications"
+" des données et d'interagir à la fois en interne et avec les contacts externes."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_force_save_3
+msgid "Press the \"Enter\" key after each modification."
+msgstr "Appuyez sur la touche \"Entrer\" après chaque modification."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_smart_button_3
+msgid "Print documents"
+msgstr "Imprimer des documents"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_server_action_4
+msgid "Print them out"
+msgstr "Imprimez-les"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_print_4
+msgid "Refresh page"
+msgstr "Actualiser la page"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_server_action_2
+msgid "Rename them"
+msgstr "Renommez-les"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_default_analysis_sale_2
+msgid "Sales after tax"
+msgstr "Ventes après impôts"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_save_delete_archive_search
+msgid "Save, delete, archive, search"
+msgstr "Enregistrer, supprimer, archiver, rechercher"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_save_delete_archive_search_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_save_delete_archive_search_intro
+msgid "Save, delete, archive, search - Introduction"
+msgstr "Enregistrer, supprimer, archiver, rechercher - Introduction"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_save_delete_archive_search_quiz
+msgid "Save, delete, archive, search - Quiz"
+msgstr "Enregistrer, supprimer, archiver, rechercher - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_save_delete_archive_search_video
+msgid "Save, delete, archive, search - Video"
+msgstr "Enregistrer, supprimer, archiver, rechercher - Vidéo"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_chatter_use_2
+msgid "Send mass emails to all contacts."
+msgstr "Envoyer des e-mails en masse à tous les contacts."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_smart_tab_4
+msgid "Settings menu"
+msgstr "Menu des paramètres"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_reminder_2
+msgid "Subscriber tracking option."
+msgstr "Option de suivi des abonnés."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_dashboard_intro
+msgid ""
+"Tables display key metrics for purchases, with time trend graphs and lists "
+"of top results."
+msgstr ""
+"Des tableaux affichent les principales données relatives aux achats, avec"
+" des graphiques de tendance temporelle et des listes des meilleurs résultats."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_reminder_4
+msgid "The \"Send a message\" button."
+msgstr "Le bouton \"Envoyer un message\""
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_which_filter_has_been_used_1
+msgid "The analyst position"
+msgstr "Le poste d'analyste"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_joined_documents_1
+msgid ""
+"The attachment is automatically shared with all subscribers to the file."
+msgstr ""
+"La pièce jointe est automatiquement partagée avec tous les abonnés au fichier."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_joined_documents_3
+msgid "The attachment is converted to text and displayed in the chatter."
+msgstr "La pièce jointe est convertie en texte et affichée dans le chat."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_joined_documents_2
+msgid "The attachment is visible only to the user who added it."
+msgstr "La pièce jointe n'est visible que par l'utilisateur qui l'a ajoutée."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_list_after_sale_dashboard_2
+msgid "The best buyers"
+msgstr "Les meilleurs acheteurs"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_list_after_sale_dashboard_1
+msgid "The best countries"
+msgstr "Les meilleurs pays"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_list_after_sale_dashboard_3
+msgid "The best products"
+msgstr "Les meilleurs produits"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_list_after_sale_dashboard_4
+msgid "The best suppliers"
+msgstr "Les meilleurs fournisseurs"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_consequence_delete_employee_1
+msgid "The employee is completely deleted from the database."
+msgstr "L'employé est complètement supprimé de la base de données."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_consequence_delete_employee_3
+msgid "The employee is marked as inactive but remains accessible."
+msgstr "L'employé est marqué comme inactif mais reste accessible."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_consequence_delete_employee_2
+msgid "The employee is moved to an archive and can be restored."
+msgstr "L'employé est déplacé vers une archive et peut être restauré."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_dashboard_intro
+msgid ""
+"The filter bar at the top lets you select criteria such as country, "
+"supplier, product category, specific product and buyer."
+msgstr ""
+"La barre de filtre située en haut vous permet de sélectionner des"
+" critères tels que le pays, le fournisseur, la catégorie de produits, le produit spécifique et l'acheteur."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_analysis_intro
+msgid ""
+"The interface lets you filter data, choose between different types of "
+"visualizations such as graphs or pivot tables, and customize the display of "
+"results."
+msgstr ""
+"L'interface vous permet de filtrer les données, de choisir entre différents"
+" types de visualisation tels que des graphiques ou des tableaux croisés"
+" dynamiques, et de personnaliser l'affichage des résultats."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+msgid ""
+"The platform also simplifies data entry with shortcuts for dates and "
+"mathematical calculations."
+msgstr ""
+"La plateforme simplifie également la saisie des données grâce"
+" à des raccourcis pour les dates et les calculs mathématiques."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+msgid ""
+"The tabs at the bottom of the screen allow you to configure various aspects "
+"of the products according to the modules installed."
+msgstr ""
+"Les onglets en bas de l'écran permettent de configurer différents aspects des"
+" produits en fonction des modules installés."
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_dashboard_intro
+msgid ""
+"These tables are interactive, allowing you to click on items such as order "
+"numbers to see details, or apply filters with a single click to adjust the "
+"data."
+msgstr ""
+"Ces tableaux sont interactifs, ce qui vous permet de cliquer sur des"
+" éléments tels que les numéros de commande pour voir les détails, ou"
+" d'appliquer des filtres d'un simple clic pour ajuster les données."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_hyperlink_2
+msgid "They automatically change the interface language"
+msgstr "Ils changent automatiquement la langue de l'interface"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_hyperlink_3
+msgid "They download PDF documents"
+msgstr "Ils téléchargent des documents PDF"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_hyperlink_4
+msgid "They modify application parameters"
+msgstr "Ils modifient les paramètres de l'application"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_navigation_hyperlink_1
+msgid "They provide direct access to the details of the record concerned."
+msgstr "Ils permettent d’accéder directement aux détails du dossier concerné."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_home_page_intro
+msgid ""
+"This bar provides quick access to applications, chat notifications and "
+"scheduled activities."
+msgstr ""
+"Cette barre permet d'accéder rapidement aux applications, aux"
+" notifications de chat et aux activités programmées."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_warning_1
+msgid "This could have an impact on several recordings"
+msgstr "Cela pourrait avoir un impact sur plusieurs enregistrements"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_custom_filter_groupby_intro
+msgid ""
+"This customization allows you to fully exploit the power of Odoo's search "
+"tool for greater efficiency."
+msgstr ""
+"Cette personnalisation vous permet d'exploiter pleinement la puissance"
+" de l'outil de recherche d'Odoo pour une plus grande efficacité."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+msgid ""
+"This module explores form views in Odoo, focusing on their practical "
+"appearance and use."
+msgstr ""
+"Ce module explore les vues de formulaire"
+" dans Odoo, en se concentrant sur leur apparence et leur utilisation."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_filter_search_group_intro
+msgid ""
+"This module focuses on Odoo's advanced search and grouping features, "
+"allowing you to easily filter your records according to your specific needs."
+msgstr ""
+"Ce module se concentre sur les fonctions avancées de recherche et de regroupement d'Odoo, vous permettant de filtrer"
+" facilement vos enregistrements en fonction de vos besoins spécifiques."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_contact_count_when_filter_1
+msgid "Three contacts"
+msgstr "Trois contacts"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_create_product_1
+#: model:slide.answer,text_value:elearning_data.question_tree_change_view_3
+msgid "Top left"
+msgstr "En haut à gauche"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_create_product_3
+#: model:slide.answer,text_value:elearning_data.question_tree_change_view_1
+msgid "Top right"
+msgstr "En haut à droite"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_default_analysis_sale_1
+msgid "Total excluding tax"
+msgstr "Total hors taxes"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_exchange_chatter_use_1
+msgid "Track changes and enable internal and external exchanges."
+msgstr "Suivez les changements et permettez les échanges internes et externes."
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_tree_view
+msgid "Tree view"
+msgstr "Vue arborescente"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_tree_view_intro
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_tree_view_intro
+msgid "Tree view - Introduction"
+msgstr "Vue arborescente - Introduction"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_tree_view_quiz
+msgid "Tree view - Quiz"
+msgstr "Vue arborescente - Quiz"
+
+#. module: elearning_data
+#: model:slide.slide,name:elearning_data.getting_started_tree_view_video
+msgid "Tree view - Video"
+msgstr "Vue arborescente - Vidéo"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_contact_count_when_filter_2
+msgid "Two contacts"
+msgstr "Deux contacts"
+
+#. module: elearning_data
+#: model_terms:ir.ui.view,arch_db:elearning_data.slide_slide_view_form
+msgid "URL"
+msgstr "URL"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_exchange_intro
+msgid ""
+"Users can exchange internal notes for private discussions, or send external "
+"messages to partners."
+msgstr ""
+"Les utilisateurs peuvent échanger des notes internes pour des "
+"discussions privées ou envoyer des messages externes à des partenaires."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_analysis_intro
+msgid ""
+"Users can thus obtain a detailed, interactive view of their sales, grouping "
+"data according to different criteria and exporting the results for further "
+"analysis."
+msgstr ""
+"Les utilisateurs peuvent ainsi obtenir une vue détaillée et interactive de"
+" leurs ventes, en regroupant les données selon différents critères et en"
+" exportant les résultats pour une analyse plus approfondie."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_navigate_page_1
+msgid "Using the arrows"
+msgstr "Utiliser les flèches"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_navigate_product_1
+msgid "Using the arrows at top right"
+msgstr "En utilisant les flèches en haut à droite"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_filter_search_group_groupby_company_partner_1
+msgid "Using the company grouping option"
+msgstr "Utilisation de l'option de regroupement d'entreprises"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_access_app_top_bar_3
+msgid "Using the keyboard shortcut ALT-C"
+msgstr "Utilisation du raccourci clavier ALT-C"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_change_company_in_multi_3
+msgid "Using the keyboard shortcut CTRL-S"
+msgstr "Utilisation du raccourci clavier CTRL-S"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_tree_change_fields_1
+msgid "Using the last button in the list view header"
+msgstr "Utilisation du dernier bouton dans l'en-tête de la vue de liste"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_navigate_product_4
+msgid "Using the navigation menu"
+msgstr "Utilisation du menu de navigation"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_access_purchase_dashboard_3
+msgid "Using the product category filter"
+msgstr "Utilisation du filtre de catégorie de produit"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_form_smart_tab_1
+msgid "Via tabs"
+msgstr "Par onglets"
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_available_feature_top_bar_1
+msgid "View ongoing discussions and plan activities"
+msgstr "Consultez les discussions en cours et planifiez les activités"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_navigation_intro
+msgid ""
+"We discover how to use the breadcrumb trail effectively to navigate between "
+"different documents such as purchase orders and associated receipts."
+msgstr ""
+"Nous découvrons comment utiliser efficacement le fil d'Ariane pour"
+" naviguer entre différents documents tels que les bons de commande et les reçus associés."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.advanced_use_custom_filter_groupby_intro
+msgid ""
+"We focus on creating customized filters and groupings, applicable not only "
+"to contacts, but also to items, invoices, and any other section where the "
+"search bar is present."
+msgstr ""
+"Nous nous concentrons sur la création de filtres et de regroupements"
+" personnalisés, applicables non seulement aux contacts, mais aussi aux articles,"
+" aux factures et à toute autre section où la barre de recherche est présente."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+msgid ""
+"We look at how form views apply to items, contacts, employees and other "
+"reference data."
+msgstr ""
+"Nous examinons comment les vues de formulaire s'appliquent aux éléments, "
+"aux contacts, aux employés et à d'autres données de référence."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+msgid "We'll also take a look at how chatter works in a dedicated video."
+msgstr "Nous verrons également comment fonctionne le chat dans une vidéo dédiée."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_filter_search_group_intro
+msgid "We'll explore these features in detail to optimize your use of Odoo."
+msgstr "Nous explorerons ces fonctionnalités en détail pour optimiser votre utilisation d'Odoo."
+
+#. module: elearning_data
+#: model_terms:ir.ui.view,arch_db:elearning_data.slide_slide_view_form
+msgid "Website Content"
+msgstr "Contenu du site Web"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_tree_server_action
+msgid ""
+"What action can you perform on several contacts at once using list views in "
+"Odoo?"
+msgstr ""
+"Quelle action pouvez-vous effectuer sur plusieurs contacts à la"
+" fois en utilisant les vues en liste dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_save_delete_archive_search_ireversible_action
+msgid "What action is irreversible in Odoo?"
+msgstr "Quelle action est irréversible dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_form_print
+msgid ""
+"What actions can you perform using the little cogwheel icon in Odoo's form "
+"views?"
+msgstr ""
+"Quelles sont les actions que vous pouvez effectuer en utilisant la"
+" petite icône de roue dentée dans les vues de formulaire d'Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_which_filter_has_been_used
+msgid ""
+"What additional criteria were applied to screen people at Pleasant Hill?"
+msgstr ""
+"Quels critères supplémentaires ont été appliqués pour sélectionner les personnes à Pleasant Hill ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_navigation_hyperlink
+msgid ""
+"What advantages do hypertext links in Odoo offer when browsing through "
+"suppliers?"
+msgstr ""
+"Quels sont les avantages des liens hypertextes dans"
+" Odoo lorsque l'on navigue parmi les fournisseurs ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_form_smart_button
+msgid "What are Smart Buttons used for in Odoo form views?"
+msgstr "À quoi servent les boutons intelligents dans les vues de formulaire Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_click_on_pivot_table
+msgid "What can be done by clicking on a value in a pivot table?"
+msgstr "Que peut-on faire en cliquant sur une valeur dans un tableau croisé dynamique ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_available_feature_top_bar
+msgid ""
+"What functions are available via the notification icons in Odoo's top bar?"
+msgstr ""
+"Quelles sont les fonctions disponibles via les icônes de notification dans la barre supérieure d'Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_filter_search_group_ge_enter
+msgid "What happens if you type \"GE\" in the Odoo search bar and press \"Enter\"?"
+msgstr "Que se passe-t-il si vous tapez \"GE\ dans la bar de recherche et appuyer sur \"Enter\""
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_exchange_joined_documents
+msgid "What happens when you add an attachment to the chatter?"
+msgstr "Que se passe-t-il lorsque vous ajoutez une pièce jointe au chat ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_filter_search_group_and_or_filter
+msgid ""
+"What happens when you select two pre-configured filters in the same section?"
+msgstr ""
+"Que se passe-t-il lorsque vous sélectionnez deux filtres préconfigurés dans la même section ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_list_after_sale_dashboard
+msgid ""
+"What is presented in list form under the purchasing time trend in the "
+"purchasing dashboard?"
+msgstr ""
+"Qu'est-ce qui est présenté sous forme de liste"
+" sous la tendance temporelle des achats dans le tableau de bord des achats ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_save_delete_archive_search_consequence_delete_employee
+msgid "What is the consequence of deleting an employee file in Odoo?"
+msgstr "Quelle est la conséquence de la suppression d'un dossier d'employé dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_save_delete_archive_search_difference_in_edit
+msgid ""
+"What is the main difference between Odoo's editing functions and those of "
+"other software packages?"
+msgstr ""
+"Quelle est la principale différence entre les fonctions d'édition"
+" d'Odoo et celles d'autres logiciels ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_exchange_chatter_use
+msgid "What is the main role of the \"chatter\" in Odoo?"
+msgstr "Quel est le rôle principal du \"chatter\" dans Odoo?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_tree_warning
+msgid ""
+"What should you look out for when using the multiple selection feature in "
+"list views to update data in Odoo?"
+msgstr ""
+"A quoi devez-vous faire attention lorsque vous utilisez"
+" la fonction de sélection multiple dans les vues de liste pour mettre à jour des données dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_available_graphic_analysis
+msgid ""
+"What type of graphic is not mentioned as an available option in the "
+"interface?"
+msgstr ""
+"Quel type de graphique n'est pas mentionné comme"
+" option disponible dans l'interface ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_exchange_internal_note
+msgid "What type of message remains strictly internal in Odoo?"
+msgstr "Quel type de message reste strictement interne à Odoo ?"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_filter_search_group_intro
+msgid ""
+"What's more, Odoo enables flexible grouping of records according to various "
+"criteria, providing better visual and analytical organization."
+msgstr ""
+"De plus, Odoo permet un regroupement flexible des enregistrements en fonction de"
+" divers critères, offrant ainsi une meilleure organisation visuelle et analytique."
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_change_company_in_multi
+msgid ""
+"Where can I change the company environment when working with several "
+"companies in Odoo?"
+msgstr ""
+"Où puis-je changer l'environnement de l'entreprise lorsque je "
+"travaille avec plusieurs entreprises dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_form_create_product
+msgid ""
+"Where can I find the option to create a new product when viewing product "
+"details in Odoo?"
+msgstr ""
+"Où puis-je trouver l'option de créer un nouveau produit lorsque"
+" je consulte les détails d'un produit dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_tree_change_view
+msgid ""
+"Where can I find the option to select list views in Odoo applications such "
+"as Contacts?"
+msgstr ""
+"Où puis-je trouver l'option permettant de sélectionner des vues de liste"
+" dans les applications Odoo telles que Contacts ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_filter_search_group_save_search
+msgid "Where can you save a search to find it later in Odoo?"
+msgstr "Où pouvez-vous enregistrer une recherche pour la retrouver plus tard dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_exchange_reminder
+msgid ""
+"Which \"chatter\" feature can be used to create reminders for future tasks?"
+msgstr ""
+"Quelle fonction de \"chatter\" peut être utilisée pour créer des rappels pour des tâches futures ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_form_smart_tab
+msgid ""
+"Which feature at the bottom of the screen allows you to configure specific "
+"product details in Odoo?"
+msgstr ""
+"Quelle fonction en bas de l'écran vous permet de configurer"
+" les détails spécifiques d'un produit dans Odoo ?"
+
+#. module: elearning_data
+#: model:slide.question,question:elearning_data.question_default_analysis_sale
+msgid "Which measure is used by default for sales analysis in the example?"
+msgstr "Quelle mesure est utilisée par défaut pour l’analyse des ventes dans l’exemple ?"
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_filter_search_group_intro
+msgid ""
+"You can adjust these default filters and perform precise searches to find "
+"exactly what you're looking for."
+msgstr ""
+"Vous pouvez ajuster ces filtres par défaut et effectuer des recherches"
+" précises pour trouver exactement ce que vous cherchez."
+
+#. module: elearning_data
+#: model:slide.answer,text_value:elearning_data.question_save_delete_archive_search_difference_in_edit_3
+msgid "You must first enter edit mode to modify the data."
+msgstr "Vous devez d'abord entrer en mode édition pour modifier les données."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_tree_view_intro
+msgid ""
+"You'll also discover how to perform mass actions, such as archiving or "
+"exporting multiple records, and update data on a massive scale."
+msgstr ""
+"Vous découvrirez également comment effectuer des actions de masse, telles"
+" que l'archivage ou l'exportation de plusieurs enregistrements, et mettre à jour des données à grande échelle."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_form_view_intro
+msgid ""
+"You'll learn how to navigate between items and use smart buttons to access "
+"specific information such as stock forecasts and associated sales"
+msgstr ""
+"Vous apprendrez à naviguer entre les éléments et à utiliser des boutons"
+" intelligents pour accéder à des informations spécifiques telles que les prévisions de stock et les ventes associées."
+
+#. module: elearning_data
+#: model_terms:slide.slide,html_content:elearning_data.getting_started_tree_view_intro
+msgid ""
+"You'll learn how to select and hide fields, sort records, navigate between "
+"pages and display all records at once."
+msgstr ""
+"Vous apprendrez à sélectionner et à masquer des champs, à trier les enregistrements,"
+" à naviguer entre les pages et à afficher tous les enregistrements à la fois."
