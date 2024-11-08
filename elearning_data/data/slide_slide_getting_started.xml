@@ -70,7 +70,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">4</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- PAGE D'ACCUEIL -->
 
@@ -140,7 +140,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">23</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- VUE LISTE -->
 
@@ -212,7 +212,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">33</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- VUE FORMULAIRE -->
 
@@ -293,7 +293,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">43</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- NAVIGATION -->
 
@@ -363,7 +363,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">53</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- EXCHANGE -->
 
@@ -451,7 +451,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">63</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- FILTER, RECHERCHER ET GROUPER -->
 
@@ -528,7 +528,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">73</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- SAVE, DELETE, ARCHIVE, SEARCH -->
 

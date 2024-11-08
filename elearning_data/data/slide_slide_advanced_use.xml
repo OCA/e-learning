@@ -63,7 +63,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">4</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- ANALYSES -->
 
@@ -151,7 +151,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">14</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- FILTRES ET REGROUPEMENTS PERSONNALISÉS -->
 
@@ -220,7 +220,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">24</field>
-        <field name="completion_time">0.05</field> <!-- 3 minutes -->
+        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
     </record>
     <!-- TABLEAUX DE BORD -->
 </odoo>
