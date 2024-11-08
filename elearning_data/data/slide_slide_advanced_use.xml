@@ -14,10 +14,26 @@
         <field name="name">Analyses - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field
-            name="html_content"
-        >&lt;h1 style=&quot;margin-bottom: 0px;&quot;&gt;Analyses&amp;nbsp;- Introduction&lt;/h1&gt;&lt;p style=&quot;margin-bottom: 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px;&quot;&gt;Dans cette vidéo, nous découvrons comment réaliser des rapports dans Odoo en utilisant les outils d&#39;analyse des ventes.&amp;nbsp;&lt;/p&gt;&lt;ul style=&quot;margin-bottom: 0px;&quot;&gt;&lt;li&gt;L&#39;interface permet de filtrer les données, de choisir entre différents types de visualisations comme les graphiques ou les tableaux croisés dynamiques, et de personnaliser l&#39;affichage des résultats.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Les utilisateurs peuvent ainsi obtenir une vue détaillée et interactive de leurs ventes, en regroupant les données selon différents critères et en exportant les résultats pour une analyse plus approfondie.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/br&gt; &lt;p&gt;&lt;em&gt;PS : Pour vous exercer vous pouvez utiliser &lt;/em&gt;&lt;a href=&quot;https://elearning-demo.odooapps.ch&quot; target=&quot;_blank&quot;&gt;  &lt;em&gt;elearning-demo.odooapps.ch&lt;/em&gt; &lt;/a&gt; &lt;em&gt; . Vous noterez que la plateforme est réinitialisée tous les jours. &lt;/em&gt;&lt;/p&gt;&lt;/p&gt;</field>
         <field name="sequence">2</field>
+        <field name="html_content" type="html">
+<h1 style="margin-bottom: 0px;">Analyses - Introduction</h1>
+<p style="margin-bottom: 0px;"><br /></p>
+<p
+                style="margin-bottom: 0px;"
+            >Dans cette vidéo, nous découvrons comment réaliser des rapports dans Odoo en utilisant les outils d'analyse des ventes.</p>
+<ul style="margin-bottom: 0px;">
+	<li
+                >L'interface permet de filtrer les données, de choisir entre différents types de visualisations comme les graphiques ou les tableaux croisés dynamiques, et de personnaliser l'affichage des résultats.</li>
+	<li
+                >Les utilisateurs peuvent ainsi obtenir une vue détaillée et interactive de leurs ventes, en regroupant les données selon différents critères et en exportant les résultats pour une analyse plus approfondie.</li>
+</ul>
+<p><br /> </p>
+<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+                    href="https://elearning-demo.odooapps.ch"
+                    target="_blank"
+                >  <em>elearning-demo.odooapps.ch</em> </a> <em
+                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+        </field>
     </record>
     <record forcecreate="True" id="advanced_use_analysis_video" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
@@ -71,10 +87,31 @@
         <field name="name">Filtres et regroupements personnalisés - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field
-            name="html_content"
-        >&lt;h1 style=&quot;margin-bottom: 0px;&quot;&gt;Filtres et regroupements personnalisés&amp;nbsp;- Introduction&lt;/h1&gt;&lt;p style=&quot;margin-bottom: 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px;&quot;&gt;Dans cette vidéo, nous explorons la personnalisation avancée des fonctionnalités de recherche dans Odoo.&amp;nbsp;&lt;/p&gt;&lt;ul style=&quot;margin-bottom: 0px;&quot;&gt;&lt;li&gt;Nous nous concentrons sur la création de filtres et de regroupements sur mesure, applicables non seulement aux contacts, mais aussi aux articles, aux factures, et à toute autre section où la barre de recherche est présente.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Par exemple, vous apprendrez à regrouper les contacts par état et à créer des filtres pour trouver rapidement des informations spécifiques, comme tous les contacts basés en France ou ceux résidant à Pleasant Hill et ayant le poste d&#39;analyste.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Cette personnalisation permet d&#39;exploiter pleinement la puissance de l&#39;outil de recherche d&#39;Odoo pour une efficacité accrue.&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;margin-bottom: 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/br&gt; &lt;p&gt;&lt;em&gt;PS : Pour vous exercer vous pouvez utiliser &lt;/em&gt;&lt;a href=&quot;https://elearning-demo.odooapps.ch&quot; target=&quot;_blank&quot;&gt;  &lt;em&gt;elearning-demo.odooapps.ch&lt;/em&gt; &lt;/a&gt; &lt;em&gt; . Vous noterez que la plateforme est réinitialisée tous les jours. &lt;/em&gt;&lt;/p&gt;&lt;/p&gt;</field>
         <field name="sequence">12</field>
+        <field name="html_content" type="html">
+<h1
+                style="margin-bottom: 0px;"
+            >Filtres et regroupements personnalisés - Introduction</h1>
+<p style="margin-bottom: 0px;"><br /></p>
+<p
+                style="margin-bottom: 0px;"
+            >Dans cette vidéo, nous explorons la personnalisation avancée des fonctionnalités de recherche dans Odoo.</p>
+<ul style="margin-bottom: 0px;">
+	<li
+                >Nous nous concentrons sur la création de filtres et de regroupements sur mesure, applicables non seulement aux contacts, mais aussi aux articles, aux factures, et à toute autre section où la barre de recherche est présente.</li>
+	<li
+                >Par exemple, vous apprendrez à regrouper les contacts par état et à créer des filtres pour trouver rapidement des informations spécifiques, comme tous les contacts basés en France ou ceux résidant à Pleasant Hill et ayant le poste d'analyste.</li>
+	<li
+                >Cette personnalisation permet d'exploiter pleinement la puissance de l'outil de recherche d'Odoo pour une efficacité accrue.</li>
+</ul>
+<p style="margin-bottom: 0px;"><br /></p>
+<p><br /> </p>
+<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+                    href="https://elearning-demo.odooapps.ch"
+                    target="_blank"
+                >  <em>elearning-demo.odooapps.ch</em> </a> <em
+                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+        </field>
     </record>
     <record
         forcecreate="True"
@@ -128,10 +165,28 @@
         <field name="name">Tableaux de bord - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field
-            name="html_content"
-        >&lt;h1 style=&quot;margin-bottom: 0px;&quot;&gt;Tableaux de bord - Introduction&lt;/h1&gt;&lt;p style=&quot;margin-bottom: 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px;&quot;&gt;Dans cette vidéo, je vous présente l&#39;application Tableau de bord qui offre un aperçu instantané des données clés à travers différentes applications.&amp;nbsp;&lt;/p&gt;&lt;ul style=&quot;margin-bottom: 0px;&quot;&gt;&lt;li&gt;La barre de filtres en haut permet de sélectionner des critères comme le pays, le fournisseur, la catégorie de produit, le produit spécifique et l&#39;acheteur.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Les tableaux affichent les principales métriques pour les achats avec des graphiques d&#39;évolution temporelle et des listes des meilleurs résultats.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Ces tableaux sont interactifs, permettant de cliquer sur des éléments comme les numéros de commande pour voir les détails, ou d&#39;appliquer des filtres en un clic pour ajuster les données.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/br&gt; &lt;p&gt;&lt;em&gt;PS : Pour vous exercer vous pouvez utiliser &lt;/em&gt;&lt;a href=&quot;https://elearning-demo.odooapps.ch&quot; target=&quot;_blank&quot;&gt;  &lt;em&gt;elearning-demo.odooapps.ch&lt;/em&gt; &lt;/a&gt; &lt;em&gt; . Vous noterez que la plateforme est réinitialisée tous les jours. &lt;/em&gt;&lt;/p&gt;&lt;/p&gt;</field>
         <field name="sequence">22</field>
+        <field name="html_content" type="html">
+<h1 style="margin-bottom: 0px;">Tableaux de bord - Introduction</h1>
+<p style="margin-bottom: 0px;"><br /></p>
+<p
+                style="margin-bottom: 0px;"
+            >Dans cette vidéo, je vous présente l'application Tableau de bord qui offre un aperçu instantané des données clés à travers différentes applications.</p>
+<ul style="margin-bottom: 0px;">
+	<li
+                >La barre de filtres en haut permet de sélectionner des critères comme le pays, le fournisseur, la catégorie de produit, le produit spécifique et l'acheteur.</li>
+	<li
+                >Les tableaux affichent les principales métriques pour les achats avec des graphiques d'évolution temporelle et des listes des meilleurs résultats.</li>
+	<li
+                >Ces tableaux sont interactifs, permettant de cliquer sur des éléments comme les numéros de commande pour voir les détails, ou d'appliquer des filtres en un clic pour ajuster les données.</li>
+</ul>
+<p><br /> </p>
+<p><em>PS : Pour vous exercer vous pouvez utiliser </em><a
+                    href="https://elearning-demo.odooapps.ch"
+                    target="_blank"
+                >  <em>elearning-demo.odooapps.ch</em> </a> <em
+                > . Vous noterez que la plateforme est réinitialisée tous les jours. </em></p>
+        </field>
     </record>
     <record forcecreate="True" id="advanced_use_dashboard_video" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />

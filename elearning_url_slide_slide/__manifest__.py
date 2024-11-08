@@ -15,8 +15,7 @@
     "data": [
         # Security
         "security/ir.model.access.csv",
-        
-        ],
+    ],
     "assets": {},
     "installable": True,
 }
