@@ -14,6 +14,7 @@
         <field name="name">Analyses - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">2</field>
         <field name="html_content" type="html">
 <h1 style="margin-bottom: 0px;">Analyses - Introduction</h1>
@@ -62,6 +63,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">4</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- ANALYSES -->
 
@@ -87,6 +89,7 @@
         <field name="name">Filtres et regroupements personnalisés - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">12</field>
         <field name="html_content" type="html">
 <h1
@@ -148,6 +151,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">14</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- FILTRES ET REGROUPEMENTS PERSONNALISÉS -->
 
@@ -165,6 +169,7 @@
         <field name="name">Tableaux de bord - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">22</field>
         <field name="html_content" type="html">
 <h1 style="margin-bottom: 0px;">Tableaux de bord - Introduction</h1>
@@ -215,6 +220,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">24</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- TABLEAUX DE BORD -->
 </odoo>

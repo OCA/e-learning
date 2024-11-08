@@ -14,6 +14,7 @@
         <field name="name">Page d'accueil - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">2</field>
         <field name="html_content" type="html">
 <h1 style="margin-bottom: 0px;">Page d'accueil - Introduction</h1>
@@ -69,6 +70,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">4</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- PAGE D'ACCUEIL -->
 
@@ -86,6 +88,7 @@
         <field name="name">Vue liste - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">21</field>
         <field name="html_content" type="html">
 <h1 style="margin-bottom: 0px;">Vue liste - Introduction</h1>
@@ -117,6 +120,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">22</field>
+        <field
+            name="completion_time"
+        >0.04216667</field> <!-- 2 minutes and 53 seconds --> <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -134,6 +140,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">23</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- VUE LISTE -->
 
@@ -151,6 +158,7 @@
         <field name="name">Vue formulaire - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">31</field>
         <field name="html_content" type="html">
 <h1>Vue formulaire - Introduction</h1>
@@ -184,6 +192,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">32</field>
+        <field
+            name="completion_time"
+        >0.03916667</field> <!-- 2 minutes and 35 seconds --> <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -201,6 +212,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">33</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- VUE FORMULAIRE -->
 
@@ -222,6 +234,7 @@
         <field name="name">Navigation - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">41</field>
         <field name="html_content" type="html">
 <h1>Navigation - Introduction</h1>
@@ -260,6 +273,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">42</field>
+        <field
+            name="completion_time"
+        >0.0535</field> <!-- 3 minutes and 21 seconds --> <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -277,6 +293,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">43</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- NAVIGATION -->
 
@@ -294,6 +311,7 @@
         <field name="name">Echanges - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">51</field>
         <field name="html_content" type="html">
 <h1>Echanges - Introduction</h1>
@@ -325,6 +343,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">52</field>
+        <field
+            name="completion_time"
+        >0.07516667</field> <!-- 4 minutes and 51 seconds --> <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -342,6 +363,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">53</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- EXCHANGE -->
 
@@ -367,6 +389,7 @@
         <field name="name">Filter, rechercher et grouper - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">61</field>
         <field name="html_content" type="html">
 <h1 style="margin-bottom: 0px;">Filter, rechercher et grouper - Introduction</h1>
@@ -404,6 +427,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">62</field>
+        <field
+            name="completion_time"
+        >0.06783333</field> <!-- 4 minutes and 7 seconds --> <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -425,6 +451,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">63</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- FILTER, RECHERCHER ET GROUPER -->
 
@@ -452,6 +479,7 @@
         >Enregistrer, supprimer, archiver, rechercher - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
+        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
         <field name="sequence">71</field>
         <field name="html_content" type="html">
 <h1>Enregistrer, supprimer, archiver, rechercher - Introduction</h1>
@@ -476,6 +504,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">72</field>
+        <field
+            name="completion_time"
+        >0.06816667</field> <!-- 4 minutes and 9 seconds --> <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -497,6 +528,7 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">73</field>
+        <field name="completion_time">0.05</field> <!-- 3 minutes -->
     </record>
     <!-- SAVE, DELETE, ARCHIVE, SEARCH -->
 
