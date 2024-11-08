@@ -7,9 +7,9 @@
     "category": "Uncategorized",
     "author": "Open Net Sàrl, Adam Bonnet <adambonnet0@gmail.com>, Odoo Community Association (OCA)",  # noqa: E501
     "depends": [
-        "website_slides",
         "elearning_url_slide_slide",
         "elearning_shuffle_slide_answer",
+        "website_slides",
     ],
     "version": "17.0.0.1.0",
     "auto_install": False,
@@ -27,8 +27,6 @@
         # Advanced Use
         "data/slide_slide_advanced_use.xml",
         "data/slide_question_advanced_use.xml",
-        # Security
-        "security/ir.model.access.csv",
     ],
     "assets": {},
     "installable": True,

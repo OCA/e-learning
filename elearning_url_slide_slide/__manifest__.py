@@ -12,7 +12,11 @@
     "auto_install": False,
     "website": "https://github.com/OCA/e-learning",
     "license": "AGPL-3",
-    "data": [],
+    "data": [
+        # Security
+        "security/ir.model.access.csv",
+        
+        ],
     "assets": {},
     "installable": True,
 }
