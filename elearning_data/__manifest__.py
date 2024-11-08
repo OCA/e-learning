@@ -2,12 +2,14 @@
 
 
 {
-    "name": "eLearning Data",
+    "name": "eLearning - Data",
     "summary": "An module that import data into eLearning",
     "category": "Uncategorized",
     "author": "Open Net Sàrl, Adam Bonnet <adambonnet0@gmail.com>, Odoo Community Association (OCA)",  # noqa: E501
     "depends": [
         "website_slides",
+        "elearning_url_slide_slide",
+        "elearning_shuffle_slide_answer",
     ],
     "version": "17.0.0.1.0",
     "auto_install": False,

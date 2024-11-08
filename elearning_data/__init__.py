@@ -1,5 +1,1 @@
-# © 2024 Open Net Sarl
-
-
-from . import models
-from . import controllers
+# File created for the oca-checks-odoo-module
