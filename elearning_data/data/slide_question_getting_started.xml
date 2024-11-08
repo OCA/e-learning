@@ -134,12 +134,12 @@
     </record>
     <record forcecreate="True" id="question_tree_change_view_1" model="slide.answer">
         <field name="question_id" ref="question_tree_change_view" />
-        <field name="text_value">En bas à gauche</field>
+        <field name="text_value">En haut à droite</field>
         <field name="is_correct" eval="True" />
     </record>
     <record forcecreate="True" id="question_tree_change_view_2" model="slide.answer">
         <field name="question_id" ref="question_tree_change_view" />
-        <field name="text_value">En haut à droite</field>
+        <field name="text_value">En bas à gauche</field>
     </record>
     <record forcecreate="True" id="question_tree_change_view_3" model="slide.answer">
         <field name="question_id" ref="question_tree_change_view" />
