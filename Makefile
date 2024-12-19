@@ -3,3 +3,6 @@ changelog:
 
 fragments:
 	@bash create_fragment.sh elearning_data
+
+transcript:
+	@cd elearning_data/readme/transcript && python3 transcript.py

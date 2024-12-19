@@ -9,8 +9,10 @@
 
 # e-learning
 
-e-learning
+E-Learning platform for Odoo
 
+## E-Learning Data
+Rules for contributing in this module follow those guidelines: [CONTRIBUTING.md](elearning_data/readme/CONTRIBUTING.md)
 <!-- /!\ do not modify below this line -->
 
 <!-- prettier-ignore-start -->
