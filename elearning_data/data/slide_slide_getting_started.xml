@@ -103,11 +103,6 @@
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_tree_view_video" model="slide.slide">
@@ -175,11 +170,6 @@
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_form_view_video" model="slide.slide">
@@ -252,11 +242,6 @@
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record
@@ -326,11 +311,6 @@
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_exchange_video" model="slide.slide">
@@ -405,11 +385,6 @@
 </ul>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record
@@ -480,11 +455,6 @@
 <p><br /></p>
 <p><br /></p>
 <p><br /> </p>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record

@@ -29,11 +29,6 @@
                 >Users can thus obtain a detailed, interactive view of their sales, grouping data according to different criteria and exporting the results for further analysis.</li>
 </ul>
 <p><br /> </p>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="advanced_use_analysis_video" model="slide.slide">
@@ -107,11 +102,6 @@
 </ul>
 <p style="margin-bottom: 0px;"><br /></p>
 <p><br /> </p>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record
@@ -184,11 +174,6 @@
                 >These tables are interactive, allowing you to click on items such as order numbers to see details, or apply filters with a single click to adjust the data.</li>
 </ul>
 <p><br /> </p>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >  <em>elearning-demo.odooapps.ch</em> </a> <em
-                > . Please note that the platform is reset every day. </em></p>
         </field>
     </record>
     <record forcecreate="True" id="advanced_use_dashboard_video" model="slide.slide">
