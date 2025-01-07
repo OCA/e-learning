@@ -819,7 +819,7 @@ msgstr "Dans le champ de texte en bas"
 #. module: elearning_data
 #: model_terms:slide.slide,html_content:elearning_data.advanced_use_dashboard_intro
 msgid ""
-"In this video, I introduce you to the Dashboard application, which provides "
+"In this video, we introduce you to the Dashboard application, which provides "
 "an instant overview of key data across different applications."
 msgstr ""
 "Dans cette vidéo, je vous présente l'application Tableau de bord, qui offre une vue d'ensemble"
@@ -852,7 +852,7 @@ msgstr ""
 #: model_terms:slide.slide,html_content:elearning_data.advanced_use_analysis_intro
 msgid ""
 "In this video, we show you how to create reports in Odoo using sales "
-"analysis tools.."
+"analysis tools."
 msgstr ""
 "Dans cette vidéo, nous vous montrons comment créer des rapports dans"
 " Odoo à l'aide d'outils d'analyse des ventes."

@@ -3,7 +3,7 @@
 
 {
     "name": "eLearning - Data",
-    "summary": "An module that import data into eLearning",
+    "summary": "A module that import data into eLearning",
     "category": "Uncategorized",
     "author": "Open Net Sàrl, Adam Bonnet <adambonnet0@gmail.com>, Odoo Community Association (OCA)",  # noqa: E501
     "depends": [
