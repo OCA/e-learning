@@ -74,9 +74,13 @@ To contribute to the translation of videos into different languages, please foll
 
 1. Configure an **Odoo Community v17.0** database with demo data.
 2. Install the following modules:
-   - **Module X** (Details will be provided soon)
-   - **Module Y** (Details will be provided soon)
-   - **Module Z** (Details will be provided soon)
+   - **Contact**
+   - **Sales**
+   - **Dashboards**
+   - **Invoicing**
+   - **Purchase**
+   - **Inventory**
+   - **Employees**
 
 ### Translation Process
 
