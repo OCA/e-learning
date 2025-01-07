@@ -7,7 +7,6 @@ This document provides a set of guidelines to help you contribute to the E-Learn
 
 ## Table of Contents
 
-- [Code of Conduct](#code-of-conduct)
 - [I Just Have a Question!](#i-just-have-a-question)
 - [How Can I Contribute?](#how-can-i-contribute)
   - [Reporting Bugs](#reporting-bugs)
@@ -17,13 +16,6 @@ This document provides a set of guidelines to help you contribute to the E-Learn
 - [Guidelines for Video Translation](#guidelines-for-video-translation)
 - [Transcripts](#transcripts)
 - [Additional Notes](#additional-notes)
-
----
-
-## Code of Conduct
-
-This project and everyone participating in it are governed by the [Open Net Code of Conduct](CODE_OF_CONDUCT.md). By participating, you agree to uphold this code.  
-Please report unacceptable behavior to [support@open-net.ch](mailto:support@open-net.ch).
 
 ---
 
