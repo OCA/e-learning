@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Tecnativa - Pilar Vargas
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="slide_channel_partner_view_tree" model="ir.ui.view">
+        <field name="model">slide.channel.partner</field>
+        <field name="inherit_id" ref="website_slides.slide_channel_partner_view_tree" />
+        <field name="arch" type="xml">
+            <field name="partner_email" position="after">
+                <field name="slide_channel_partner_name" />
+                <field name="slide_channel_partner_email" />
+                <field name="slide_channel_partner_phone" />
+            </field>
+        </field>
+    </record>
+</odoo>
