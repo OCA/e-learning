@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Slide channel confirmation email -->
+    <record id="mail_template_slide_channel_confirm" model="mail.template">
+        <field name="name">Channel: Confirm Access</field>
+        <field name="model_id" ref="model_slide_channel_partner" />
+        <field
+            name="subject"
+        >Your access to {{ object.channel_id.name }} has been confirmed</field>
+        <field name="use_default_to" eval="True" />
+        <field name="body_html" type="html">
+            <div style="margin: 0px; padding: 0px; font-size: 13px;">
+                <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                    Hello <t t-out="object.partner_id.name " />,
+                </p>
+                <t t-if="object.sale_order_line_ids.product_uom_qty > 1">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        You have successfully acquired <strong><t
+                                t-out="object.available_registrations"
+                            /></strong>
+                        registrations for the course <strong><t
+                                t-out="object.channel_id.name or ''"
+                            >Course Name</t></strong>.
+                    </p>
+                    <p>
+                        To allow participants to access the course, they must complete their registration
+                        using the following link. They can either log in with their Odoo account or create a new participation.
+                    </p>
+                    <p>
+                        <div style="margin: 32px 0px 32px 0px; text-align: center;">
+                            <a
+                                t-att-href="object.invitation_link"
+                                style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;"
+                            >
+                                <t t-out="object.invitation_link" />
+                            </a>
+                        </div>
+                    </p>
+                </t>
+                <t t-else="">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Your access to the course <strong><t
+                                t-out="object.channel_id.name or ''"
+                            >Course Name</t></strong> has been confirmed.
+                    </p>
+                    <p>
+                        You can start learning by clicking the link below:
+                    </p>
+                    <p>
+                        <div style="margin: 32px 0px 32px 0px; text-align: center;">
+                            <a
+                                t-att-href="object.invitation_link"
+                                style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;"
+                            >
+                                Click here to access the course
+                            </a>
+                        </div>
+                    </p>
+                </t>
+                <p>Happy learning!</p>
+            </div>
+        </field>
+        <field name="lang">{{ object.partner_id.lang }}</field>
+        <field name="auto_delete" eval="True" />
+    </record>
+</odoo>

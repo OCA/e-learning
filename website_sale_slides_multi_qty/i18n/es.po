@@ -1,0 +1,267 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_sale_slides_multi_qty
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-06 06:24+0000\n"
+"PO-Revision-Date: 2025-05-06 08:25+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: website_sale_slides_multi_qty
+#: model:mail.template,body_html:website_sale_slides_multi_qty.mail_template_slide_channel_confirm
+msgid ""
+"<div style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                    Hello <t t-out=\"object.partner_id.name \"/>,\n"
+"                </p>\n"
+"                <t t-if=\"object.sale_order_line_ids.product_uom_qty &gt; "
+"1\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;"
+"\">\n"
+"                        You have successfully acquired <strong><t t-"
+"out=\"object.available_registrations\"/></strong>\n"
+"                        registrations for the course <strong><t t-"
+"out=\"object.channel_id.name or ''\">Course Name</t></strong>.\n"
+"                    </p>\n"
+"                    <p>\n"
+"                        To allow participants to access the course, they "
+"must complete their registration\n"
+"                        using the following link. They can either log in "
+"with their Odoo account or create a new participation.\n"
+"                    </p>\n"
+"                    <p>\n"
+"                        <div style=\"margin: 32px 0px 32px 0px; text-align: "
+"center;\">\n"
+"                            <a t-att-href=\"object.invitation_link\" "
+"style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-"
+"decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                                <t t-out=\"object.invitation_link\"/>\n"
+"                            </a>\n"
+"                        </div>\n"
+"                    </p>\n"
+"                </t>\n"
+"                <t t-else=\"\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;"
+"\">\n"
+"                        Your access to the course <strong><t t-out=\"object."
+"channel_id.name or ''\">Course Name</t></strong> has been confirmed.\n"
+"                    </p>\n"
+"                    <p>\n"
+"                        You can start learning by clicking the link below:\n"
+"                    </p>\n"
+"                    <p>\n"
+"                        <div style=\"margin: 32px 0px 32px 0px; text-align: "
+"center;\">\n"
+"                            <a t-att-href=\"object.invitation_link\" "
+"style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-"
+"decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                                Click here to access the course\n"
+"                            </a>\n"
+"                        </div>\n"
+"                    </p>\n"
+"                </t>\n"
+"                <p>Happy learning!</p>\n"
+"            </div>\n"
+"        "
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                    Hola <t t-out=\"object.partner_id.name \"/>,\n"
+"                </p>\n"
+"                <t t-if=\"object.sale_order_line_ids.product_uom_qty &gt; "
+"1\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;"
+"\">\n"
+"                        Has adquirido con éxito <strong><t t-"
+"out=\"object.available_registrations\"/></strong>\n"
+"                        inscripciones para el curso <strong><t t-"
+"out=\"object.channel_id.name or ''\">Nombre del curso</t></strong>.\n"
+"                    </p>\n"
+"                    <p>\n"
+"                        Para que los participantes accedan al curso, deben "
+"completar su inscripción\n"
+"                        utilizando el siguiente enlace. Pueden iniciar sesión "
+"con su cuenta de Odoo o crear una nueva participación.\n"
+"                    </p>\n"
+"                    <p>\n"
+"                        <div style=\"margin: 32px 0px 32px 0px; text-align: "
+"center;\">\n"
+"                            <a t-att-href=\"object.invitation_link\" "
+"style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-"
+"decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                                <t t-out=\"object.invitation_link\"/>\n"
+"                            </a>\n"
+"                        </div>\n"
+"                    </p>\n"
+"                </t>\n"
+"                <t t-else=\"\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;"
+"\">\n"
+"                        Tu acceso al curso <strong><t t-out=\"object."
+"channel_id.name or ''\">Nombre del curso</t></strong> ha sido confirmado.\n"
+"                    </p>\n"
+"                    <p>\n"
+"                        Puedes comenzar a aprender haciendo clic en el siguiente enlace:\n"
+"                    </p>\n"
+"                    <p>\n"
+"                        <div style=\"margin: 32px 0px 32px 0px; text-align: "
+"center;\">\n"
+"                            <a t-att-href=\"object.invitation_link\" "
+"style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-"
+"decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                                Haz clic aquí para acceder al curso\n"
+"                            </a>\n"
+"                        </div>\n"
+"                    </p>\n"
+"                </t>\n"
+"                <p>¡Feliz aprendizaje!</p>\n"
+"            </div>\n"
+"        "
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__available_registrations
+msgid "Available Registrations"
+msgstr "Inscripciones disponibles"
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model,name:website_sale_slides_multi_qty.model_slide_channel_partner
+msgid "Channel / Partners (Members)"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:mail.template,name:website_sale_slides_multi_qty.mail_template_slide_channel_confirm
+msgid "Channel: Confirm Access"
+msgstr "Curso: Confirmar acceso"
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__child_channel_partner_ids
+msgid "Child Participation"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model,name:website_sale_slides_multi_qty.model_slide_channel
+msgid "Course"
+msgstr "Curso"
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+msgid "Enter your ID"
+msgstr "Introduce tu DNI"
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+msgid "Enter your email"
+msgstr "Introduce tu email"
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+msgid "Enter your name"
+msgstr "Introduce tu nombre"
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+msgid "Enter your phone"
+msgstr "Introduce tu teléfono"
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+msgid "I have already joined"
+msgstr "Ya me he unido"
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__identification_number
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_slide_partner__identification_number
+msgid "Identification Number"
+msgstr "Número de identificación"
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__invitation_hash
+msgid "Invitation Hash"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__invitation_link
+msgid "Invitation Link"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__is_public_slide_channel_partner
+msgid "Is Public Slide Channel Partner"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+msgid "Join Course"
+msgstr "Unirse al curso"
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__slide_channel_partner_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: website_sale_slides_multi_qty
+#: code:addons/website_sale_slides_multi_qty/models/slide_channel.py:0
+#, python-format
+msgid "No registrations available for this course."
+msgstr "No hay inscripciones disponibles para este curso"
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__parent_id
+msgid "Parent Participation"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__slide_channel_partner_email
+msgid "Participation Email"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__slide_channel_partner_phone
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model,name:website_sale_slides_multi_qty.model_slide_slide_partner
+msgid "Slide / Partner decorated m2m"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model,name:website_sale_slides_multi_qty.model_slide_slide
+msgid "Slides"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.constraint,message:website_sale_slides_multi_qty.constraint_slide_channel_partner_unique_channel_identification
+msgid "The identification number must be unique per course!"
+msgstr "El numero de identificación debe ser único!"
+
+#. module: website_sale_slides_multi_qty
+#: code:addons/website_sale_slides_multi_qty/controllers/main.py:0
+#, python-format
+msgid "There is no participation for this key"
+msgstr "No hay ninguna participación para esta identificación"
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__used_registrations
+msgid "Used Registrations"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,help:website_sale_slides_multi_qty.field_slide_channel_partner__identification_number
+msgid "User's personal identification number"
+msgstr "Número de identificación personal del usuario"
+
+#. module: website_sale_slides_multi_qty
+#: model:mail.template,subject:website_sale_slides_multi_qty.mail_template_slide_channel_confirm
+msgid "Your access to {{ object.channel_id.name }} has been confirmed"
+msgstr "Tu acceso a {{ object.channel_id.name }} ha sido confirmado"
