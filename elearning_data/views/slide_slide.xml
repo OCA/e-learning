@@ -19,12 +19,12 @@
                         <field
                             name="elearning_url_ids"
                             widget="one2many_list"
-                            context="{'default_slide_id': active_id}"
+                            context="{'default_slide_id': id}"
                         >
-                            <tree editable="bottom">
+                            <list editable="bottom">
                                 <field name="url" />
                                 <field name="lang" />
-                            </tree>
+                            </list>
                         </field>
                     </group>
                 </page>

@@ -14,39 +14,43 @@
         <field name="name">Home page - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">2</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Home page - Introduction</h1>
-<p style="margin-bottom: 0px;"><br /></p>
-<p
+            <h1 style="margin-bottom: 0px;">Home page - Introduction</h1>
+            <p style="margin-bottom: 0px;">
+                <br />
+            </p>
+            <p
                 style="margin-bottom: 0px;"
             >In this video, we'll explore Odoo's top bar, an essential element for navigation for navigation and application management.
 </p>
-<ul style="margin-bottom: 0px;">
-	<li
+            <ul style="margin-bottom: 0px;">
+                <li
                 >This bar provides quick access to applications, chat notifications and scheduled activities.
 	</li>
-	<li>It also lets you manage personal settings and access Odoo documentation and support.
+                <li
+                >It also lets you manage personal settings and access Odoo documentation and support.
 	</li>
-</ul>
-<p><em>PS: To practice, you can use </em><a
-                    href="https://elearning-demo.odooapps.ch"
-                    target="_blank"
-                >
-	<em>elearning-demo.odooapps.ch</em> </a><em
-                >. Please note that the platform is reset every day.
+            </ul>
+            <p>
+                <em>PS: To practice, you can use </em>
+                <a href="https://elearning-demo.odooapps.ch" target="_blank">
+                    <em>elearning-demo.odooapps.ch</em>
+                </a>
+                <em>. Please note that the platform is reset every day.
 	</em>
-</p>
+            </p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_home_page_video" model="slide.slide">
         <field name="channel_id" ref="getting_started" />
         <field name="category_id" ref="getting_started_home_page" />
         <field name="name">Home page - Video</field>
-        <field
-            name="completion_time"
-        >0.034833333</field> <!-- 2 minutes and 9 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.034833333</field>
+        <!-- 2 minutes and 9 seconds -->
+        <!-- <minute> / 60 -->
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">3</field>
@@ -67,7 +71,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">4</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- HOMEPAGE -->
 
@@ -85,24 +90,31 @@
         <field name="name">Tree view - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">21</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Tree view - Introduction</h1>
-<p style="margin-bottom: 0px;"><br /></p>
-<p
+            <h1 style="margin-bottom: 0px;">Tree view - Introduction</h1>
+            <p style="margin-bottom: 0px;">
+                <br />
+            </p>
+            <p
                 style="margin-bottom: 0px;"
             >It also lets you manage personal settings and access Odoo documentation and support.</p>
-<ul style="margin-bottom: 0px;">
-	<li
+            <ul style="margin-bottom: 0px;">
+                <li
                 >You'll learn how to select and hide fields, sort records, navigate between pages and display all records at once.</li>
-	<li
+                <li
                 >You'll also discover how to perform mass actions, such as archiving or exporting multiple records, and update data on a massive scale.</li>
-	<li
+                <li
                 >Finally, we'll look at some of the other view types available in Odoo, which will be explored in more detail later.</li>
-</ul>
-<p><br /></p>
-<p><br /> </p>
+            </ul>
+            <p>
+                <br />
+            </p>
+            <p>
+                <br />
+            </p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_tree_view_video" model="slide.slide">
@@ -112,9 +124,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">22</field>
-        <field
-            name="completion_time"
-        >0.04216667</field> <!-- 2 minutes and 53 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.04216667</field>
+        <!-- 2 minutes and 53 seconds -->
+        <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -132,7 +144,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">23</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- TREE VIEW -->
 
@@ -150,26 +163,32 @@
         <field name="name">Form view - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">31</field>
         <field name="html_content" type="html">
-<h1>Form view - Introduction</h1>
-<p
+            <h1>Form view - Introduction</h1>
+            <p
                 style="margin-bottom: 0px;"
             >This module explores form views in Odoo, focusing on their practical appearance and use.</p>
-<ul style="margin-bottom: 0px;">
-	<li
+            <ul style="margin-bottom: 0px;">
+                <li
                 >We look at how form views apply to items, contacts, employees and other reference data.</li>
-	<li
+                <li
                 >You'll learn how to navigate between items and use smart buttons to access specific information such as stock forecasts and associated sales</li>
-	<li
+                <li
                 >As well as performing routine actions such as updating quantities and printing labels.</li>
-	<li
+                <li
                 >The tabs at the bottom of the screen allow you to configure various aspects of the products according to the modules installed.</li>
-	<li>We'll also take a look at how chatter works in a dedicated video.</li>
-</ul>
-<p><br /></p>
-<p><br /> </p>
+                <li
+                >We'll also take a look at how chatter works in a dedicated video.</li>
+            </ul>
+            <p>
+                <br />
+            </p>
+            <p>
+                <br />
+            </p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_form_view_video" model="slide.slide">
@@ -179,9 +198,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">32</field>
-        <field
-            name="completion_time"
-        >0.03916667</field> <!-- 2 minutes and 35 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.03916667</field>
+        <!-- 2 minutes and 35 seconds -->
+        <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -199,7 +218,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">33</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- FORM VIEW -->
 
@@ -221,27 +241,32 @@
         <field name="name">Navigation - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">41</field>
         <field name="html_content" type="html">
-<h1>Navigation - Introduction</h1>
-<p
+            <h1>Navigation - Introduction</h1>
+            <p
                 style="margin-bottom: 0px;"
             >In this video, we explore Odoo's advanced navigation features.</p>
-<ul style="margin-bottom: 0px;">
-	<li
+            <ul style="margin-bottom: 0px;">
+                <li
                 >We discover how to use the breadcrumb trail effectively to navigate between different documents such as purchase orders and associated receipts.</li>
-	<li
+                <li
                 >Hyperlinks provide easy access to supplier details and other relevant information.</li>
-	<li
+                <li
                 >Odoo also enhances productivity with keyboard shortcuts for fast navigation and instant creation of new documents.</li>
-	<li
+                <li
                 >The platform also simplifies data entry with shortcuts for dates and mathematical calculations.</li>
-	<li
+                <li
                 >Last but not least, multi-screen management is optimized thanks to the ability to open links in new tabs, enabling efficient management of simultaneous tasks.</li>
-</ul>
-<p><br /></p>
-<p><br /> </p>
+            </ul>
+            <p>
+                <br />
+            </p>
+            <p>
+                <br />
+            </p>
         </field>
     </record>
     <record
@@ -255,9 +280,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">42</field>
-        <field
-            name="completion_time"
-        >0.0535</field> <!-- 3 minutes and 21 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.0535</field>
+        <!-- 3 minutes and 21 seconds -->
+        <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -275,7 +300,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">43</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- NAVIGATION -->
 
@@ -293,24 +319,29 @@
         <field name="name">Exchanges - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">51</field>
         <field name="html_content" type="html">
-<h1>Exchanges - Introduction</h1>
-<p
+            <h1>Exchanges - Introduction</h1>
+            <p
                 style="margin-bottom: 0px;"
             >In this video, we explore the chatter, Odoo's space for exchanging and tracking activities.</p>
-<ul style="margin-bottom: 0px;">
-	<li
+            <ul style="margin-bottom: 0px;">
+                <li
                 >Present on each entity, such as employee files, purchase orders and quotations, the chatter allows you to track data modifications and interact both internally and with external contacts.</li>
-	<li
+                <li
                 >Users can exchange internal notes for private discussions, or send external messages to partners.</li>
-	<li>Chatter also facilitates document sharing.</li>
-	<li
+                <li>Chatter also facilitates document sharing.</li>
+                <li
                 >Last but not least, reminder functions allow you to plan and track tasks, ensuring complete traceability of activities within the company.</li>
-</ul>
-<p><br /></p>
-<p><br /> </p>
+            </ul>
+            <p>
+                <br />
+            </p>
+            <p>
+                <br />
+            </p>
         </field>
     </record>
     <record forcecreate="True" id="getting_started_exchange_video" model="slide.slide">
@@ -320,9 +351,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">52</field>
-        <field
-            name="completion_time"
-        >0.07516667</field> <!-- 4 minutes and 51 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.07516667</field>
+        <!-- 4 minutes and 51 seconds -->
+        <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -340,7 +371,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">53</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- EXCHANGE -->
 
@@ -366,25 +398,33 @@
         <field name="name">Filter, search and group - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">61</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Filter, search and group - Introduction</h1>
-<p style="margin-bottom: 0px;"><br /></p>
-<p
+            <h1 style="margin-bottom: 0px;">Filter, search and group - Introduction</h1>
+            <p style="margin-bottom: 0px;">
+                <br />
+            </p>
+            <p
                 style="margin-bottom: 0px;"
             >This module focuses on Odoo's advanced search and grouping features, allowing you to easily filter your records according to your specific needs.</p>
-<ul style="margin-bottom: 0px;">
-	<li
+            <ul style="margin-bottom: 0px;">
+                <li
                 >Odoo offers pre-configured filters that make it easy to visualize relevant data, whether for contacts, products or invoices.</li>
-	<li
+                <li
                 >You can adjust these default filters and perform precise searches to find exactly what you're looking for.</li>
-	<li
+                <li
                 >What's more, Odoo enables flexible grouping of records according to various criteria, providing better visual and analytical organization.</li>
-	<li>We'll explore these features in detail to optimize your use of Odoo.</li>
-</ul>
-<p><br /></p>
-<p><br /> </p>
+                <li
+                >We'll explore these features in detail to optimize your use of Odoo.</li>
+            </ul>
+            <p>
+                <br />
+            </p>
+            <p>
+                <br />
+            </p>
         </field>
     </record>
     <record
@@ -398,9 +438,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">62</field>
-        <field
-            name="completion_time"
-        >0.06783333</field> <!-- 4 minutes and 7 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.06783333</field>
+        <!-- 4 minutes and 7 seconds -->
+        <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -422,7 +462,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">63</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- FILTER, SEARCH AND GROUP -->
 
@@ -448,13 +489,20 @@
         <field name="name">Save, delete, archive, search - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">71</field>
         <field name="html_content" type="html">
-<h1>Save, delete, archive, search - Introduction</h1>
-<p><br /></p>
-<p><br /></p>
-<p><br /> </p>
+            <h1>Save, delete, archive, search - Introduction</h1>
+            <p>
+                <br />
+            </p>
+            <p>
+                <br />
+            </p>
+            <p>
+                <br />
+            </p>
         </field>
     </record>
     <record
@@ -468,9 +516,9 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">72</field>
-        <field
-            name="completion_time"
-        >0.06816667</field> <!-- 4 minutes and 9 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.06816667</field>
+        <!-- 4 minutes and 9 seconds -->
+        <!-- <minute> / 60 -->
     </record>
     <record
         forcecreate="True"
@@ -492,8 +540,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">73</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- SAVE, DELETE, ARCHIVE, SEARCH -->
-
 </odoo>

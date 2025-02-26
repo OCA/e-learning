@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-
     <!-- HOMEPAGE -->
     <!-- QUESTION 1 -->
     <record forcecreate="True" id="question_access_app_top_bar" model="slide.question">
@@ -1241,5 +1240,4 @@
         >By selecting a creation option from the main menu.</field>
     </record>
     <!-- SAVE, DELETE, ARCHIVE, SEARCH -->
-
 </odoo>

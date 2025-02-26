@@ -14,30 +14,35 @@
         <field name="name">Analysis - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">2</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Analysis - Introduction</h1>
-<p style="margin-bottom: 0px;"><br /></p>
-<p
+            <h1 style="margin-bottom: 0px;">Analysis - Introduction</h1>
+            <p style="margin-bottom: 0px;">
+                <br />
+            </p>
+            <p
                 style="margin-bottom: 0px;"
             >In this video, we show you how to create reports in Odoo using sales analysis tools.</p>
-<ul style="margin-bottom: 0px;">
-	<li
+            <ul style="margin-bottom: 0px;">
+                <li
                 >The interface lets you filter data, choose between different types of visualizations such as graphs or pivot tables, and customize the display of results.</li>
-	<li
+                <li
                 >Users can thus obtain a detailed, interactive view of their sales, grouping data according to different criteria and exporting the results for further analysis.</li>
-</ul>
-<p><br /> </p>
+            </ul>
+            <p>
+                <br />
+            </p>
         </field>
     </record>
     <record forcecreate="True" id="advanced_use_analysis_video" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_analysis" />
         <field name="name">Analysis - Video</field>
-        <field
-            name="completion_time"
-        >0.0695</field> <!-- 2 minutes and 9 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.0695</field>
+        <!-- 2 minutes and 9 seconds -->
+        <!-- <minute> / 60 -->
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">3</field>
@@ -58,7 +63,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">4</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- ANALYSIS -->
 
@@ -84,24 +90,33 @@
         <field name="name">Custom filters and groupings - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">12</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Custom filters and groupings - Introduction</h1>
-<p style="margin-bottom: 0px;"><br /></p>
-<p
+            <h1
+                style="margin-bottom: 0px;"
+            >Custom filters and groupings - Introduction</h1>
+            <p style="margin-bottom: 0px;">
+                <br />
+            </p>
+            <p
                 style="margin-bottom: 0px;"
             >In this video, we explore advanced customization of Odoo's search functionality.</p>
-<ul style="margin-bottom: 0px;">
-	<li
+            <ul style="margin-bottom: 0px;">
+                <li
                 >We focus on creating customized filters and groupings, applicable not only to contacts, but also to items, invoices, and any other section where the search bar is present.</li>
-	<li
+                <li
                 >For example, you'll learn how to group contacts by status and create filters to quickly find specific information, such as all contacts based in France or those residing in Pleasant Hill and holding the position of analyst.</li>
-	<li
+                <li
                 >This customization allows you to fully exploit the power of Odoo's search tool for greater efficiency.</li>
-</ul>
-<p style="margin-bottom: 0px;"><br /></p>
-<p><br /> </p>
+            </ul>
+            <p style="margin-bottom: 0px;">
+                <br />
+            </p>
+            <p>
+                <br />
+            </p>
         </field>
     </record>
     <record
@@ -112,9 +127,9 @@
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_custom_filter_groupby" />
         <field name="name">Custom filters and groupings - Video</field>
-        <field
-            name="completion_time"
-        >0.06783333</field> <!-- 4 minutes and 7 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.06783333</field>
+        <!-- 4 minutes and 7 seconds -->
+        <!-- <minute> / 60 -->
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">13</field>
@@ -139,7 +154,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">14</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- CUSTOM FILTERS AND GROUPINGS -->
 
@@ -157,32 +173,37 @@
         <field name="name">Dashboards - Introduction</field>
         <field name="is_published" eval="True" />
         <field name="slide_category">article</field>
-        <field name="completion_time">0.01666667</field> <!-- 1 minutes -->
+        <field name="completion_time">0.01666667</field>
+        <!-- 1 minutes -->
         <field name="sequence">22</field>
         <field name="html_content" type="html">
-<h1 style="margin-bottom: 0px;">Dashboards - Introduction</h1>
-<p style="margin-bottom: 0px;"><br /></p>
-<p
+            <h1 style="margin-bottom: 0px;">Dashboards - Introduction</h1>
+            <p style="margin-bottom: 0px;">
+                <br />
+            </p>
+            <p
                 style="margin-bottom: 0px;"
             >In this video, we introduce you to the Dashboard application, which provides an instant overview of key data across different applications.</p>
-<ul style="margin-bottom: 0px;">
-	<li
+            <ul style="margin-bottom: 0px;">
+                <li
                 >The filter bar at the top lets you select criteria such as country, supplier, product category, specific product and buyer.</li>
-	<li
+                <li
                 >Tables display key metrics for purchases, with time trend graphs and lists of top results.</li>
-	<li
+                <li
                 >These tables are interactive, allowing you to click on items such as order numbers to see details, or apply filters with a single click to adjust the data.</li>
-</ul>
-<p><br /> </p>
+            </ul>
+            <p>
+                <br />
+            </p>
         </field>
     </record>
     <record forcecreate="True" id="advanced_use_dashboard_video" model="slide.slide">
         <field name="channel_id" ref="advanced_use" />
         <field name="category_id" ref="advanced_use_dashboard" />
         <field name="name">Dashboards - Video</field>
-        <field
-            name="completion_time"
-        >0.02633333</field> <!-- 1 minutes and 58 seconds --> <!-- <minute> / 60 -->
+        <field name="completion_time">0.02633333</field>
+        <!-- 1 minutes and 58 seconds -->
+        <!-- <minute> / 60 -->
         <field name="is_published" eval="True" />
         <field name="slide_category">video</field>
         <field name="sequence">23</field>
@@ -203,7 +224,8 @@
         <field name="is_published" eval="True" />
         <field name="slide_category">quiz</field>
         <field name="sequence">24</field>
-        <field name="completion_time">0.08333333</field> <!-- 5 minutes -->
+        <field name="completion_time">0.08333333</field>
+        <!-- 5 minutes -->
     </record>
     <!-- DASHBOARDS -->
 </odoo>
