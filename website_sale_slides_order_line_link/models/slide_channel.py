@@ -21,7 +21,8 @@ class SlideChannelPartner(models.Model):
             return records
         for record in records:
             record.sale_order_line_ids = sale_order_lines.filtered(
-                lambda line: line.product_id == record.channel_id.product_id
+                lambda line, record=record: line.product_id
+                == record.channel_id.product_id
                 and line.order_id.partner_id == record.partner_id
             )
         return records

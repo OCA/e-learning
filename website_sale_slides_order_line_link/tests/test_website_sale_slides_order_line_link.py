@@ -1,5 +1,7 @@
 # Copyright 2025 Tecnativa - Pilar Vargas
 
+from odoo import Command
+
 from odoo.addons.website_slides.tests import common
 
 
@@ -25,9 +27,7 @@ class TestWebsiteSaleSlidesOrderLineLink(common.SlidesCase):
             {
                 "partner_id": self.customer.id,
                 "order_line": [
-                    (
-                        0,
-                        0,
+                    Command.create(
                         {
                             "name": self.course_product.name,
                             "product_id": self.course_product.id,
