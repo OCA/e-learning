@@ -369,14 +369,16 @@ ul.auto-toc {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! source digest: sha256:19435eaa737786d8ff0205ea389c434edf20ccbe7d95e8b24f9528e93918d112
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/OCA/e-learning/tree/15.0/website_sale_slides_order_line_link"><img alt="OCA/e-learning" src="https://img.shields.io/badge/github-OCA%2Fe--learning-lightgray.png?logo=github" /></a> <a class="reference external image-reference" href="https://translation.odoo-community.org/projects/e-learning-15-0/e-learning-15-0-website_sale_slides_order_line_link"><img alt="Translate me on Weblate" src="https://img.shields.io/badge/weblate-Translate%20me-F47D42.png" /></a> <a class="reference external image-reference" href="https://runboat.odoo-community.org/builds?repo=OCA/e-learning&amp;target_branch=15.0"><img alt="Try me on Runboat" src="https://img.shields.io/badge/runboat-Try%20me-875A7B.png" /></a></p>
-<p>This module links sales order lines to <cite>slide.channel.partner</cite> participations when
-selling a course. It does not add new views or user interface elements but ensures
-that when a course is sold through Odoo’s eLearning system, the corresponding sales
-order line is associated with the participation record.</p>
+<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/OCA/e-learning/tree/17.0/website_sale_slides_order_line_link"><img alt="OCA/e-learning" src="https://img.shields.io/badge/github-OCA%2Fe--learning-lightgray.png?logo=github" /></a> <a class="reference external image-reference" href="https://translation.odoo-community.org/projects/e-learning-17-0/e-learning-17-0-website_sale_slides_order_line_link"><img alt="Translate me on Weblate" src="https://img.shields.io/badge/weblate-Translate%20me-F47D42.png" /></a> <a class="reference external image-reference" href="https://runboat.odoo-community.org/builds?repo=OCA/e-learning&amp;target_branch=17.0"><img alt="Try me on Runboat" src="https://img.shields.io/badge/runboat-Try%20me-875A7B.png" /></a></p>
+<p>This module links sales order lines to slide.channel.partner
+participations when selling a course. It does not add new views or user
+interface elements but ensures that when a course is sold through Odoo’s
+eLearning system, the corresponding sales order line is associated with
+the participation record.</p>
 <p>This functionality is useful for:</p>
 <ul class="simple">
-<li>Tracking which sale order line is responsible for a given course participation.</li>
+<li>Tracking which sale order line is responsible for a given course
+participation.</li>
 <li>Ensuring better traceability between sales and enrollments.</li>
 <li>Serving as a base for other modules that may extend its logic.</li>
 </ul>
@@ -396,10 +398,12 @@ order line is associated with the participation record.</p>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-1">Usage</a></h1>
 <ol class="arabic simple">
-<li>Create a new sales order containing a course (linked to a <cite>slide.channel</cite>).</li>
+<li>Create a new sales order containing a course (linked to a
+slide.channel).</li>
 <li>Confirm the order.</li>
-<li>The system will automatically create a participation (<cite>slide.channel.partner</cite>) and
-link it to the corresponding sales order line.</li>
+<li>The system will automatically create a participation
+(slide.channel.partner) and link it to the corresponding sales order
+line.</li>
 </ol>
 </div>
 <div class="section" id="bug-tracker">
@@ -407,7 +411,7 @@ link it to the corresponding sales order line.</li>
 <p>Bugs are tracked on <a class="reference external" href="https://github.com/OCA/e-learning/issues">GitHub Issues</a>.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-<a class="reference external" href="https://github.com/OCA/e-learning/issues/new?body=module:%20website_sale_slides_order_line_link%0Aversion:%2015.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
+<a class="reference external" href="https://github.com/OCA/e-learning/issues/new?body=module:%20website_sale_slides_order_line_link%0Aversion:%2017.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
 <p>Do not contact contributors directly about support or help with technical issues.</p>
 </div>
 <div class="section" id="credits">
@@ -437,7 +441,7 @@ If you spotted it first, help us to smash it by providing a detailed and welcome
 <p>OCA, or the Odoo Community Association, is a nonprofit organization whose
 mission is to support the collaborative development of Odoo features and
 promote its widespread use.</p>
-<p>This module is part of the <a class="reference external" href="https://github.com/OCA/e-learning/tree/15.0/website_sale_slides_order_line_link">OCA/e-learning</a> project on GitHub.</p>
+<p>This module is part of the <a class="reference external" href="https://github.com/OCA/e-learning/tree/17.0/website_sale_slides_order_line_link">OCA/e-learning</a> project on GitHub.</p>
 <p>You are welcome to contribute. To learn how please visit <a class="reference external" href="https://odoo-community.org/page/Contribute">https://odoo-community.org/page/Contribute</a>.</p>
 </div>
 </div>
