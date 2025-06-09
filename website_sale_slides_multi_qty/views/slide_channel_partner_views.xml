@@ -8,6 +8,7 @@
         <field name="arch" type="xml">
             <field name="partner_email" position="after">
                 <field name="slide_channel_partner_name" />
+                <field name="identification_number" />
                 <field name="slide_channel_partner_email" />
                 <field name="slide_channel_partner_phone" />
             </field>

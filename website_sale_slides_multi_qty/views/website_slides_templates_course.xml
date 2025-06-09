@@ -2,8 +2,8 @@
 <!-- Copyright 2025 Tecnativa - Pilar Vargas
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-    <template id="course_sidebar" inherit_id="website_slides.course_sidebar">
-        <xpath expr="//t[@t-if='channel.is_member']" position="after">
+    <template id="course_join" inherit_id="website_slides.course_join" priority="9999">
+        <xpath expr="//t[@t-elif='channel.is_member']" position="before">
             <t t-if="channel_error">
                 <div class="alert alert-warning" role="alert">
                     <t t-out="channel_error" />
@@ -38,7 +38,7 @@
                         id="slide_channel_partner_name"
                         name="slide_channel_partner_name"
                         class="form-control my-2"
-                        placeholder="Enter your name"
+                        placeholder="Enter your first and last name"
                         required="required"
                     />
                     <input
@@ -80,19 +80,28 @@
                             >terms and conditions</a>
                         </label>
                     </div>
-                    <button
-                        type="submit"
-                        class="btn btn-primary btn-block"
-                    >Join Course</button>
-                    <a
-                        role="button"
-                        id="toggle_key_access"
-                        class="btn btn-secondary btn-block text-white"
-                    >I have already joined</a>
+                    <div class="d-grid gap-2">
+                        <button
+                            type="submit"
+                            id="join_course_submit"
+                            class="btn btn-primary"
+                        >Join Course</button>
+                        <a
+                            role="button"
+                            id="toggle_key_access"
+                            class="btn btn-secondary"
+                        >I have already joined</a>
+                    </div>
                 </form>
             </t>
         </xpath>
-        <xpath expr="//t[@t-if='channel.is_member']" position="attributes">
+        <xpath expr="//t[@t-elif='channel.is_member']" position="attributes">
+            <attribute name="t-elif" add="and not can_enroll" separator=" " />
+        </xpath>
+        <xpath
+            expr="//*[contains(@t-if, 'channel.enroll') and contains(@t-if, 'payment')]"
+            position="attributes"
+        >
             <attribute name="t-if" add="and not can_enroll" separator=" " />
         </xpath>
     </template>

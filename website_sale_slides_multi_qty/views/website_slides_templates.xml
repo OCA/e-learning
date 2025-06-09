@@ -9,7 +9,7 @@
         <xpath expr="//a[@id='add_to_cart']/../../../.." position="attributes">
                 <attribute name="t-if">not can_enroll</attribute>
         </xpath>
-        <xpath expr="//t[@t-else='']/div" position="attributes">
+        <xpath expr="//t[@t-elif='not channel.is_member']/div" position="attributes">
                 <attribute name="t-if">not can_enroll</attribute>
         </xpath>
     </template>

@@ -32,7 +32,7 @@
                                 t-att-href="object.invitation_link"
                                 style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;"
                             >
-                                <t t-out="object.invitation_link" />
+                                Click here to access the course
                             </a>
                         </div>
                     </p>

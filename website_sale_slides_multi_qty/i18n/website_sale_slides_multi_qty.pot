@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 06:24+0000\n"
-"PO-Revision-Date: 2025-05-06 06:24+0000\n"
+"POT-Creation-Date: 2025-09-24 09:53+0000\n"
+"PO-Revision-Date: 2025-09-24 09:53+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,11 @@ msgstr ""
 msgid ""
 "<div style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
 "                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
-"                    Hello <t t-out=\"object.partner_id.name \"/>,\n"
+"                    Hello <t t-out=\"object.partner_id.name \"></t>,\n"
 "                </p>\n"
 "                <t t-if=\"object.sale_order_line_ids.product_uom_qty &gt; 1\">\n"
 "                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
-"                        You have successfully acquired <strong><t t-out=\"object.available_registrations\"/></strong>\n"
+"                        You have successfully acquired <strong><t t-out=\"object.available_registrations\"></t></strong>\n"
 "                        registrations for the course <strong><t t-out=\"object.channel_id.name or ''\">Course Name</t></strong>.\n"
 "                    </p>\n"
 "                    <p>\n"
@@ -34,7 +34,7 @@ msgid ""
 "                    <p>\n"
 "                        <div style=\"margin: 32px 0px 32px 0px; text-align: center;\">\n"
 "                            <a t-att-href=\"object.invitation_link\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
-"                                <t t-out=\"object.invitation_link\"/>\n"
+"                                Click here to access the course\n"
 "                            </a>\n"
 "                        </div>\n"
 "                    </p>\n"
@@ -80,32 +80,42 @@ msgid "Child Participation"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
+#: model:ir.model.constraint,message:website_sale_slides_multi_qty.constraint_slide_slide_partner_slide_partner_uniq
+msgid "Constraint disabled: allowing repeated partner on the same slide."
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
 #: model:ir.model,name:website_sale_slides_multi_qty.model_slide_channel
 msgid "Course"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_join
 msgid "Enter your ID"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_join
 msgid "Enter your email"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
-msgid "Enter your name"
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_join
+msgid "Enter your first and last name"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_join
 msgid "Enter your phone"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_join
+msgid "I accept the"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_join
 msgid "I have already joined"
 msgstr ""
 
@@ -113,6 +123,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__identification_number
 #: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_slide_partner__identification_number
 msgid "Identification Number"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#. odoo-python
+#: code:addons/website_sale_slides_multi_qty/controllers/main.py:0
+#, python-format
+msgid "Invalid identification number."
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
@@ -131,7 +148,7 @@ msgid "Is Public Slide Channel Partner"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_sidebar
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_join
 msgid "Join Course"
 msgstr ""
 
@@ -141,6 +158,7 @@ msgid "Name"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
+#. odoo-python
 #: code:addons/website_sale_slides_multi_qty/models/slide_channel.py:0
 #, python-format
 msgid "No registrations available for this course."
@@ -162,6 +180,11 @@ msgid "Phone"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
+#: model:ir.model,name:website_sale_slides_multi_qty.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
 #: model:ir.model,name:website_sale_slides_multi_qty.model_slide_slide_partner
 msgid "Slide / Partner decorated m2m"
 msgstr ""
@@ -172,11 +195,22 @@ msgid "Slides"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
+#: model:ir.model.constraint,message:website_sale_slides_multi_qty.constraint_slide_channel_partner_channel_partner_uniq
+msgid "Temporal constraint disabled"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
 #: model:ir.model.constraint,message:website_sale_slides_multi_qty.constraint_slide_channel_partner_unique_channel_identification
 msgid "The identification number must be unique per course!"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
+#: model:ir.model.constraint,message:website_sale_slides_multi_qty.constraint_slide_slide_partner_unique_slide_identification
+msgid "The identification number must be unique!"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#. odoo-python
 #: code:addons/website_sale_slides_multi_qty/controllers/main.py:0
 #, python-format
 msgid "There is no participation for this key"
@@ -195,4 +229,9 @@ msgstr ""
 #. module: website_sale_slides_multi_qty
 #: model:mail.template,subject:website_sale_slides_multi_qty.mail_template_slide_channel_confirm
 msgid "Your access to {{ object.channel_id.name }} has been confirmed"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.course_join
+msgid "terms and conditions"
 msgstr ""
