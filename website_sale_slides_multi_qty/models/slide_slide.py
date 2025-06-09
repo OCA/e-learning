@@ -10,6 +10,19 @@ class SlideSlidePartner(models.Model):
 
     identification_number = fields.Char()
 
+    _sql_constraints = [
+        (
+            "slide_partner_uniq",
+            "CHECK (true)",
+            "Constraint disabled: allowing repeated partner on the same slide.",
+        ),
+        (
+            "unique_slide_identification",
+            "unique(slide_id, identification_number)",
+            "The identification number must be unique!",
+        ),
+    ]
+
 
 class SlideSlide(models.Model):
     _inherit = "slide.slide"
@@ -89,16 +102,8 @@ class SlideSlide(models.Model):
                 ]
             )
             if quiz_attempts_inc and existing_sudo:
-                sql.increment_field_skiplock(existing_sudo, "quiz_attempts_count")
-                SlidePartnerSudo.invalidate_cache(
-                    fnames=["quiz_attempts_count"], ids=existing_sudo.ids
-                )
-            for slide in existing_sudo:
-                if (
-                    slide.slide_id.slide_type != "quiz"
-                    or not slide.slide_id.question_ids
-                ):
-                    slide.slide_id.action_set_completed()
+                sql.increment_fields_skiplock(existing_sudo, "quiz_attempts_count")
+                existing_sudo.invalidate_recordset(["quiz_attempts_count"])
             new_slides = self_sudo - existing_sudo.mapped("slide_id")
             return SlidePartnerSudo.create(
                 [
@@ -117,7 +122,7 @@ class SlideSlide(models.Model):
             target_partner, quiz_attempts_inc=quiz_attempts_inc
         )
 
-    def _action_set_completed(self, target_partner):
+    def _action_mark_completed(self):
         if self._is_public_with_key():
             invite_partner_id = request.session.get("invite_partner_id")
             identification_number = request.session.get("identification_number")
@@ -150,11 +155,11 @@ class SlideSlide(models.Model):
                 ]
             )
             return True
-        return super()._action_set_completed(target_partner)
+        return super()._action_mark_completed()
 
-    def _action_set_quiz_done(self):
+    def _action_set_quiz_done(self, completed=True):
         points_before = self.env.user.karma
-        res = super()._action_set_quiz_done()
+        res = super()._action_set_quiz_done(completed=completed)
         # If the user is public with password, resets the points to the previous value.
         if self.env.user._is_public() and any(
             slide.user_membership_id.identification_number for slide in self
@@ -233,4 +238,4 @@ class SlideSlide(models.Model):
     def check_access_rule(self, operation):
         if self._is_public_with_key():
             return
-        return super(SlideSlide, self).check_access_rule(operation)
+        return super().check_access_rule(operation)

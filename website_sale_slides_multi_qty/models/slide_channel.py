@@ -1,7 +1,7 @@
 # Copyright 2025 Tecnativa - Pilar Vargas
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import _, api, fields, models, tools
+from odoo import _, api, fields, models
 from odoo.http import request
 
 
@@ -21,8 +21,8 @@ class SlideChannel(models.Model):
             )
         return False
 
-    def _compute_is_member(self):
-        res = super()._compute_is_member()
+    def _compute_membership_values(self):
+        res = super()._compute_membership_values()
         if self._is_public_with_key():
             channel_partner = (
                 self.env["slide.channel.partner"]
@@ -61,10 +61,13 @@ class SlideChannel(models.Model):
                     ]
                 )
             )
-            mapped_data = {
-                info.channel_id.id: (info.completed, info.completed_slides_count)
+            mapped_data = dict(
+                (
+                    info.channel_id.id,
+                    (info.member_status == "completed", info.completed_slides_count),
+                )
                 for info in current_user_info
-            }
+            )
             for record in self:
                 completed, completed_slides_count = mapped_data.get(
                     record.id, (False, 0)
@@ -80,9 +83,13 @@ class SlideChannel(models.Model):
         else:
             return super()._compute_user_statistics()
 
-    # def _compute_action_rights(self):
-
-    def _action_add_members(self, target_partners, **member_values):
+    def _action_add_members(
+        self,
+        target_partners,
+        member_status="joined",
+        raise_on_access=False,
+        **member_values,
+    ):
         # Create sub-participations
         parent_channel_partner = member_values.get("parent_channel_partner", False)
         to_create_values = {}
@@ -121,7 +128,11 @@ class SlideChannel(models.Model):
             new_target_partners = target_partners.filtered(
                 lambda x: x.id not in self.channel_partner_ids.partner_id.ids
             )
-        res = super()._action_add_members(target_partners, **member_values)
+        res = super()._action_add_members(
+            target_partners,
+            member_status=member_status,
+            raise_on_access=raise_on_access,
+        )
         if new_target_partners:
             for target in self.channel_partner_ids.filtered(
                 lambda x: x.partner_id.id in new_target_partners.ids
@@ -150,8 +161,8 @@ class SlideChannelPartner(models.Model):
     used_registrations = fields.Integer(
         compute="_compute_used_registrations", store=True
     )
-    invitation_hash = fields.Char(compute="_compute_invitation", store=True)
-    invitation_link = fields.Char(compute="_compute_invitation", store=True)
+    invitation_hash = fields.Char(compute="_compute_invitation_link", store=True)
+    invitation_link = fields.Char(store=True)
     slide_channel_partner_name = fields.Char(string="Name")
     slide_channel_partner_email = fields.Char(string="Participation Email")
     slide_channel_partner_phone = fields.Char(string="Phone")
@@ -161,11 +172,12 @@ class SlideChannelPartner(models.Model):
     is_public_slide_channel_partner = fields.Boolean(default=False)
 
     _sql_constraints = [
+        ("channel_partner_uniq", "CHECK (true)", "Temporal constraint disabled"),
         (
             "unique_channel_identification",
             "unique(channel_id, identification_number)",
             "The identification number must be unique per course!",
-        )
+        ),
     ]
 
     @api.depends("sale_order_line_ids.product_uom_qty")
@@ -180,18 +192,11 @@ class SlideChannelPartner(models.Model):
             record.used_registrations = len(record.child_channel_partner_ids)
 
     @api.depends("channel_id", "partner_id")
-    def _compute_invitation(self):
-        # This sets the url used as hyperlink in the channel invitation email in
-        # template mail_notification_channel_invite.
-        # The partner_id is given in the url, as well as a hash based on the partner
-        # and channel id.
+    def _compute_invitation_link(self):
+        res = super()._compute_invitation_link()
         for record in self:
             record.invitation_hash = record._get_invitation_hash()
-            record.invitation_link = (
-                f"{record.channel_id.get_base_url()}/slides/{record.channel_id.id}"
-                f"/invite?invite_partner_id={record.partner_id.id}"
-                f"&invite_hash={record.invitation_hash}"
-            )
+        return res
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -208,57 +213,52 @@ class SlideChannelPartner(models.Model):
         return super().create(vals_list)
 
     def _recompute_completion(self):
-        if not self.channel_id._is_public_with_key():
+        slide_channel_partners = self.filtered(lambda scp: scp.identification_number)
+        if not slide_channel_partners:
             return super()._recompute_completion()
-        identification_number = request.session.get("identification_number", False)
-        # Obtain progress only from the participation of the user with current password
         read_group_res = (
             self.env["slide.slide.partner"]
             .sudo()
-            .read_group(
+            ._read_group(
                 [
                     ("channel_id", "in", self.mapped("channel_id").ids),
-                    ("identification_number", "=", identification_number),
+                    ("identification_number", "!=", False),
                     ("completed", "=", True),
                     ("slide_id.is_published", "=", True),
                     ("slide_id.active", "=", True),
                 ],
-                ["channel_id"],
-                groupby=["channel_id"],
-                lazy=False,
+                ["channel_id", "identification_number"],
+                aggregates=["__count"],
             )
         )
         mapped_data = {
-            item["channel_id"][0]: item["__count"] for item in read_group_res
+            (channel.id, identification_number): count
+            for channel, identification_number, count in read_group_res
         }
-        # Filter only shares that have an ID number
-        for record in self.filtered("identification_number"):
-            if record.identification_number != identification_number:
+        for record in slide_channel_partners:
+            if record.member_status in ("completed", "invited"):
                 continue
-            completed_slides_count = mapped_data.get(record.channel_id.id, 0)
-            record.completed_slides_count = completed_slides_count
-            record.completion = (
-                100.0
-                if record.completed
-                else round(
-                    100.0
-                    * completed_slides_count
-                    / (record.channel_id.total_slides or 1)
-                )
+            record.completed_slides_count = mapped_data.get(
+                (record.channel_id.id, record.identification_number), 0
             )
-            if (
-                not record.completed
-                and record.channel_id.active
-                and completed_slides_count >= record.channel_id.total_slides
-            ):
-                record.completed = True
-
-    def _get_invitation_hash(self):
-        # Returns the invitation hash of the attendee, used to access courses
-        # as invited / joined.
-        self.ensure_one()
-        token = (self.partner_id.id, self.channel_id.id)
-        return tools.hmac(self.env(su=True), "website_slides-channel-invite", token)
+            record.completion = round(
+                100.0
+                * record.completed_slides_count
+                / (record.channel_id.total_slides or 1)
+            )
+            if not record.channel_id.active:
+                continue
+            if record.completion == 100:
+                record.member_status = "completed"
+            elif record.completion == 0:
+                record.member_status = "joined"
+            else:
+                record.member_status = "ongoing"
+        return super(
+            SlideChannelPartner,
+            self.filtered(lambda scp: not scp.child_channel_partner_ids)
+            - slide_channel_partners,
+        )._recompute_completion()
 
     def _send_confirm_mail(self):
         self.ensure_one()
