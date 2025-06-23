@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="course_slides_list_slide"
+        inherit_id="website_slides.course_slides_list_slide"
+    >
+        <xpath
+            expr="//a[hasclass('o_wslides_js_slides_list_slide_link')]"
+            position="attributes"
+        >
+            <attribute
+                name="t-if"
+            >(slide.is_preview or channel.is_member or channel.can_publish) and not slide.is_blocked</attribute>
+        </xpath>
+
+    </template>
+</odoo>

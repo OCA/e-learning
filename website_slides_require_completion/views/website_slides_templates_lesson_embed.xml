@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<odoo>
+    <template
+        id="slide_aside_training_category"
+        inherit_id="website_slides.slide_aside_training_category"
+    >
+        <xpath expr="//t[@t-set='can_access']" position="attributes">
+            <attribute name="t-value">
+                (aside_slide.is_preview or can_access_channel) and not aside_slide.is_blocked
+            </attribute>
+        </xpath>
+    </template>
+</odoo>
