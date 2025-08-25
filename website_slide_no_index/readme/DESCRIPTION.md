@@ -1,0 +1,1 @@
+Unpublished eLearning courses will no longer appear in search engine results. This ensures that only content marked as published is visible to the public, helping to avoid premature exposure and keeping the website content clean and intentional.
