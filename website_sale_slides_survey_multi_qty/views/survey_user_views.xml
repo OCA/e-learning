@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Tecnativa - Pilar Vargas
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="survey_user_input_view_tree" model="ir.ui.view">
+        <field name="model">survey.user_input</field>
+        <field name="inherit_id" ref="survey.survey_user_input_view_tree" />
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="slide_channel_partner_name" />
+                <field name="slide_channel_partner_email" />
+                <field name="slide_channel_partner_phone" />
+            </field>
+        </field>
+    </record>
+</odoo>
