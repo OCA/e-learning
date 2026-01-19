@@ -50,7 +50,7 @@ class TestWebsiteSaleSlidesMultiQty(common.SlidesCase, HttpCase):
         self.sale_order.action_confirm()
         mail = self.env["mail.mail"].search(
             [
-                ("model", "=", "slide.channel.partner"),
+                ("model", "=", "sale.order"),
                 ("res_id", "!=", False),
                 ("subject", "ilike", "Your access to"),
                 ("recipient_ids", "in", [self.customer.id]),

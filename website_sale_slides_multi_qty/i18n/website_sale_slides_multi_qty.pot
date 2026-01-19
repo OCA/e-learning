@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 09:53+0000\n"
-"PO-Revision-Date: 2025-09-24 09:53+0000\n"
+"POT-Creation-Date: 2026-01-30 09:46+0000\n"
+"PO-Revision-Date: 2026-01-30 09:46+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -180,6 +180,16 @@ msgid "Phone"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.slide_channel_partner_view_tree
+msgid "Remaining"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model:ir.model.fields,field_description:website_sale_slides_multi_qty.field_slide_channel_partner__remaining_registrations
+msgid "Remaining Registrations"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
 #: model:ir.model,name:website_sale_slides_multi_qty.model_sale_order
 msgid "Sales Order"
 msgstr ""
@@ -214,6 +224,16 @@ msgstr ""
 #: code:addons/website_sale_slides_multi_qty/controllers/main.py:0
 #, python-format
 msgid "There is no participation for this key"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.slide_channel_partner_view_tree
+msgid "Total"
+msgstr ""
+
+#. module: website_sale_slides_multi_qty
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_multi_qty.slide_channel_partner_view_tree
+msgid "Used"
 msgstr ""
 
 #. module: website_sale_slides_multi_qty
