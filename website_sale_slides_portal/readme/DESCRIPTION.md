@@ -1,0 +1,1 @@
+This module extends the Odoo portal to allow customers to view the courses purchased by their commercial entity through the website.
