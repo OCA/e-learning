@@ -24,20 +24,17 @@ class SlideChannelPartner(models.Model):
                     ("slide_id.is_published", "=", True),
                     ("slide_id.active", "=", True),
                 ],
-                ["channel_id", "partner_id", "slide_id:array_agg"],
-                groupby=["channel_id", "partner_id"],
-                lazy=False,
+                ["channel_id", "partner_id"],
+                aggregates=["slide_id:recordset"],
             )
         )
-        mapped_data = dict()
-        Slide = self.env["slide.slide"]
-        for item in read_group_res:
-            mapped_data.setdefault(item["channel_id"][0], dict())
-            mapped_data[item["channel_id"][0]][item["partner_id"][0]] = sum(
-                Slide.browse(set(item["slide_id"])).mapped("completion_time"), 0.0
-            )
+        mapped_data = {
+            (channel.id, partner.id): sum(slides.mapped("completion_time"), 0.0)
+            for channel, partner, slides in read_group_res
+        }
+
         for record in self:
-            record.completed_time = mapped_data.get(record.channel_id.id, dict()).get(
-                record.partner_id.id, 0.0
+            record.completed_time = mapped_data.get(
+                (record.channel_id.id, record.partner_id.id), 0.0
             )
         return res

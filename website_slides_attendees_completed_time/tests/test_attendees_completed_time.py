@@ -4,18 +4,13 @@ from odoo.tools import mute_logger
 from odoo.addons.website_slides.tests import common
 
 
-@tagged("-at_install", "post_install")
+@tagged("functional")
 class TestAttendeesCompletedTime(common.SlidesCase):
     @mute_logger("odoo.models")
     def test_channel_attendees_completed_time(self):
         channel_publisher = self.channel.with_user(self.user_officer)
-        channel_publisher.write(
-            {
-                "enroll": "invite",
-            }
-        )
+        channel_publisher.enroll = "invite"
         channel_publisher._action_add_members(self.user_emp.partner_id)
-        self.channel.with_user(self.user_emp)
 
         members = self.env["slide.channel.partner"].search(
             [("channel_id", "=", self.channel.id)]
@@ -32,7 +27,6 @@ class TestAttendeesCompletedTime(common.SlidesCase):
         self.assertEqual(member_emp.completed_time, 0)
 
         slides_emp.action_mark_completed()
-
         slides_emp_completed_time = sum(slides_emp.mapped("completion_time"))
         self.assertEqual(member_emp.completed_time, slides_emp_completed_time)
         self.slide_3.with_user(self.user_emp)._action_mark_completed()
@@ -67,7 +61,7 @@ class TestAttendeesCompletedTime(common.SlidesCase):
         )
 
         # Shouln't update completed_time when a new published slide is created
-        self.slide_4 = self.slide_3.copy({"is_published": True})
+        self.slide_4 = self.slide_3.copy({"is_published": True, "question_ids": []})
         self.assertEqual(member_emp.completed_time, slides_emp_completed_time)
         self.assertEqual(
             member_publisher.completed_time, slides_publisher_completed_time
@@ -79,19 +73,28 @@ class TestAttendeesCompletedTime(common.SlidesCase):
         self.assertEqual(
             member_publisher.completed_time, slides_publisher_completed_time
         )
+        self.slide_4.is_published = True
 
-        # Should update completed_time when slide is marked as uncompleted
-        self.slide.with_user(self.user_emp).action_mark_uncompleted()
-        slides_emp_completed_time -= self.slide.completion_time
+        # Should update completed_time when a already_completed slide is unlinked
+        slides_publisher_completed_time += self.slide_4.completion_time
+        self.slide_4.with_user(self.user_officer).action_mark_completed()
+        self.assertEqual(
+            member_publisher.completed_time, slides_publisher_completed_time
+        )
+        slides_publisher_completed_time -= self.slide_4.completion_time
+        self.slide_4.with_user(self.user_manager).unlink()
         self.assertEqual(member_emp.completed_time, slides_emp_completed_time)
         self.assertEqual(
             member_publisher.completed_time, slides_publisher_completed_time
         )
 
-        # Should update completed_time when a slide is unlinked
+        # Should update completed_time when slide is marked as uncompleted
         slides_publisher_completed_time -= self.slide.completion_time
-        self.slide.with_user(self.user_manager).unlink()
-        self.assertEqual(member_emp.completed_time, slides_emp_completed_time)
+        slide_publisher = self.slide.with_user(self.user_officer)
+        slide_publisher.action_mark_uncompleted()
+        self.assertEqual(
+            member_publisher.completed_time, slides_publisher_completed_time
+        )
         self.assertEqual(
             member_publisher.completed_time, slides_publisher_completed_time
         )

@@ -2,10 +2,6 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
 
-from odoo import SUPERUSER_ID, api
-
-
-def channel_partner_recompute_completion(cr, registry):
-    env = api.Environment(cr, SUPERUSER_ID, {})
+def channel_partner_recompute_completion(env):
     env["slide.channel.partner"].search([])._recompute_completion()
     return

@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 =======================================
 Website Slides Attendees Completed Time
 =======================================
@@ -17,17 +13,17 @@ Website Slides Attendees Completed Time
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fe--learning-lightgray.png?logo=github
-    :target: https://github.com/OCA/e-learning/tree/16.0/website_slides_attendees_completed_time
+    :target: https://github.com/OCA/e-learning/tree/17.0/website_slides_attendees_completed_time
     :alt: OCA/e-learning
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/e-learning-16-0/e-learning-16-0-website_slides_attendees_completed_time
+    :target: https://translation.odoo-community.org/projects/e-learning-17-0/e-learning-17-0-website_slides_attendees_completed_time
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
-    :target: https://runboat.odoo-community.org/builds?repo=OCA/e-learning&target_branch=16.0
+    :target: https://runboat.odoo-community.org/builds?repo=OCA/e-learning&target_branch=17.0
     :alt: Try me on Runboat
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
@@ -45,35 +41,35 @@ completed.
 
 **Built-in (Odoo):**
 
-- **Progress**
-  ``Progress = Number of Completed Slides / Total Number of Slides`` → A
-  simple ratio, based only on slide count.
+-  **Progress**
+   ``Progress = Number of Completed Slides / Total Number of Slides`` →
+   A simple ratio, based only on slide count.
 
 **Added by this addon:**
 
-- **Completed Time (in hours)**
-  ``Completed Time = Σ(completion_time of each completed slide)`` → A
-  cumulative total of time-based effort for each attendee.
+-  **Completed Time (in hours)**
+   ``Completed Time = Σ(completion_time of each completed slide)`` → A
+   cumulative total of time-based effort for each attendee.
 
 💡 Why This Matters
 ^^^^^^^^^^^^^^^^^^^
 
-- ⏱️ **Duration-Aware Insight** Accurately reflects how much content a
-  learner has completed, by time spent rather than steps clicked.
+-  ⏱️ **Duration-Aware Insight** Accurately reflects how much content a
+   learner has completed, by time spent rather than steps clicked.
 
-- 👤 **Per-Attendee Computation** Each attendee has a personalized
-  Completed Time value, making metrics more meaningful for trainers and
-  reports.
+-  👤 **Per-Attendee Computation** Each attendee has a personalized
+   Completed Time value, making metrics more meaningful for trainers and
+   reports.
 
-- 📊 **Actionable Training Analytics** Trainers can better identify
-  high-effort learners and tailor support accordingly.
+-  📊 **Actionable Training Analytics** Trainers can better identify
+   high-effort learners and tailor support accordingly.
 
 🧪 Example
 ^^^^^^^^^^
 
 For a course with 10 slides (total 20 hours), if an attendee completes:
 
-- 1 slide of 15 hours → **Progress**: 10% → **Completed Time**: 15h
+-  1 slide of 15 hours → **Progress**: 10% → **Completed Time**: 15h
 
 --------------
 
@@ -92,9 +88,8 @@ Usage
 After module installation, you will see course's completed time within
 attendee views.
 
-|Attendees Tree View|
-
-.. |Attendees Tree View| image:: https://raw.githubusercontent.com/OCA/e-learning/16.0/website_slides_attendees_completed_time/static/description/attendees_tree_view.png
+.. image:: https://raw.githubusercontent.com/OCA/e-learning/17.0/website_slides_attendees_completed_time/static/description/attendees_tree_view.png
+   :alt: Attendees Tree View
 
 Bug Tracker
 ===========
@@ -102,7 +97,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/OCA/e-learning/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/OCA/e-learning/issues/new?body=module:%20website_slides_attendees_completed_time%0Aversion:%2016.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/OCA/e-learning/issues/new?body=module:%20website_slides_attendees_completed_time%0Aversion:%2017.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -117,7 +112,7 @@ Authors
 Contributors
 ------------
 
-- Rolando Pérez rrebollo@binhex.cloud https://binhex.cloud
+-  Rolando Pérez rrebollo@binhex.cloud https://binhex.cloud
 
 Maintainers
 -----------
@@ -132,6 +127,6 @@ OCA, or the Odoo Community Association, is a nonprofit organization whose
 mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
-This module is part of the `OCA/e-learning <https://github.com/OCA/e-learning/tree/16.0/website_slides_attendees_completed_time>`_ project on GitHub.
+This module is part of the `OCA/e-learning <https://github.com/OCA/e-learning/tree/17.0/website_slides_attendees_completed_time>`_ project on GitHub.
 
 You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.
