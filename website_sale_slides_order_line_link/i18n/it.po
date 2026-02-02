@@ -17,9 +17,29 @@ msgstr ""
 "X-Generator: Weblate 5.10.4\n"
 
 #. module: website_sale_slides_order_line_link
+#. odoo-python
+#: code:addons/website_sale_slides_order_line_link/models/sale_order.py:0
+#, python-format
+msgid ""
+"<p>Your registrations for the course <strong>%(course_name)s</strong> have "
+"been increased by <strong>%(added_qty)s registration(s)</strong>.</p><p>You "
+"now have a total of <strong>%(available_registrations)s</strong> "
+"registration(s) purchased, of which <strong>%(used_registrations)s</strong> "
+"have already been used and <strong>%(remaining_registrations)s</strong> are "
+"still available.</p>"
+msgstr ""
+
+#. module: website_sale_slides_order_line_link
 #: model:ir.model,name:website_sale_slides_order_line_link.model_slide_channel_partner
 msgid "Channel / Partners (Members)"
 msgstr "Canale / Partner (membri)"
+
+#. module: website_sale_slides_order_line_link
+#. odoo-python
+#: code:addons/website_sale_slides_order_line_link/models/sale_order.py:0
+#, python-format
+msgid "Course Registrations Added: %s"
+msgstr ""
 
 #. module: website_sale_slides_order_line_link
 #: model:ir.model.fields,field_description:website_sale_slides_order_line_link.field_slide_channel_partner__sale_order_line_ids
