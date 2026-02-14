@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<odoo>
+    <template
+        id="slide_sidebar_done_button"
+        inherit_id="website_slides.slide_sidebar_done_button"
+    >
+        <xpath expr="//div" position="attributes">
+            <attribute name="t-if" separator=" " add="and not slide.is_blocked" />
+        </xpath>
+        <xpath expr="//div" position="after">
+            <div
+                t-else=""
+                class="o_wslides_sidebar_done_button align-self-start"
+                t-att-data-id="slide.id"
+                t-att-data-completed="slide_completed"
+                t-att-data-can-self-mark-completed="slide.can_self_mark_completed"
+                t-att-data-can-self-mark-uncompleted="slide.can_self_mark_uncompleted"
+                t-att-data-is-member="is_member"
+            >
+                <i class="fa fa-lock fa-fw fa-lg" t-att-data-slide-id="slide.id" />
+            </div>
+        </xpath>
+    </template>
+</odoo>
