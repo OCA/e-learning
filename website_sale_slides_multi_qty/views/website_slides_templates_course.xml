@@ -6,16 +6,51 @@
         <xpath expr="//t[@t-elif='channel.is_member']" position="before">
             <t t-if="channel_error">
                 <div class="alert alert-warning" role="alert">
-                    <t t-out="channel_error" />
+                    <t t-raw="channel_error" />
                 </div>
             </t>
             <div t-if="can_enroll and not show_modal_to_join" class="text-center">
-                <a
-                    t-att-href="'/slides/%s/join%s' % (channel.id, '?invite_partner_id=%s' % request.params.get('invite_partner_id') if request.params.get('invite_partner_id') else '')"
-                    class="btn btn-primary"
-                >Join Course</a>
+                <t
+                    t-if="show_identification_form and not request.website.is_public_user()"
+                >
+                    <form method="POST" action="/slides/channel/join_with_vat">
+                        <input
+                            type="hidden"
+                            name="csrf_token"
+                            t-att-value="request.csrf_token()"
+                        />
+                        <input
+                            type="hidden"
+                            name="channel_id"
+                            t-att-value="channel.id"
+                        />
+                        <input
+                            type="hidden"
+                            name="invite_partner_id"
+                            t-att-value="request.params.get('invite_partner_id')"
+                        />
+                        <input
+                            type="text"
+                            name="identification_number"
+                            class="form-control my-2"
+                            placeholder="Enter your ID"
+                            required="required"
+                        />
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">
+                                Join Course
+                            </button>
+                        </div>
+                    </form>
+                </t>
+                <t t-else="">
+                    <a
+                        t-att-href="'/slides/%s/join%s' % (channel.id, '?invite_partner_id=%s' % request.params.get('invite_partner_id') if request.params.get('invite_partner_id') else '')"
+                        class="btn btn-primary"
+                    >Join Course</a>
+                </t>
             </div>
-            <t t-if="show_modal_to_join">
+            <t t-if="show_modal_to_join and request.website.is_public_user()">
                 <form method="POST" action="/slides/channel/join_with_id">
                     <input
                         type="hidden"

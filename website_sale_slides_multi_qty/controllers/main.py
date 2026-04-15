@@ -1,6 +1,7 @@
 # Copyright 2025 Tecnativa - Pilar Vargas
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 import json
+import re
 
 from dateutil.relativedelta import relativedelta
 
@@ -12,6 +13,9 @@ from odoo.addons.website_slides.controllers.main import WebsiteSlides
 
 
 class WebsiteSaleSlides(WebsiteSlides):
+    def _normalize_identification_number(self, value):
+        return re.sub(r"[^0-9A-Z]", "", (value or "").strip().upper())
+
     def _set_viewed_slide(self, slide, quiz_attempts_inc=False):
         identification_number = request.session.get("identification_number", False)
         if (
@@ -211,7 +215,61 @@ class WebsiteSaleSlides(WebsiteSlides):
         show_modal_to_join = request.session.pop("show_modal_to_join", None)
         if show_modal_to_join:
             res.qcontext["show_modal_to_join"] = show_modal_to_join
+        show_identification_form = request.session.pop("show_identification_form", None)
+        if show_identification_form:
+            res.qcontext["show_identification_form"] = show_identification_form
         return res
+
+    @http.route(
+        "/slides/channel/join_with_vat",
+        type="http",
+        auth="user",
+        methods=["POST"],
+        website=True,
+    )
+    def join_with_vat(self, **kwargs):
+        # Registered user enters VAT before accessing the course.
+        channel_id = int(kwargs.get("channel_id"))
+        invite_partner_id = kwargs.get("invite_partner_id")
+        invite_hash = kwargs.get("invite_hash")
+        redirect_url = (
+            f"/slides/{channel_id}"
+            f"/invite?invite_partner_id={invite_partner_id}"
+            f"&invite_hash={invite_hash}"
+        )
+        channel = request.env["slide.channel"].browse(channel_id).exists()
+        if not channel:
+            return self._redirect_to_slides_main("no_channel")
+        target_partner = request.env.user.partner_id
+        identification_number = kwargs.get("identification_number", False)
+        if not self._check_identification_number(identification_number, target_partner):
+            request.session["channel_error"] = _("Invalid identification number.")
+            return request.redirect(redirect_url)
+        identification_number_norm = self._normalize_identification_number(
+            identification_number
+        )
+        existing_enroll = channel.sudo().channel_partner_ids.filtered(
+            lambda r: self._normalize_identification_number(r.identification_number)
+            == identification_number_norm
+        )[:1]
+        # Save VAT in user contact
+        target_partner.sudo().write(
+            {
+                "vat": identification_number,
+            }
+        )
+        if existing_enroll:
+            existing_enroll.write(
+                {
+                    "partner_id": target_partner.id,
+                }
+            )
+            return request.redirect(f"/slides/{channel_id}")
+        request.session.pop("show_identification_form", None)
+        join_url = f"/slides/{channel.id}/join" + (
+            f"?invite_partner_id={invite_partner_id}" if invite_partner_id else ""
+        )
+        return request.redirect(join_url)
 
     @http.route(
         "/slides/channel/join_with_id",
@@ -223,27 +281,43 @@ class WebsiteSaleSlides(WebsiteSlides):
     def slide_channel_join_with_id(self, **kw):
         identification_number = kw.get("identification_number", False)
         channel_id = int(kw.get("channel_id"))
+        invite_partner_id = int(kw.get("invite_partner_id"))
+        invite_hash = kw.get("invite_hash")
+        redirect_url = (
+            f"/slides/{channel_id}"
+            f"/invite?invite_partner_id={invite_partner_id}"
+            f"&invite_hash={invite_hash}"
+        )
+        channel = request.env["slide.channel"].browse(channel_id).exists()
+        if not channel:
+            return self._redirect_to_slides_main("no_channel")
+        identification_number_norm = self._normalize_identification_number(
+            identification_number
+        )
+        slide_channel_partner = channel.sudo().channel_partner_ids.filtered(
+            lambda r: self._normalize_identification_number(r.identification_number)
+            == identification_number_norm
+        )[:1]
+        if slide_channel_partner and slide_channel_partner.partner_id.user_ids:
+            login_url = f"/web/login?redirect=/slides/{channel_id}"
+            request.session["channel_error"] = (
+                _(
+                    "This identification number is already linked to a registered "
+                    "account. Please <a href='%s'>log in</a> to access the course."
+                )
+                % login_url
+            )
+            return request.redirect(redirect_url)
         slide_channel_partner_name = (
-            kw.get("slide_channel_partner_name").strip().upper()
+            (kw.get("slide_channel_partner_name") or "").strip().upper()
         )
         slide_channel_partner_email = kw.get("slide_channel_partner_email")
         slide_channel_partner_phone = kw.get("slide_channel_partner_phone")
-        invite_partner_id = int(kw.get("invite_partner_id"))
-        invite_hash = kw.get("invite_hash")
-        channel = request.env["slide.channel"].browse(channel_id).exists()
-        slide_channel_partner = channel.sudo().channel_partner_ids.filtered(
-            lambda x: x.identification_number == identification_number
-        )
         target_partner = request.env["res.partner"].browse(invite_partner_id)
         parent_channel_partner = channel.sudo().channel_partner_ids.filtered(
             lambda x: x.sale_order_line_ids and x.invitation_hash == invite_hash
         )
         if not slide_channel_partner:
-            redirect_url = (
-                f"/slides/{channel_id}"
-                f"/invite?invite_partner_id={invite_partner_id}"
-                f"&invite_hash={invite_hash}"
-            )
             if (
                 not slide_channel_partner_name
                 or not slide_channel_partner_email
@@ -274,7 +348,20 @@ class WebsiteSaleSlides(WebsiteSlides):
     @http.route("/slides/<int:channel_id>/join", type="http", auth="user", website=True)
     def slide_channel_join_course(self, channel_id, **kwargs):
         channel = request.env["slide.channel"].browse(channel_id).exists()
+        if not channel:
+            return self._redirect_to_slides_main("no_channel")
         target_partner = request.env.user.partner_id
+        if target_partner.vat:
+            identification_number_norm = self._normalize_identification_number(
+                target_partner.vat
+            )
+            existing_enroll = channel.sudo().channel_partner_ids.filtered(
+                lambda r: self._normalize_identification_number(r.identification_number)
+                == identification_number_norm
+            )[:1]
+            if existing_enroll and existing_enroll.partner_id != target_partner:
+                existing_enroll.write({"partner_id": target_partner.id})
+                return request.redirect(f"/slides/{channel_id}")
         parent_channel_partners = channel.sudo().channel_partner_ids.filtered(
             lambda x: x.available_registrations > 1
         )
@@ -301,29 +388,24 @@ class WebsiteSaleSlides(WebsiteSlides):
     def slide_channel_invite(self, channel_id, invite_partner_id, invite_hash):
         res = super().slide_channel_invite(channel_id, invite_partner_id, invite_hash)
         self._delete_session_data()
-        # A user is logged
-        if not request.website.is_public_user():
-            channel = request.env["slide.channel"].browse(int(channel_id)).exists()
-
-            enroll = channel.sudo().channel_partner_ids.filtered(
-                lambda x: x.partner_id == request.env.user.partner_id
-            )
-            if (
-                not request.env.user.partner_id.id == int(invite_partner_id)
-                and not enroll
-            ):
-                return request.redirect(
-                    f"/slides/{channel_id}?is_invite=1&invite_partner_id={invite_partner_id}"
-                )
-            # return request.redirect(f"/slides/{channel_id}")
+        redirect_url = (
+            f"/slides/{channel_id}?is_invite=1&invite_partner_id={invite_partner_id}"
+        )
         # No user is logged.
         if request.website.is_public_user():
             request.session["invite_partner_id"] = int(invite_partner_id)
             request.session["invite_hash"] = invite_hash
             request.session["show_modal_to_join"] = True
-            return request.redirect(
-                f"/slides/{channel_id}?is_invite=1&invite_partner_id={invite_partner_id}"
-            )
+            return request.redirect(redirect_url)
+        # A user is logged
+        channel = request.env["slide.channel"].browse(int(channel_id)).exists()
+        enroll = channel.sudo().channel_partner_ids.filtered(
+            lambda x: x.partner_id == request.env.user.partner_id
+        )
+        if not request.env.user.partner_id.id == int(invite_partner_id) and not enroll:
+            if not request.env.user.partner_id.vat:
+                request.session["show_identification_form"] = True
+            return request.redirect(redirect_url)
         return res
 
     def _can_user_register(self, channel, user):
@@ -361,7 +443,9 @@ class WebsiteSaleSlides(WebsiteSlides):
         channel._action_add_members(
             target_partners=target_partner,
             parent_channel_partner=parent_channel_partner,
-            identification_number=kwargs.get("identification_number", False),
+            identification_number=(
+                kwargs.get("identification_number") or target_partner.vat
+            ),
             slide_channel_partner_name=kwargs.get("slide_channel_partner_name", False),
             slide_channel_partner_email=kwargs.get(
                 "slide_channel_partner_email", False
