@@ -226,6 +226,7 @@ class SlideChannelPartner(models.Model):
                 vals["slide_channel_partner_name"] = partner.name
                 vals["slide_channel_partner_email"] = partner.email
                 vals["slide_channel_partner_phone"] = partner.phone or partner.mobile
+                vals["identification_number"] = partner.vat
         return super().create(vals_list)
 
     def _recompute_completion(self):
