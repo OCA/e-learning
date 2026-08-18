@@ -17,35 +17,9 @@ msgstr ""
 "X-Generator: Weblate 5.15.2\n"
 
 #. module: website_sale_slides_order_line_link
-#. odoo-python
-#: code:addons/website_sale_slides_order_line_link/models/sale_order.py:0
-#, python-format
-msgid ""
-"<p>Your registrations for the course <strong>%(course_name)s</strong> have "
-"been increased by <strong>%(added_qty)s registration(s)</strong>.</p><p>You "
-"now have a total of <strong>%(available_registrations)s</strong> "
-"registration(s) purchased, of which <strong>%(used_registrations)s</strong> "
-"have already been used and <strong>%(remaining_registrations)s</strong> are "
-"still available.</p>"
-msgstr ""
-"<p>Le tue iscrizioni per il corso <strong>%(course_name)s</strong> sono "
-"state aumentate di <strong>%(added_qty)s iscrizioni</strong>.</p><p>Ora hai "
-"un totale di <strong>%(available_registrations)s</strong> iscrizioni "
-"acquistate, di cui <strong>%(used_registrations)s</strong> sono già state "
-"utilizzate e <strong>%(remaining_registrations)s</strong> sono ancora "
-"disponibili.</p>"
-
-#. module: website_sale_slides_order_line_link
 #: model:ir.model,name:website_sale_slides_order_line_link.model_slide_channel_partner
 msgid "Channel / Partners (Members)"
 msgstr "Canale / Partner (membri)"
-
-#. module: website_sale_slides_order_line_link
-#. odoo-python
-#: code:addons/website_sale_slides_order_line_link/models/sale_order.py:0
-#, python-format
-msgid "Course Registrations Added: %s"
-msgstr "Iscrizioni corso aggiunte: %s"
 
 #. module: website_sale_slides_order_line_link
 #: model:ir.model.fields,field_description:website_sale_slides_order_line_link.field_slide_channel_partner__sale_order_line_ids
@@ -66,3 +40,23 @@ msgstr "Riga ordine di vendita"
 #: model:ir.model.fields,field_description:website_sale_slides_order_line_link.field_sale_order_line__slide_channel_partner_id
 msgid "Slide Channel Partner"
 msgstr "Avanza partner canale"
+
+#, python-format
+#~ msgid ""
+#~ "<p>Your registrations for the course <strong>%(course_name)s</strong> "
+#~ "have been increased by <strong>%(added_qty)s registration(s)</strong>.</"
+#~ "p><p>You now have a total of <strong>%(available_registrations)s</strong> "
+#~ "registration(s) purchased, of which <strong>%(used_registrations)s</"
+#~ "strong> have already been used and <strong>%(remaining_registrations)s</"
+#~ "strong> are still available.</p>"
+#~ msgstr ""
+#~ "<p>Le tue iscrizioni per il corso <strong>%(course_name)s</strong> sono "
+#~ "state aumentate di <strong>%(added_qty)s iscrizioni</strong>.</p><p>Ora "
+#~ "hai un totale di <strong>%(available_registrations)s</strong> iscrizioni "
+#~ "acquistate, di cui <strong>%(used_registrations)s</strong> sono già state "
+#~ "utilizzate e <strong>%(remaining_registrations)s</strong> sono ancora "
+#~ "disponibili.</p>"
+
+#, python-format
+#~ msgid "Course Registrations Added: %s"
+#~ msgstr "Iscrizioni corso aggiunte: %s"
