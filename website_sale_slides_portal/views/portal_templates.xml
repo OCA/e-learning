@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Tecnativa - Pilar Vargas
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="portal_my_home_instances"
+        name="Show Instances"
+        inherit_id="portal.portal_my_home"
+        customize_show="True"
+        priority="30"
+    >
+        <div id="portal_common_category" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t
+                    t-set="icon"
+                    t-value="'/website_sale_slides_portal/static/src/img/courses.png'"
+                />
+                <t t-set="title">Slides</t>
+                <t t-set="text">Information about courses and participations.</t>
+                <t t-set="url" t-value="'/my/courses'" />
+                <t t-set="placeholder_count" t-value="'courses_count'" />
+            </t>
+        </div>
+    </template>
+
+    <template id="portal_my_courses" name="My courses">
+        <t t-call="portal.portal_layout">
+            <t t-set="additional_title">Courses</t>
+            <t t-if="not courses">
+                <div class="alert alert-warning" role="alert">
+                    There are no courses.
+                </div>
+            </t>
+            <t t-if="courses" t-call="portal.portal_table">
+                <thead>
+                    <tr class="active">
+                        <td class="fw-bold">Course #</td>
+                        <td class="fw-bold">Used</td>
+                        <td class="fw-bold">Remaining</td>
+                        <td class="fw-bold">Total</td>
+                        <td class="text-end pe-3 fw-bold">Invitation Link</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="courses" t-as="course">
+                        <td>
+                            <span t-field="course.channel_id.name" />
+                        </td>
+                        <td>
+                            <span t-field="course.used_registrations" />
+                        </td>
+                        <td>
+                            <span t-field="course.remaining_registrations" />
+                        </td>
+                        <td>
+                            <span t-field="course.available_registrations" />
+                        </td>
+                        <td class="text-end">
+                            <!-- 1 course: direct access to the course -->
+                            <a
+                                t-if="course.available_registrations == 1"
+                                t-attf-href="/slides/#{slug(course.channel_id)}"
+                                class="btn btn-primary"
+                                target="_blank"
+                            >
+                                    Go to course
+                            </a>
+
+                            <!-- Multiple courses: invitation link -->
+                            <a
+                                t-else=""
+                                t-att-href="course.invitation_link"
+                                class="btn btn-primary"
+                                target="_blank"
+                            >
+                                    Go to course
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </t>
+        </t>
+    </template>
+</odoo>
