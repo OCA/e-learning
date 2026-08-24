@@ -219,9 +219,9 @@ class SlideSlide(models.Model):
                         if slide_partner.quiz_attempts_count < len(gains)
                         else gains[-1]
                     )
-                    result[slide.id][
-                        "quiz_attempts_count"
-                    ] = slide_partner.quiz_attempts_count
+                    result[slide.id]["quiz_attempts_count"] = (
+                        slide_partner.quiz_attempts_count
+                    )
                     if quiz_done or slide_partner.completed:
                         result[slide.id]["quiz_karma_won"] = (
                             gains[slide_partner.quiz_attempts_count - 1]

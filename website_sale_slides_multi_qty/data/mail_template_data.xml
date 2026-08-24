@@ -15,12 +15,12 @@
                 </p>
                 <t t-if="object.sale_order_line_ids.product_uom_qty > 1">
                     <p style="margin: 0px; padding: 0px; font-size: 13px;">
-                        You have successfully acquired <strong><t
-                                t-out="object.available_registrations"
-                            /></strong>
-                        registrations for the course <strong><t
-                                t-out="object.channel_id.name or ''"
-                            >Course Name</t></strong>.
+                        You have successfully acquired <strong>
+                        <t t-out="object.available_registrations" />
+                    </strong>
+                        registrations for the course <strong>
+                        <t t-out="object.channel_id.name or ''">Course Name</t>
+                    </strong>.
                     </p>
                     <p>
                         To allow participants to access the course, they must complete their registration
@@ -39,9 +39,9 @@
                 </t>
                 <t t-else="">
                     <p style="margin: 0px; padding: 0px; font-size: 13px;">
-                        Your access to the course <strong><t
-                                t-out="object.channel_id.name or ''"
-                            >Course Name</t></strong> has been confirmed.
+                        Your access to the course <strong>
+                        <t t-out="object.channel_id.name or ''">Course Name</t>
+                    </strong> has been confirmed.
                     </p>
                     <p>
                         You can start learning by clicking the link below:
