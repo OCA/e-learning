@@ -1,0 +1,69 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_sale_slides_order_line_link
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-30 10:53+0000\n"
+"PO-Revision-Date: 2026-01-30 11:56+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: website_sale_slides_order_line_link
+#. odoo-python
+#: code:addons/website_sale_slides_order_line_link/models/sale_order.py:0
+#, python-format
+msgid ""
+"<p>Your registrations for the course <strong>%(course_name)s</strong> have "
+"been increased by <strong>%(added_qty)s registration(s)</strong>.</p><p>You "
+"now have a total of <strong>%(available_registrations)s</strong> "
+"registration(s) purchased, of which <strong>%(used_registrations)s</strong> "
+"have already been used and <strong>%(remaining_registrations)s</strong> are "
+"still available.</p>"
+msgstr ""
+"<p>Sus inscripciones para el curso <strong>%(course_name)s</strong> se han "
+"incrementado en <strong>%(added_qty)s inscripción(es)</strong>.</p><p>Ahora "
+"dispone de un total de <strong>%(available_registrations)s</strong> "
+"inscripción(es) adquiridas, de las cuales <strong>%(used_registrations)s</"
+"strong> ya se han utilizado y <strong>%(remaining_registrations)s</strong> "
+"siguen disponibles.</p>"
+
+#. module: website_sale_slides_order_line_link
+#: model:ir.model,name:website_sale_slides_order_line_link.model_slide_channel_partner
+msgid "Channel / Partners (Members)"
+msgstr ""
+
+#. module: website_sale_slides_order_line_link
+#. odoo-python
+#: code:addons/website_sale_slides_order_line_link/models/sale_order.py:0
+#, python-format
+msgid "Course Registrations Added: %s"
+msgstr "Inscripciones añadidas al curso: %s"
+
+#. module: website_sale_slides_order_line_link
+#: model:ir.model.fields,field_description:website_sale_slides_order_line_link.field_slide_channel_partner__sale_order_line_ids
+msgid "Sale Order Lines"
+msgstr "Líneas de pedido"
+
+#. module: website_sale_slides_order_line_link
+#: model:ir.model,name:website_sale_slides_order_line_link.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: website_sale_slides_order_line_link
+#: model:ir.model,name:website_sale_slides_order_line_link.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: website_sale_slides_order_line_link
+#: model:ir.model.fields,field_description:website_sale_slides_order_line_link.field_sale_order_line__slide_channel_partner_id
+msgid "Slide Channel Partner"
+msgstr ""
