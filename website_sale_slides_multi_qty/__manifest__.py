@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "Website Sale Slides Multi Qty",
-    "version": "17.0.1.0.0",
+    "version": "19.0.1.0.0",
     "category": "Website/eLearning",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/e-learning",
@@ -11,9 +11,7 @@
     "data": [
         "data/mail_template_data.xml",
         "views/slide_channel_partner_views.xml",
-        "views/slide_channel_views.xml",
         "views/website_slides_templates_course.xml",
-        "views/website_slides_templates_homepage.xml",
     ],
     "installable": True,
     "assets": {

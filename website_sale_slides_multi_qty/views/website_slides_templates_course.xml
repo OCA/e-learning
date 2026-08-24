@@ -6,7 +6,7 @@
         <xpath expr="//t[@t-elif='channel.is_member']" position="before">
             <t t-if="channel_error">
                 <div class="alert alert-warning" role="alert">
-                    <t t-raw="channel_error" />
+                    <t t-out="channel_error" />
                 </div>
             </t>
             <div t-if="can_enroll and not show_modal_to_join" class="text-center">
@@ -131,13 +131,13 @@
             </t>
         </xpath>
         <xpath expr="//t[@t-elif='channel.is_member']" position="attributes">
-            <attribute name="t-elif" add="and not can_enroll" separator=" " />
+            <attribute name="t-elif" add="not can_enroll" separator="and" />
         </xpath>
         <xpath
             expr="//*[contains(@t-if, 'channel.enroll') and contains(@t-if, 'payment')]"
             position="attributes"
         >
-            <attribute name="t-if" add="and not can_enroll" separator=" " />
+            <attribute name="t-if" add="not can_enroll" separator="and" />
         </xpath>
     </template>
 </odoo>

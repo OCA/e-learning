@@ -10,18 +10,15 @@ class SlideSlidePartner(models.Model):
 
     identification_number = fields.Char()
 
-    _sql_constraints = [
-        (
-            "slide_partner_uniq",
-            "CHECK (true)",
-            "Constraint disabled: allowing repeated partner on the same slide.",
-        ),
-        (
-            "unique_slide_identification",
-            "unique(slide_id, identification_number)",
-            "The identification number must be unique!",
-        ),
-    ]
+    _slide_partner_uniq = models.Constraint(
+        "CHECK (true)",
+        "Constraint disabled: allowing repeated partner on the same slide.",
+    )
+
+    _unique_slide_identification = models.Constraint(
+        "unique(slide_id, identification_number)",
+        "The identification number must be unique!",
+    )
 
 
 class SlideSlide(models.Model):
@@ -72,6 +69,7 @@ class SlideSlide(models.Model):
                     self.env["slide.slide.partner"],
                 )
                 record.user_vote = record.user_membership_id.vote
+                record.user_has_completed = record.user_membership_id.completed
         return res
 
     def _action_vote(self, upvote=True):
@@ -230,12 +228,7 @@ class SlideSlide(models.Model):
                         )
         return result
 
-    def _apply_ir_rules(self, query, mode="read"):
+    def _check_access(self, operation):
         if self._is_public_with_key():
             return
-        return super()._apply_ir_rules(query, mode="read")
-
-    def check_access_rule(self, operation):
-        if self._is_public_with_key():
-            return
-        return super().check_access_rule(operation)
+        return super()._check_access(operation)

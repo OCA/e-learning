@@ -2,61 +2,62 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from markupsafe import Markup
 
-from odoo import _, models
+from odoo import models
 
 
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
-    def _verify_updated_quantity(self, order_line, product_id, new_qty, **kwargs):
-        # Allow adding more than 1 quantity of a course to the cart
-        res = super()._verify_updated_quantity(
-            order_line, product_id, new_qty, **kwargs
-        )
-        product = self.env["product.product"].browse(product_id)
-        if product.detailed_type == "course" and new_qty > 1:
-            return new_qty, ""
-        return res
-
     def _action_confirm(self):
-        course_lines = self.order_line.filtered(
-            lambda line: line.product_id.channel_ids
-        )
-        for line in course_lines:
-            existing_parent = self.env["slide.channel.partner"].search(
-                [
-                    ("channel_id", "in", line.product_id.channel_ids.ids),
-                    ("partner_id", "=", self.partner_id.id),
-                    ("sale_order_line_ids", "!=", False),
-                ],
-                limit=1,
+        additions = {}
+        for order in self:
+            course_lines = order.order_line.filtered(
+                lambda line: line.product_id.channel_ids
             )
-            if existing_parent:
-                linked_lines_this_order = existing_parent.sale_order_line_ids.filtered(
-                    lambda ln: ln.order_id.id == self.id
+            for line in course_lines:
+                registration = self.env["slide.channel.partner"].search(
+                    [
+                        ("channel_id", "in", line.product_id.channel_ids.ids),
+                        ("partner_id", "=", order.partner_id.id),
+                        ("parent_id", "=", False),
+                        ("sale_order_line_ids", "!=", False),
+                    ],
+                    limit=1,
                 )
-                commands = [(3, ln.id) for ln in linked_lines_this_order]
-                commands.append((4, line.id))
-                existing_parent.write({"sale_order_line_ids": commands})
-                if not linked_lines_this_order:
-                    self._send_registrations_added_mail(
-                        line.product_uom_qty, existing_parent
-                    )
-        return super()._action_confirm()
+                if not registration or line in registration.sale_order_line_ids:
+                    continue
+                if registration._is_individual_course_registration():
+                    registration = registration._create_registration_parent(line)
+                else:
+                    line.slide_channel_partner_id = registration
+                key = (order.id, registration.id)
+                additions.setdefault(
+                    key,
+                    [order, registration, 0.0],
+                )[2] += line.product_uom_qty
+        result = super()._action_confirm()
+        for order, registration, added_qty in additions.values():
+            order._send_registrations_added_mail(
+                added_qty,
+                registration,
+            )
+        return result
 
-    def _verify_updated_quantity(self, order_line, product_id, new_qty, **kwargs):
+    def _verify_updated_quantity(
+        self, order_line, product_id, new_qty, uom_id, **kwargs
+    ):
         # Allow adding more than 1 quantity of a course to the cart
         res = super()._verify_updated_quantity(
-            order_line, product_id, new_qty, **kwargs
+            order_line, product_id, new_qty, uom_id, **kwargs
         )
         product = self.env["product.product"].browse(product_id)
-        if product.detailed_type == "course" and new_qty > 1:
+        if product.service_tracking == "course" and new_qty > 1:
             return new_qty, ""
         return res
 
     def _send_registrations_added_mail(self, added_qty, registration):
         body = Markup(
-            _(
+            self.env._(
                 "<p>Your registrations for the course <strong>%(course_name)s</strong> "
                 "have been increased by <strong>%(added_qty)s registration(s)</strong>."
                 "</p>"
@@ -74,7 +75,10 @@ class SaleOrder(models.Model):
         )
         self.message_post(
             body=body,
-            subject=_("Course Registrations Added: %s") % registration.channel_id.name,
+            subject=self.env._(
+                "Course Registrations Added: %s",
+                registration.channel_id.name,
+            ),
             message_type="comment",
             subtype_xmlid="mail.mt_comment",
             partner_ids=[self.partner_id.id],

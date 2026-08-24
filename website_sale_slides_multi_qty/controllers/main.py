@@ -4,8 +4,9 @@ import json
 import re
 
 from dateutil.relativedelta import relativedelta
+from markupsafe import Markup
 
-from odoo import _, fields, http
+from odoo import fields, http
 from odoo.http import request
 from odoo.tools import consteq
 
@@ -127,8 +128,9 @@ class WebsiteSaleSlides(WebsiteSlides):
         # Validate ID depending on the country of the parent partner
         if not identification_number or not partner or not partner.sudo().country_id:
             return True  # Allow if insufficient data
-        return request.env["res.partner"].simple_vat_check(
-            partner.country_id.code.upper(), identification_number.strip().upper()
+        return request.env["res.partner"]._check_vat_number(
+            partner.sudo().country_id.code.upper(),
+            identification_number.strip().upper(),
         )
 
     def _session_data(self):
@@ -150,7 +152,9 @@ class WebsiteSaleSlides(WebsiteSlides):
         request.session["invite_partner_id"] = invite_partner_id
         request.session["invite_hash"] = invite_hash
 
-    @http.route("/slides/is_public_with_key", type="json", auth="public", website=True)
+    @http.route(
+        "/slides/is_public_with_key", type="jsonrpc", auth="public", website=True
+    )
     def session_data(self):
         return self._session_data()
 
@@ -211,7 +215,7 @@ class WebsiteSaleSlides(WebsiteSlides):
         ) or bool(kw.get("is_invite", False))
         channel_error = request.session.pop("channel_error", None)
         if channel_error:
-            res.qcontext["channel_error"] = channel_error
+            res.qcontext["channel_error"] = Markup(channel_error)
         show_modal_to_join = request.session.pop("show_modal_to_join", None)
         if show_modal_to_join:
             res.qcontext["show_modal_to_join"] = show_modal_to_join
@@ -243,7 +247,9 @@ class WebsiteSaleSlides(WebsiteSlides):
         target_partner = request.env.user.partner_id
         identification_number = kwargs.get("identification_number", False)
         if not self._check_identification_number(identification_number, target_partner):
-            request.session["channel_error"] = _("Invalid identification number.")
+            request.session["channel_error"] = request.env._(
+                "Invalid identification number."
+            )
             return request.redirect(redirect_url)
         identification_number_norm = self._normalize_identification_number(
             identification_number
@@ -300,12 +306,10 @@ class WebsiteSaleSlides(WebsiteSlides):
         )[:1]
         if slide_channel_partner and slide_channel_partner.partner_id.user_ids:
             login_url = f"/web/login?redirect=/slides/{channel_id}"
-            request.session["channel_error"] = (
-                _(
-                    "This identification number is already linked to a registered "
-                    "account. Please <a href='%s'>log in</a> to access the course."
-                )
-                % login_url
+            request.session["channel_error"] = request.env._(
+                "This identification number is already linked to a registered "
+                "account. Please <a href='%s'>log in</a> to access the course.",
+                login_url,
             )
             return request.redirect(redirect_url)
         slide_channel_partner_name = (
@@ -323,14 +327,16 @@ class WebsiteSaleSlides(WebsiteSlides):
                 or not slide_channel_partner_email
                 or not slide_channel_partner_phone
             ):
-                request.session["channel_error"] = _(
+                request.session["channel_error"] = request.env._(
                     "There is no participation for this key"
                 )
                 return request.redirect(redirect_url)
             if not self._check_identification_number(
                 identification_number, target_partner
             ):
-                request.session["channel_error"] = _("Invalid identification number.")
+                request.session["channel_error"] = request.env._(
+                    "Invalid identification number."
+                )
                 return request.redirect(redirect_url)
             self._add_new_member(
                 channel,

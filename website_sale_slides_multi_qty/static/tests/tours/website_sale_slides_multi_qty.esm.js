@@ -1,36 +1,29 @@
-/** @odoo-module */
 // Copyright 2025 Tecnativa - Pilar Vargas
 /* License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). */
 
 import {registry} from "@web/core/registry";
+import {clickOnElement} from "@website/js/tours/tour_utils";
+import * as tourUtils from "@website_sale/js/tours/tour_utils";
 
 registry.category("web_tour.tours").add("website_sale_slides_order_line_multi_qty", {
-    test: true,
     url: "/slides",
     steps: () => [
+        ...tourUtils.addToCart({
+            productName: "Test Channel",
+            search: false,
+            expectUnloadPage: true,
+        }),
         {
-            content: "Select the course",
-            trigger: 'a:contains("Test Channel")',
+            content: "Wait for the first course to be added",
+            trigger: "a sup.my_cart_quantity:text(1)",
         },
+        clickOnElement("Add another course to the cart", "a#add_to_cart"),
         {
-            content: "Add a course to the cart",
-            trigger: "a#add_to_cart",
+            content: "Wait for the second course to be added",
+            trigger: "a sup.my_cart_quantity:text(2)",
         },
-        {
-            content: "Add another course to the cart",
-            trigger: "a#add_to_cart",
-        },
-        {
-            content: "Add one more course to the cart",
-            trigger: "a#add_to_cart",
-        },
-        {
-            content: "Go to cart",
-            trigger: "a[href='/shop/cart']",
-            extra_trigger: "sup.my_cart_quantity:contains('3')",
-        },
-        {
-            trigger: ".btn:contains('Checkout')",
-        },
+        clickOnElement("Add one more course to the cart", "a#add_to_cart"),
+        tourUtils.goToCart({quantity: 3}),
+        tourUtils.goToCheckout(),
     ],
 });

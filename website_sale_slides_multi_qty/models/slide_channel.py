@@ -1,7 +1,7 @@
 # Copyright 2025-2026 Tecnativa - Pilar Vargas
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import _, api, fields, models
+from odoo import api, fields, models
 from odoo.http import request
 
 
@@ -21,6 +21,7 @@ class SlideChannel(models.Model):
             )
         return False
 
+    @api.depends("channel_partner_all_ids.sale_order_line_ids")
     def _compute_membership_values(self):
         res = super()._compute_membership_values()
         if self._is_public_with_key():
@@ -118,7 +119,7 @@ class SlideChannel(models.Model):
             and parent_channel_partner.available_registrations
             <= parent_channel_partner.used_registrations
         ):
-            request.session["channel_error"] = _(
+            request.session["channel_error"] = self.env._(
                 "No registrations available for this course."
             )
             return self.env["slide.channel.partner"].sudo()
@@ -176,14 +177,15 @@ class SlideChannelPartner(models.Model):
     )
     is_public_slide_channel_partner = fields.Boolean(default=False)
 
-    _sql_constraints = [
-        ("channel_partner_uniq", "CHECK (true)", "Temporal constraint disabled"),
-        (
-            "unique_channel_identification",
-            "unique(channel_id, identification_number)",
-            "The identification number must be unique per course!",
-        ),
-    ]
+    _channel_partner_uniq = models.Constraint(
+        "CHECK (true)",
+        "Temporal constraint disabled",
+    )
+
+    _unique_channel_identification = models.Constraint(
+        "unique(channel_id, identification_number)",
+        "The identification number must be unique per course!",
+    )
 
     @api.depends("sale_order_line_ids.product_uom_qty")
     def _compute_available_registrations(self):
@@ -198,11 +200,15 @@ class SlideChannelPartner(models.Model):
                 rec.used_registrations or 0
             )
 
-    @api.depends("child_channel_partner_ids")
+    @api.depends(
+        "child_channel_partner_ids",
+        "sale_order_line_ids.product_uom_qty",
+    )
     def _compute_used_registrations(self):
         for record in self:
             record.used_registrations = (
                 len(record.child_channel_partner_ids)
+                + int(record._is_individual_course_registration())
                 if record.sale_order_line_ids
                 else 1
             )
@@ -213,6 +219,23 @@ class SlideChannelPartner(models.Model):
         for record in self:
             record.invitation_hash = record._get_invitation_hash()
         return res
+
+    def _is_individual_course_registration(self):
+        self.ensure_one()
+        ordered_qty = sum(self.sale_order_line_ids.mapped("product_uom_qty"))
+        return ordered_qty == 1
+
+    def _create_registration_parent(self, additional_line):
+        self.ensure_one()
+        order_lines = self.sale_order_line_ids | additional_line
+        parent = self.with_context(course_sale_order_lines=order_lines).create(
+            {
+                "channel_id": self.channel_id.id,
+                "partner_id": self.partner_id.id,
+            }
+        )
+        self.parent_id = parent
+        return parent
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -225,7 +248,7 @@ class SlideChannelPartner(models.Model):
                 partner = self.env["res.partner"].browse(vals["partner_id"])
                 vals["slide_channel_partner_name"] = partner.name
                 vals["slide_channel_partner_email"] = partner.email
-                vals["slide_channel_partner_phone"] = partner.phone or partner.mobile
+                vals["slide_channel_partner_phone"] = partner.phone
                 vals["identification_number"] = partner.vat
         return super().create(vals_list)
 
