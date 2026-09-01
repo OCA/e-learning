@@ -23,4 +23,5 @@ class SaleOrderLine(models.Model):
 
     slide_channel_partner_id = fields.Many2one(
         comodel_name="slide.channel.partner",
+        copy=False,
     )
