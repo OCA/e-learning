@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Tecnativa - Pilar Vargas
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="course_buy_course_button"
+        inherit_id="website_sale_slides.course_buy_course_button"
+    >
+        <xpath expr="//a[@id='add_to_cart']/../../../.." position="attributes">
+                <attribute name="t-if">not can_enroll</attribute>
+        </xpath>
+        <xpath expr="//t[@t-elif='not channel.is_member']/div" position="attributes">
+                <attribute name="t-if">not can_enroll</attribute>
+        </xpath>
+    </template>
+</odoo>
