@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Tecnativa - Pilar Vargas
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="certification_report_view_general"
+        inherit_id="survey.certification_report_view_general"
+    >
+        <xpath expr="//t[@t-set='certified_name']" position="attributes">
+            <attribute name="t-value">
+                (user_input.slide_channel_partner_name or user_input.slide_channel_partner_email or user_input.partner_id.name or user_input.email or '').upper()
+            </attribute>
+        </xpath>
+    </template>
+</odoo>
