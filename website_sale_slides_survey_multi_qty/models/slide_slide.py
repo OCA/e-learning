@@ -30,7 +30,7 @@ class Slide(models.Model):
                     slide=slide: cp.partner_id.id
                     == user_membership_id_sudo.partner_id.id
                     and cp.identification_number
-                    == slide.user_membership_id.identification_number
+                    == user_membership_id_sudo.identification_number
                 )[:1]
                 if user_membership_id_sudo.user_input_ids:
                     last_user_input = next(

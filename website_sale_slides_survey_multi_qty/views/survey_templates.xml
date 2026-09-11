@@ -7,7 +7,9 @@
             expr="//div[a[contains(@t-att-href, '/survey/%s/get_certification')]]"
             position="attributes"
         >
-            <attribute name="t-if">not website.is_public_user()</attribute>
+            <attribute
+                name="t-if"
+            >survey.certification and not website.is_public_user()</attribute>
         </xpath>
     </template>
 </odoo>

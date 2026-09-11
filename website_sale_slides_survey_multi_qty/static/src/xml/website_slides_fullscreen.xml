@@ -2,7 +2,7 @@
 <templates>
     <t
         t-name="website.slides.fullscreen.certification"
-        t-inherit="website_slides_survey.website.slides.fullscreen.certification"
+        t-inherit="website.slides.fullscreen.certification"
         t-inherit-mode="extension"
     >
         <xpath expr="//a[@role='button']" position="attributes">
