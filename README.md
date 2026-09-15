@@ -22,6 +22,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[website_sale_slides_multi_qty](website_sale_slides_multi_qty/) | 19.0.1.0.0 |  | Website Sale Slides Multi Qty
 [website_sale_slides_order_line_link](website_sale_slides_order_line_link/) | 19.0.1.0.1 |  | Link sales order lines to slide channel participations in sold courses.
 
 [//]: # (end addons)
