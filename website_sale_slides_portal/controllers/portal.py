@@ -1,8 +1,8 @@
 # Copyright 2026 Tecnativa - Pilar Vargas
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
-from odoo import _, http
+from odoo import http
+from odoo.fields import Domain
 from odoo.http import request
-from odoo.osv import expression
 
 from odoo.addons.portal.controllers.portal import CustomerPortal
 from odoo.addons.portal.controllers.portal import pager as portal_pager
@@ -12,21 +12,27 @@ class CoursesCustomerPortal(CustomerPortal):
     def _prepare_courses_domain(self):
         partner = request.env.user.partner_id
         commercial = partner.commercial_partner_id
-        base = [
-            ("parent_id", "=", False),
-            ("sale_order_line_ids", "!=", False),
-        ]
+        base = Domain(
+            [
+                ("parent_id", "=", False),
+                ("sale_order_line_ids", "!=", False),
+            ]
+        )
         # Multi: visible for the whole commercial entity
-        multi = [
-            ("partner_id.commercial_partner_id", "=", commercial.id),
-            ("available_registrations", ">", 1),
-        ]
+        multi = Domain(
+            [
+                ("partner_id.commercial_partner_id", "=", commercial.id),
+                ("available_registrations", ">", 1),
+            ]
+        )
         # Single: visible only for the current partner
-        individual = [
-            ("partner_id", "=", partner.id),
-            ("available_registrations", "=", 1),
-        ]
-        return expression.AND([base, expression.OR([multi, individual])])
+        individual = Domain(
+            [
+                ("partner_id", "=", partner.id),
+                ("available_registrations", "=", 1),
+            ]
+        )
+        return base & (multi | individual)
 
     def _prepare_home_portal_values(self, counters):
         values = super()._prepare_home_portal_values(counters)
@@ -39,8 +45,8 @@ class CoursesCustomerPortal(CustomerPortal):
 
     def _get_courses_searchbar_sortings(self):
         return {
-            "date": {"label": _("Newest"), "order": "create_date desc"},
-            "name": {"label": _("Course"), "order": "channel_id"},
+            "date": {"label": self.env._("Newest"), "order": "create_date desc"},
+            "name": {"label": self.env._("Course"), "order": "channel_id"},
         }
 
     @http.route(
