@@ -1,9 +1,10 @@
 [project]
 name = "odoo-addons-oca-e-learning"
-version = "19.0.20260915.0"
+version = "19.0.20260915.1"
 dependencies = [
     "odoo-addon-website_sale_slides_multi_qty==19.0.*",
     "odoo-addon-website_sale_slides_order_line_link==19.0.*",
+    "odoo-addon-website_sale_slides_portal==19.0.*",
 ]
 classifiers=[
     "Programming Language :: Python",
