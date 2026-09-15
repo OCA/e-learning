@@ -4,10 +4,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 12:37+0000\n"
-"PO-Revision-Date: 2026-01-30 12:37+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,13 +14,21 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: website_sale_slides_portal
+#. odoo-python
+#: code:addons/website_sale_slides_portal/controllers/portal.py:0
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
 msgid "Course"
 msgstr ""
 
 #. module: website_sale_slides_portal
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_courses
 msgid "Courses"
+msgstr ""
+
+#. module: website_sale_slides_portal
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
+msgid "Go to course"
 msgstr ""
 
 #. module: website_sale_slides_portal
@@ -36,13 +42,14 @@ msgid "Invitation Link"
 msgstr ""
 
 #. module: website_sale_slides_portal
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
-msgid "Remaining"
+#. odoo-python
+#: code:addons/website_sale_slides_portal/controllers/portal.py:0
+msgid "Newest"
 msgstr ""
 
 #. module: website_sale_slides_portal
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_courses
-msgid "Slides"
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
+msgid "Remaining"
 msgstr ""
 
 #. module: website_sale_slides_portal
