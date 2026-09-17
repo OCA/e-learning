@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t
+        t-name="website.slides.fullscreen.certification"
+        t-inherit="website_slides_survey.website.slides.fullscreen.certification"
+        t-inherit-mode="extension"
+    >
+        <xpath expr="//a[@role='button']" position="attributes">
+            <attribute name="class">d-none</attribute>
+        </xpath>
+    </t>
+</templates>

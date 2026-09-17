@@ -1,0 +1,1 @@
+odoo-addon-website-sale-slides-multi-qty @ git+https://github.com/OCA/e-learning.git@refs/pull/26/head#subdirectory=website_sale_slides_multi_qty
