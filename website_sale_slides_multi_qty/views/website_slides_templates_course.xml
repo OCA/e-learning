@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Tecnativa - Pilar Vargas
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="course_join" inherit_id="website_slides.course_join" priority="9999">
+        <xpath expr="//t[@t-elif='channel.is_member']" position="before">
+            <t t-if="channel_error">
+                <div class="alert alert-warning" role="alert">
+                    <t t-raw="channel_error" />
+                </div>
+            </t>
+            <div t-if="can_enroll and not show_modal_to_join" class="text-center">
+                <t
+                    t-if="show_identification_form and not request.website.is_public_user()"
+                >
+                    <form method="POST" action="/slides/channel/join_with_vat">
+                        <input
+                            type="hidden"
+                            name="csrf_token"
+                            t-att-value="request.csrf_token()"
+                        />
+                        <input
+                            type="hidden"
+                            name="channel_id"
+                            t-att-value="channel.id"
+                        />
+                        <input
+                            type="hidden"
+                            name="invite_partner_id"
+                            t-att-value="request.params.get('invite_partner_id')"
+                        />
+                        <input
+                            type="text"
+                            name="identification_number"
+                            class="form-control my-2"
+                            placeholder="Enter your ID"
+                            required="required"
+                        />
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">
+                                Join Course
+                            </button>
+                        </div>
+                    </form>
+                </t>
+                <t t-else="">
+                    <a
+                        t-att-href="'/slides/%s/join%s' % (channel.id, '?invite_partner_id=%s' % request.params.get('invite_partner_id') if request.params.get('invite_partner_id') else '')"
+                        class="btn btn-primary"
+                    >Join Course</a>
+                </t>
+            </div>
+            <t t-if="show_modal_to_join and request.website.is_public_user()">
+                <form method="POST" action="/slides/channel/join_with_id">
+                    <input
+                        type="hidden"
+                        name="csrf_token"
+                        t-att-value="request.csrf_token()"
+                    />
+                    <input type="hidden" name="channel_id" t-att-value="channel.id" />
+                    <input
+                        type="hidden"
+                        name="invite_partner_id"
+                        t-att-value="request.params.get('invite_partner_id')"
+                    />
+                    <input
+                        type="hidden"
+                        name="invite_hash"
+                        t-att-value="request.session.get('invite_hash')"
+                    />
+                    <input
+                        type="text"
+                        id="slide_channel_partner_name"
+                        name="slide_channel_partner_name"
+                        class="form-control my-2"
+                        placeholder="Enter your first and last name"
+                        required="required"
+                    />
+                    <input
+                        type="email"
+                        id="slide_channel_partner_email"
+                        name="slide_channel_partner_email"
+                        class="form-control my-2"
+                        placeholder="Enter your email"
+                        required="required"
+                    />
+                    <input
+                        type="tel"
+                        id="slide_channel_partner_phone"
+                        name="slide_channel_partner_phone"
+                        class="form-control my-2"
+                        placeholder="Enter your phone"
+                        required="required"
+                    />
+                    <input
+                        type="text"
+                        name="identification_number"
+                        class="form-control my-2"
+                        placeholder="Enter your ID"
+                        required="required"
+                    />
+                    <!-- Terms and conditions -->
+                    <div id="terms_and_conditions" class="form-check my-2 text-start">
+                        <input
+                            type="checkbox"
+                            id="accept_terms"
+                            name="accept_terms"
+                            required="required"
+                            class="form-check-input"
+                        />
+                        <label for="accept_terms" class="form-check-label">
+                            I accept the <a
+                                href="/terms"
+                                target="_blank"
+                            >terms and conditions</a>
+                        </label>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button
+                            type="submit"
+                            id="join_course_submit"
+                            class="btn btn-primary"
+                        >Join Course</button>
+                        <a
+                            role="button"
+                            id="toggle_key_access"
+                            class="btn btn-secondary"
+                        >I have already joined</a>
+                    </div>
+                </form>
+            </t>
+        </xpath>
+        <xpath expr="//t[@t-elif='channel.is_member']" position="attributes">
+            <attribute name="t-elif" add="and not can_enroll" separator=" " />
+        </xpath>
+        <xpath
+            expr="//*[contains(@t-if, 'channel.enroll') and contains(@t-if, 'payment')]"
+            position="attributes"
+        >
+            <attribute name="t-if" add="and not can_enroll" separator=" " />
+        </xpath>
+    </template>
+</odoo>

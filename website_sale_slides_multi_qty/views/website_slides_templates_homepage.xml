@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Tecnativa - Pilar Vargas
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="courses_home" inherit_id="website_slides.courses_home">
+        <xpath expr="//div[hasclass('o_wslides_home_main')]/div" position="before">
+            <div t-if="error" class="alert alert-warning" role="alert">
+                <t t-esc="error" />
+            </div>
+        </xpath>
+    </template>
+</odoo>
