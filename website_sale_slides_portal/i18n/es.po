@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-02 15:06+0000\n"
-"PO-Revision-Date: 2026-10-02 17:10+0200\n"
+"POT-Creation-Date: 2026-10-05 09:45+0000\n"
+"PO-Revision-Date: 2026-10-05 11:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -16,6 +16,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.9\n"
+
+#. module: website_sale_slides_portal
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
+msgid "Actions"
+msgstr "Acciones"
+
+#. module: website_sale_slides_portal
+#. odoo-javascript
+#: code:addons/website_sale_slides_portal/static/src/js/portal_courses.esm.js:0
+#, python-format
+msgid "Copied"
+msgstr "Copiado"
+
+#. module: website_sale_slides_portal
+#. odoo-javascript
+#: code:addons/website_sale_slides_portal/static/src/js/portal_courses.esm.js:0
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
+#, python-format
+msgid "Copy link"
+msgstr "Copiar enlace"
 
 #. module: website_sale_slides_portal
 #. odoo-python
@@ -28,23 +48,14 @@ msgstr "Curso #"
 #. module: website_sale_slides_portal
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_courses
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_menu_courses
 msgid "Courses"
 msgstr "Cursos"
-
-#. module: website_sale_slides_portal
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
-msgid "Go to course"
-msgstr "Ir al curso"
 
 #. module: website_sale_slides_portal
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_courses
 msgid "Information about courses and participations."
 msgstr "Información acerca de cursos y participaciones."
-
-#. module: website_sale_slides_portal
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
-msgid "Invitation Link"
-msgstr "Link de invitación"
 
 #. module: website_sale_slides_portal
 #. odoo-python

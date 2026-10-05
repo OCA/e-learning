@@ -14,6 +14,7 @@
             </li>
         </xpath>
     </template>
+
     <template
         id="portal_my_home_courses"
         name="Show Courses"
@@ -57,49 +58,46 @@
                         <th>Used</th>
                         <th>Remaining</th>
                         <th>Total</th>
-                        <th class="text-end pe-3">Invitation Link</th>
+                        <th class="text-center">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr t-foreach="courses" t-as="course">
                         <td>
-                            <span t-field="course.channel_id.name" />
-                        </td>
-                        <td class="text-center">
-                            <span
-                                class="text-center"
-                                t-field="course.used_registrations"
-                            />
-                        </td>
-                        <td class="text-center">
-                            <span
-                                class="text-center"
-                                t-field="course.remaining_registrations"
-                            />
-                        </td>
-                        <td class="text-center">
-                            <span t-field="course.available_registrations" />
-                        </td>
-                        <td class="text-end">
                             <!-- 1 course: direct access to the course -->
                             <a
                                 t-if="course.available_registrations == 1"
                                 t-attf-href="/slides/#{slug(course.channel_id)}"
-                                class="btn btn-primary"
                                 target="_blank"
                             >
-                                    Go to course
+                                <span t-field="course.channel_id.name" />
                             </a>
-
                             <!-- Multiple courses: invitation link -->
                             <a
                                 t-else=""
                                 t-att-href="course.invitation_link"
-                                class="btn btn-primary"
                                 target="_blank"
                             >
-                                    Go to course
+                                <span t-field="course.channel_id.name" />
                             </a>
+                        </td>
+                        <td class="text-center">
+                            <span t-field="course.used_registrations" />
+                        </td>
+                        <td class="text-center">
+                            <span t-field="course.remaining_registrations" />
+                        </td>
+                        <td class="text-center">
+                            <span t-field="course.available_registrations" />
+                        </td>
+                        <td class="text-center">
+                            <button
+                                type="button"
+                                class="btn btn-primary js_copy_invitation_link"
+                                t-att-data-clipboard-text="course.invitation_link"
+                            >
+                                Copy link
+                            </button>
                         </td>
                     </tr>
                 </tbody>
