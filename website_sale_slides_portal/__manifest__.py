@@ -12,4 +12,9 @@
     "data": [
         "views/portal_templates.xml",
     ],
+    "assets": {
+        "web.assets_frontend": [
+            "website_sale_slides_portal/static/src/js/portal_courses.esm.js",
+        ],
+    },
 }
