@@ -24,3 +24,5 @@ repo_website: https://github.com/OCA/e-learning
 use_pyproject_toml: false
 use_ruff: false
 
+
+#copier updated
