@@ -4,7 +4,7 @@
 {
     "name": "Website Slides Attendees Completed Time",
     "summary": """Show course completed time in attendee views""",
-    "version": "16.0.1.0.0",
+    "version": "17.0.1.0.0",
     "license": "AGPL-3",
     "author": "Binhex,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/e-learning",
