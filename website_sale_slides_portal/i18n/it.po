@@ -17,6 +17,24 @@ msgstr ""
 "X-Generator: Weblate 5.15.2\n"
 
 #. module: website_sale_slides_portal
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
+msgid "Actions"
+msgstr ""
+
+#. module: website_sale_slides_portal
+#. odoo-javascript
+#: code:addons/website_sale_slides_portal/static/src/js/portal_courses.esm.js:0
+msgid "Copied"
+msgstr ""
+
+#. module: website_sale_slides_portal
+#. odoo-javascript
+#: code:addons/website_sale_slides_portal/static/src/js/portal_courses.esm.js:0
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
+msgid "Copy link"
+msgstr ""
+
+#. module: website_sale_slides_portal
 #. odoo-python
 #: code:addons/website_sale_slides_portal/controllers/portal.py:0
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
@@ -26,23 +44,14 @@ msgstr "Corso"
 #. module: website_sale_slides_portal
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_courses
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_menu_courses
 msgid "Courses"
 msgstr "Corsi"
-
-#. module: website_sale_slides_portal
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
-msgid "Go to course"
-msgstr "Vai al corso"
 
 #. module: website_sale_slides_portal
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_courses
 msgid "Information about courses and participations."
 msgstr "Informazioni sui corsi e i partecipanti."
-
-#. module: website_sale_slides_portal
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
-msgid "Invitation Link"
-msgstr "Collegamento invito"
 
 #. module: website_sale_slides_portal
 #. odoo-python
@@ -69,3 +78,9 @@ msgstr "Totale"
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
 msgid "Used"
 msgstr "Usato"
+
+#~ msgid "Go to course"
+#~ msgstr "Vai al corso"
+
+#~ msgid "Invitation Link"
+#~ msgstr "Collegamento invito"

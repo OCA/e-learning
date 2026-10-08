@@ -25,7 +25,6 @@ msgstr "Acciones"
 #. module: website_sale_slides_portal
 #. odoo-javascript
 #: code:addons/website_sale_slides_portal/static/src/js/portal_courses.esm.js:0
-#, python-format
 msgid "Copied"
 msgstr "Copiado"
 
@@ -33,7 +32,6 @@ msgstr "Copiado"
 #. odoo-javascript
 #: code:addons/website_sale_slides_portal/static/src/js/portal_courses.esm.js:0
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
-#, python-format
 msgid "Copy link"
 msgstr "Copiar enlace"
 
@@ -59,7 +57,6 @@ msgstr "Información acerca de cursos y participaciones."
 #. module: website_sale_slides_portal
 #. odoo-python
 #: code:addons/website_sale_slides_portal/controllers/portal.py:0
-#, python-format
 msgid "Newest"
 msgstr "Más Reciente"
 
@@ -67,11 +64,6 @@ msgstr "Más Reciente"
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
 msgid "Remaining"
 msgstr "Disponibles"
-
-#. module: website_sale_slides_portal
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_courses
-msgid "Slides"
-msgstr ""
 
 #. module: website_sale_slides_portal
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
