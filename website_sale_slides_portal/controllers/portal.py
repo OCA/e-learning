@@ -18,21 +18,11 @@ class CoursesCustomerPortal(CustomerPortal):
                 ("sale_order_line_ids", "!=", False),
             ]
         )
-        # Multi: visible for the whole commercial entity
-        multi = Domain(
-            [
-                ("partner_id.commercial_partner_id", "=", commercial.id),
-                ("available_registrations", ">", 1),
-            ]
-        )
-        # Single: visible only for the current partner
-        individual = Domain(
-            [
-                ("partner_id", "=", partner.id),
-                ("available_registrations", "=", 1),
-            ]
-        )
-        return base & (multi | individual)
+        if partner.is_company:
+            visibility = Domain("partner_id.commercial_partner_id", "=", commercial.id)
+        else:
+            visibility = Domain("partner_id", "=", partner.id)
+        return base & visibility
 
     def _prepare_home_portal_values(self, counters):
         values = super()._prepare_home_portal_values(counters)
