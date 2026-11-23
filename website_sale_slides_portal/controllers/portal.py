@@ -16,17 +16,15 @@ class CoursesCustomerPortal(CustomerPortal):
             ("parent_id", "=", False),
             ("sale_order_line_ids", "!=", False),
         ]
-        # Multi: visible for the whole commercial entity
-        multi = [
-            ("partner_id.commercial_partner_id", "=", commercial.id),
-            ("available_registrations", ">", 1),
-        ]
-        # Single: visible only for the current partner
-        individual = [
-            ("partner_id", "=", partner.id),
-            ("available_registrations", "=", 1),
-        ]
-        return expression.AND([base, expression.OR([multi, individual])])
+        if partner.is_company:
+            visibility = [
+                ("partner_id.commercial_partner_id", "=", commercial.id),
+            ]
+        else:
+            visibility = [
+                ("partner_id", "=", partner.id),
+            ]
+        return expression.AND([base, visibility])
 
     def _prepare_home_portal_values(self, counters):
         values = super()._prepare_home_portal_values(counters)
