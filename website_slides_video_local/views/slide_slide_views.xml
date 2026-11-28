@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Graeme Gellatly <gdgellatly@gmail.com>
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <record id="view_slide_slide_form" model="ir.ui.view">
+        <field name="name">slide.slide.form.video.local</field>
+        <field name="model">slide.slide</field>
+        <field name="inherit_id" ref="website_slides.view_slide_slide_form" />
+        <field name="arch" type="xml">
+            <label for="source_type" position="attributes">
+                <attribute
+                    name="invisible"
+                >slide_category not in ['infographic', 'document', 'video']</attribute>
+            </label>
+            <field name="source_type" position="attributes">
+                <attribute
+                    name="invisible"
+                >slide_category not in ['infographic', 'document', 'video']</attribute>
+            </field>
+            <field name="video_url" position="attributes">
+                <attribute
+                    name="required"
+                >slide_category == 'video' and not binary_content</attribute>
+            </field>
+            <field name="video_url" position="after">
+                <field
+                    name="binary_content"
+                    string="Video"
+                    invisible="slide_category != 'video' or source_type != 'local_file'"
+                    required="slide_category == 'video' and source_type == 'local_file' and not video_url"
+                />
+                <field
+                    name="captions_vtt"
+                    invisible="slide_category != 'video' or source_type != 'local_file'"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

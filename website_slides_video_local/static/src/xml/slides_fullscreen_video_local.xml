@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Graeme Gellatly <gdgellatly@gmail.com>
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<templates xml:space="preserve">
+    <t t-name="website_slides_video_local.fullscreen_video_local">
+        <div class="player ratio ratio-16x9 embed-responsive-item h-100 bg-black">
+            <video
+                controls="controls"
+                preload="metadata"
+                class="w-100 h-100"
+                t-att-src="'/slides/slide/' + widget._slideValue.id + '/video_content'"
+            >
+                <track
+                    kind="subtitles"
+                    srclang="en"
+                    label="English"
+                    t-att-src="'/slides/slide/' + widget._slideValue.id + '/captions.vtt'"
+                />
+            </video>
+        </div>
+    </t>
+</templates>
